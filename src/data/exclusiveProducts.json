@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "img": "./controle_da_pluggy.png",
+        "alt": "Controle XPluggy GTX Ultra",
+        "name": "PC XPluggy Jenkins",
+        "description": "PC de ultima geração",
+        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "guarantee": "1 ano",
+        "price": 20999.99,
+        "quantity": 1,
+        "badge": "LANÇAMENTO"
+    },
+    {
+        "id": 2,
+        "img": "./controle_da_pluggy.png",
+        "alt": "Controle XPluggy GTX Ultra",
+        "name": "XPluggy GTX Ultra",
+        "description": "Controle sem fio premium",
+        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "guarantee": "1 ano",
+        "price": 299.90,
+        "oldPrice": 399.90,
+        "quantity": 10,
+        "badge": "30% OFF",
+        "star": 4.9
+    },
+    {
+        "id": 3,
+        "img": "./controle_da_pluggy.png",
+        "alt": "Controle XPluggy GTX Ultra",
+        "name": "XPluggy Force",
+        "description": "Laptop gamer profissional",
+        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "guarantee": "1 ano",
+        "price": 8.99990,
+        "oldPrice": 10999.90,
+        "quantity": 10,
+        "badge": "LANÇAMENTO",
+        "star": 4.7
+    },
+    {
+        "id": 4,
+        "img": "./controle_da_pluggy.png",
+        "alt": "Controle XPluggy GTX Ultra",
+        "name": "XPluggy Force",
+        "description": "Laptop gamer profissional",
+        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "guarantee": "1 ano",
+        "price": 8.99990,
+        "oldPrice": 10999.90,
+        "quantity": 10,
+        "badge": "40% OFF",
+        "star": 4.7
+    },
+    {
+        "id": 5,
+        "img": "./controle_da_pluggy.png",
+        "alt": "Controle XPluggy GTX Ultra",
+        "name": "XPluggy Force",
+        "description": "Laptop gamer profissional",
+        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "guarantee": "1 ano",
+        "price": 8.99990,
+        "oldPrice": 10999.90,
+        "quantity": 10,
+        "badge": "40% OFF",
+        "star": 4.7
+    }
+    
+]

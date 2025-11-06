@@ -8,6 +8,10 @@
     --font-secondary: 'Poppins', sans-serif;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .inter {
     font-family: var(--font-primary);
 }
@@ -18,12 +22,10 @@
 
 body {
     font-family: var(--font-primary);
-    background-color: black;
+    overflow-x: hidden
 }
 
 
 .custom-swiper .swiper-pagination-bullet {
-  @apply hidden;
+    @apply hidden;
 }
-
-

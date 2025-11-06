@@ -1,0 +1,214 @@
+{
+  "smartphones": [
+
+  {
+    "id": 1,
+    "img": "./imgproduct/iphone-15-pro-mockup.png",
+    "alt": "Mockup iPhone 15 Pro - fundo transparente",
+    "name": "Mockup iPhone 15 Pro",
+    "description": "Mockup 3D realista do iPhone 15 Pro, pronto para apresentações e landing pages.",
+    "price": 39.9,
+    "quantity": 20
+  },
+  {
+    "id": 2,
+    "img": "images/smartphones/android-ui-kit.png",
+    "alt": "Android UI Kit - fundo transparente",
+    "name": "Android UI Kit",
+    "description": "Kit de interface Android completo em Figma com componentes prontos.",
+    "price": 29.0,
+    "quantity": 18
+  },
+  {
+    "id": 3,
+    "img": "images/smartphones/iphone-clay-mockups.png",
+    "alt": "iPhone Clay Mockups - fundo transparente",
+    "name": "iPhone Clay Mockups",
+    "description": "Conjunto de mockups minimalistas estilo clay para portfolios e showcases.",
+    "price": 24.5,
+    "quantity": 15
+  },
+  {
+    "id": 4,
+    "img": "images/smartphones/smartwatch-3d-render.png",
+    "alt": "Smartwatch 3D Render - fundo transparente",
+    "name": "Smartwatch 3D Render",
+    "description": "Render de smartwatch em alta resolução para material promocional.",
+    "price": 18.9,
+    "quantity": 12
+  },
+  {
+    "id": 5,
+    "img": "images/smartphones/tablet-device-mockup.png",
+    "alt": "Tablet Device Mockup - fundo transparente",
+    "name": "Tablet Device Mockup",
+    "description": "Mockup de tablet versátil, ideal para demonstrar aplicações responsivas.",
+    "price": 21.0,
+    "quantity": 14
+  },
+  {
+    "id": 6,
+    "img": "images/smartphones/foldable-phone-mockup.png",
+    "alt": "Foldable Phone Mockup - fundo transparente",
+    "name": "Foldable Phone Mockup",
+    "description": "Mockup de smartphone dobrável com visual futurista.",
+    "price": 27.0,
+    "quantity": 10
+  },
+  {
+    "id": 7,
+    "img": "images/smartphones/phone-gradient-pack.png",
+    "alt": "Phone Gradient Pack - fundo transparente",
+    "name": "Phone Gradient Pack",
+    "description": "Coleção de fundos gradientes otimizados para mockups e wallpapers.",
+    "price": 14.9,
+    "quantity": 30
+  },
+  {
+    "id": 8,
+    "img": "images/smartphones/minimal-phone-psd.png",
+    "alt": "Minimal Phone PSD - fundo transparente",
+    "name": "Minimal Phone PSD",
+    "description": "Arquivo PSD com composições limpas para uso em apresentações.",
+    "price": 12.0,
+    "quantity": 25
+  },
+  {
+    "id": 9,
+    "img": "images/smartphones/device-shadow-pack.png",
+    "alt": "Device Shadow Pack - fundo transparente",
+    "name": "Device Shadow Pack",
+    "description": "Sombras realistas para aplicar em mockups e deixar os produtos mais naturais.",
+    "price": 9.9,
+    "quantity": 40
+  },
+  {
+    "id": 10,
+    "img": "images/smartphones/smartphone-neon-mockup.png",
+    "alt": "Smartphone Neon Mockup - fundo transparente",
+    "name": "Smartphone Neon Mockup",
+    "description": "Mockup vibrante com estética neon para campanhas e banners.",
+    "price": 34.0,
+    "quantity": 8
+  },
+  {
+    "id": 11,
+    "img": "images/smartphones/retro-phone-vector.png",
+    "alt": "Retro Phone Vector - fundo transparente",
+    "name": "Retro Phone Vector",
+    "description": "Pacote de ilustrações vetoriais de celulares retrô (SVG/AI).",
+    "price": 8.9,
+    "quantity": 50
+  },
+  {
+    "id": 12,
+    "img": "images/smartphones/iphone-outline-pack.png",
+    "alt": "iPhone Outline Pack - fundo transparente",
+    "name": "iPhone Outline Pack",
+    "description": "Pack de contornos vetoriais de dispositivos para uso em UI/UX.",
+    "price": 10.0,
+    "quantity": 35
+  },
+  {
+    "id": 13,
+    "img": "images/smartphones/appstore-mockup-set.png",
+    "alt": "App Store Mockup Set - fundo transparente",
+    "name": "App Store Mockup Set",
+    "description": "Conjunto de mockups para simular listagens em stores de apps.",
+    "price": 22.5,
+    "quantity": 16
+  },
+  {
+    "id": 14,
+    "img": "images/smartphones/clean-ui-screens.png",
+    "alt": "Clean UI Screens - fundo transparente",
+    "name": "Clean UI Screens",
+    "description": "Coleção de telas mobile clean e responsivas em Figma/Sketch.",
+    "price": 16.9,
+    "quantity": 22
+  },
+  {
+    "id": 15,
+    "img": "images/smartphones/dark-mode-phone-ui.png",
+    "alt": "Dark Mode Phone UI - fundo transparente",
+    "name": "Dark Mode Phone UI",
+    "description": "Interface mobile elegante focada em modo escuro e usabilidade noturna.",
+    "price": 18.0,
+    "quantity": 19
+  },
+  {
+    "id": 16,
+    "img": "images/smartphones/camera-lens-icons.png",
+    "alt": "Camera Lens Icons - fundo transparente",
+    "name": "Camera Lens Icons",
+    "description": "Ícones vetoriais relacionados a câmeras e lentes para UI mobile.",
+    "price": 6.9,
+    "quantity": 60
+  },
+  {
+    "id": 17,
+    "img": "images/smartphones/device-showcase-pack.png",
+    "alt": "Device Showcase Pack - fundo transparente",
+    "name": "Device Showcase Pack",
+    "description": "Cenas prontas para apresentações de apps e vitrines de produtos.",
+    "price": 26.0,
+    "quantity": 13
+  },
+  {
+    "id": 18,
+    "img": "images/smartphones/app-ui-template.png",
+    "alt": "App UI Template - fundo transparente",
+    "name": "App UI Template",
+    "description": "Template de interface para apps, pronto para customização e prototipagem.",
+    "price": 30.0,
+    "quantity": 11
+  },
+  {
+    "id": 19,
+    "img": "images/smartphones/phone-wireframe-kit.png",
+    "alt": "Phone Wireframe Kit - fundo transparente",
+    "name": "Phone Wireframe Kit",
+    "description": "Wireframes mobile em múltiplos tamanhos para prototipagem rápida.",
+    "price": 12.5,
+    "quantity": 28
+  },
+  {
+    "id": 20,
+    "img": "images/smartphones/gradient-wallpaper-set.png",
+    "alt": "Gradient Wallpaper Set - fundo transparente",
+    "name": "Gradient Wallpaper Set",
+    "description": "Pacote de papéis de parede gradientes exclusivos Pluggy com fundo transparente.",
+    "price": 7.0,
+    "quantity": 100
+  }
+  ],
+  "templates": [
+    { "id": 21, "title": "Landing Page Freelancer", "price": 59.00, "description": "Template moderno para portfólios profissionais.", "file": "freelancer-landing.zip" },
+    { "id": 22, "title": "React SaaS Template", "price": 79.00, "description": "Template completo para startups e SaaS.", "file": "react-saas.zip" },
+    { "id": 23, "title": "Dashboard Admin Tailwind", "price": 89.00, "description": "Painel administrativo estilizado com Tailwind.", "file": "dashboard-tailwind.zip" },
+    { "id": 24, "title": "E-commerce Modern", "price": 95.00, "description": "Loja online pronta com carrinho e checkout.", "file": "ecommerce-modern.zip" },
+    { "id": 25, "title": "Portfolio Developer", "price": 49.00, "description": "Site pessoal para desenvolvedores modernos.", "file": "portfolio-dev.zip" },
+    { "id": 26, "title": "Next.js Blog Kit", "price": 42.00, "description": "Template para blogs técnicos com MDX.", "file": "blog-kit.zip" },
+    { "id": 27, "title": "Agency Website", "price": 54.00, "description": "Site elegante para agências criativas.", "file": "agency-site.zip" },
+    { "id": 28, "title": "Landing Crypto", "price": 67.00, "description": "Landing Page para projetos Web3 e blockchain.", "file": "crypto-landing.zip" },
+    { "id": 29, "title": "Startup One Page", "price": 39.00, "description": "Template leve e otimizado para startups.", "file": "startup-one.zip" },
+    { "id": 30, "title": "Course Platform UI", "price": 72.00, "description": "Interface para plataformas de ensino online.", "file": "course-platform.zip" },
+    { "id": 31, "title": "Modern Resume Site", "price": 38.00, "description": "Modelo de currículo online com animações.", "file": "resume-site.zip" },
+    { "id": 32, "title": "Music App Template", "price": 50.00, "description": "Interface moderna para aplicativos de música.", "file": "music-app.zip" },
+    { "id": 33, "title": "Digital Product Store", "price": 85.00, "description": "Template para lojas de produtos digitais.", "file": "digital-store.zip" },
+    { "id": 34, "title": "Gaming Website UI", "price": 64.00, "description": "Site com estilo gamer e animações responsivas.", "file": "gaming-ui.zip" },
+    { "id": 35, "title": "Event Landing Kit", "price": 42.00, "description": "Landing page para eventos e conferências.", "file": "event-landing.zip" }
+  ],
+  "ebooks": [
+    { "id": 36, "title": "Guia de TypeScript Moderno", "price": 19.90, "description": "Aprenda TypeScript do zero ao avançado.", "file": "ebook-typescript.pdf" },
+    { "id": 37, "title": "Manual de Performance Web", "price": 22.50, "description": "Melhore o desempenho dos seus sites.", "file": "performance-web.pdf" },
+    { "id": 38, "title": "UI/UX Design Simplificado", "price": 25.00, "description": "Guia prático de design centrado no usuário.", "file": "uiux-simplificado.pdf" },
+    { "id": 39, "title": "SEO para Desenvolvedores", "price": 17.00, "description": "Otimização de sites com técnicas modernas.", "file": "seo-dev.pdf" },
+    { "id": 40, "title": "Marketing Digital 2025", "price": 27.00, "description": "Estratégias atualizadas para tráfego e vendas.", "file": "marketing2025.pdf" },
+    { "id": 41, "title": "Git e GitHub Essencial", "price": 14.00, "description": "Controle de versão para equipes e projetos.", "file": "git-essencial.pdf" },
+    { "id": 42, "title": "Design System na Prática", "price": 29.90, "description": "Crie sistemas de design reutilizáveis.", "file": "design-system.pdf" },
+    { "id": 43, "title": "React Hooks Avançado", "price": 24.90, "description": "Domine hooks e padrões avançados de React.", "file": "react-hooks.pdf" },
+    { "id": 44, "title": "Arquitetura Frontend", "price": 31.00, "description": "Boas práticas e padrões para apps escaláveis.", "file": "frontend-architecture.pdf" },
+    { "id": 45, "title": "Automação com JavaScript", "price": 26.00, "description": "Crie scripts e bots inteligentes com JS.", "file": "automation-js.pdf" }
+  ]
+}

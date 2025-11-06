@@ -1,16 +1,30 @@
-import { CircleUser, Search, ShoppingBag, ShoppingCart } from "lucide-react";
+import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, X } from "lucide-react";
+import { useState } from "react";
 
 export default function HeaderMinimal() {
+
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
     const navLinks = [
-        { href: "#", label: "Home" },
-        { href: "#", label: "Produtos" },
-        { href: "#", label: "Sobre" },
-        { href: "#", label: "Contato" },
+        { href: "/", label: "Home", alt:"início", icon: Home, },
+        { href: "#", label: "Produtos", alt:"Produtos ", icon: Package, },
+        { href: "#", label: "Sobre", alt:"Sobre nós", icon: ScrollText, },
+        { href: "#", label: "Contato", alt:"Contato", icon: Phone, },
     ];
 
+    const bottonLinks = [
+        { href: "#", label: "Carrinho", alt:"Carrinho, seus favoritos", icon: ShoppingCart, },
+        { href: "#", label: "Comprados", alt:"Comprados, produtos comprados", icon: ShoppingBag, },
+        { href: "#", label: "Login", alt:"Login, sua conta", icon: CircleUser, },
+    ];
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
+
     return (
-        <header className="sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-6 py-3">
-            <div className="flex items-center justify-between max-w-6xl mx-auto">
+        <header className="sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-2 md:px-6 py-3">
+            <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto">
                 {/* Logo */}
 
                 <picture className="w-24">
@@ -24,18 +38,19 @@ export default function HeaderMinimal() {
                     <img
                         src="./logo-pluggy-oficial.png"
                         alt="Logo da Pluggy"
-                        className="w-full h-auto"
+                        className="w-auto md:w-full h-10 md:h-auto"
                         loading="eager"
                     />
                 </picture>
 
 
                 {/* Navegação Central */}
-                <nav className="hidden md:flex items-center space-x-8">
+                <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
+                            aria-label={link.alt}
                             className="text-gray-600 text-sm font-medium hover:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full"
                         >
                             {link.label}
@@ -47,13 +62,13 @@ export default function HeaderMinimal() {
                 <div className="flex items-center gap-4">
 
                     <form
-                        className="relative hidden md:flex items-center"
+                        className="relative flex items-center "
                         onSubmit={(e) => e.preventDefault()}
                     >
                         <input
                             type="text"
                             placeholder="Pesquisar..."
-                            className="w-64 pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200"
+                            className="flex-1 w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200"
                             aria-label="Pesquisar"
                         />
                         <Search
@@ -61,11 +76,9 @@ export default function HeaderMinimal() {
                             aria-hidden="true"
                         />
                     </form>
-                    {/* Busca Minimal */}
-
-                    {/* Carrinho */}
+                    {/* bottons acoes */}
                     <button
-                        className="relative p-2 text-gray-500 hover:text-blue-600 transition-colors"
+                        className="relative hidden md:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
                         <ShoppingCart className="w-5 h-5" />
@@ -74,7 +87,7 @@ export default function HeaderMinimal() {
                         </span>
                     </button>
                     <button
-                        className="relative p-2 text-gray-500 hover:text-blue-600 transition-colors"
+                        className="relative hidden md:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
                         <ShoppingBag className="w-5 h-5" />
@@ -85,11 +98,71 @@ export default function HeaderMinimal() {
 
                     {/* Usuário */}
                     <button
-                        className="p-2 text-gray-500 hover:text-blue-600 transition-colors"
+                        className="hidden md:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Perfil do usuário"
                     >
                         <CircleUser className="w-5 h-5" />
                     </button>
+                </div>
+
+                {/* Menu Mobile Button */}
+                <button
+                    className="md:hidden ml-2 p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 transition-colors rounded-sm"
+                    aria-label="Menu"
+                    onClick={toggleMobileMenu}
+                >
+                    {isMobileMenuOpen ? (
+                        <X className="w-5 h-5" />
+                    ) : (
+                        <Menu className="w-5 h-5" />
+                    )}
+                </button>
+
+            </div>
+
+            {/* Menu Mobile */}
+            <div className={`
+                lg:hidden transition-all duration-300 ease-in-out
+                ${isMobileMenuOpen ? 'max-h-96 opacity-100 py-4 mb-2' : 'max-h-0 opacity-0 py-0 overflow-hidden'}
+            `}>
+                <nav>
+                    <ul className="flex flex-col space-y-4">
+                        {navLinks.map((link) => (
+                            <li key={link.href}>
+                                <a
+                                    href={link.href}
+                                    aria-label={link.alt}
+                                    className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500  focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50"
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                    {link.icon && <link.icon className="w-5 h-5 mr-4" />}
+                                    {link.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+                <hr className="my-2 border-t border-gray-200" />
+                <div>
+                    <div className="flex flex-col space-y-4 ">
+                        <nav>
+                            <ul className="flex flex-col space-y-4">
+                                {bottonLinks.map((link) => (
+                                    <li key={link.href}>
+                                        <a
+                                            href={link.href}
+                                            aria-label={link.alt}
+                                            className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50"
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                        >
+                                            {link.icon && <link.icon className="w-5 h-5 mr-4" />}
+                                            {link.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
