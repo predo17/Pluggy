@@ -17,7 +17,8 @@
 }
 
 body {
-    font-family: var(--font-primary)
+    font-family: var(--font-primary);
+    background-color: black;
 }
 
 

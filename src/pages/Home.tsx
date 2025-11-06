@@ -19,8 +19,8 @@ export default function Home({ DataProducts }: Props) {
     <div>
       <Banner />
       <div className="max-w-6xl mx-auto mt-12">
-        <h2>
-          Produtos 
+        <h2 className="text-2xl text-gray-700 font-semibold mb-4">
+          Produtos em Destaques
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {DataProducts.map((product) => (

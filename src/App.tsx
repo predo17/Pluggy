@@ -3,13 +3,13 @@ import Home from './pages/Home'
 import ProductPage from './pages/ProductPage.tsx'
 import Checkout from './pages/Checkout'
 import Profile from './pages/Profile'
-import Header from './components/Header'
+import Header from './components/Header/Header.tsx'
 import { DataProducts } from './data/DataProducts.ts'
 
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#ffffff] text-[#0D1117] overflow-x-hidden">
+    <div className="min-h-screen text-[#0D1117] overflow-x-hidden">
       <Header />
       <main className="container mx-auto px-4 py-6">
         <Routes>
