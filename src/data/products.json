@@ -7,6 +7,8 @@
     "alt": "Mockup iPhone 15 Pro - fundo transparente",
     "name": "Mockup iPhone 15 Pro",
     "description": "Mockup 3D realista do iPhone 15 Pro, pronto para apresentações e landing pages.",
+    "guarantee": "12 meses",
+    "freight": "Frete grátis",
     "price": 39.9,
     "quantity": 20
   },
@@ -16,6 +18,7 @@
     "alt": "Android UI Kit - fundo transparente",
     "name": "Android UI Kit",
     "description": "Kit de interface Android completo em Figma com componentes prontos.",
+    "freight": "Frete grátis",
     "price": 29.0,
     "quantity": 18
   },
@@ -25,6 +28,7 @@
     "alt": "iPhone Clay Mockups - fundo transparente",
     "name": "iPhone Clay Mockups",
     "description": "Conjunto de mockups minimalistas estilo clay para portfolios e showcases.",
+    "guarantee": "12 meses",
     "price": 24.5,
     "quantity": 15
   },

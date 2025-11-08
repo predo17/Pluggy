@@ -9,7 +9,8 @@
         "guarantee": "1 ano",
         "price": 20999.99,
         "quantity": 1,
-        "badge": "LANÇAMENTO"
+        "badge": "LANÇAMENTO",
+        "star": 4.9
     },
     {
         "id": 2,
@@ -23,48 +24,48 @@
         "oldPrice": 399.90,
         "quantity": 10,
         "badge": "30% OFF",
-        "star": 4.9
+        "star": 4.5
     },
     {
         "id": 3,
-        "img": "./controle_da_pluggy.png",
+        "img": "./fantasy-anime-style-scene.jpg",
         "alt": "Controle XPluggy GTX Ultra",
-        "name": "XPluggy Force",
-        "description": "Laptop gamer profissional",
-        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "name": "XPluggy Pro",
+        "description": "Fone de ouvido over-ear",
+        "features": ["ANC Ativo", "Som 360°", "30h bateria"],
         "guarantee": "1 ano",
-        "price": 8.99990,
-        "oldPrice": 10999.90,
+        "price": 599.90,
+        "oldPrice": 799.90,
         "quantity": 10,
         "badge": "LANÇAMENTO",
         "star": 4.7
     },
     {
         "id": 4,
-        "img": "./controle_da_pluggy.png",
+        "img": "./laptop_da_pluggy.png",
         "alt": "Controle XPluggy GTX Ultra",
         "name": "XPluggy Force",
         "description": "Laptop gamer profissional",
-        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "features": ["RTX 4070", "32GB RAM", "SSD 1TB"],
         "guarantee": "1 ano",
-        "price": 8.99990,
+        "price": 15999.90,
         "oldPrice": 10999.90,
         "quantity": 10,
         "badge": "40% OFF",
-        "star": 4.7
+        "star": 4.8
     },
     {
         "id": 5,
         "img": "./controle_da_pluggy.png",
         "alt": "Controle XPluggy GTX Ultra",
-        "name": "XPluggy Force",
+        "name": "Xpluggy 19 Ultra",
         "description": "Laptop gamer profissional",
         "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
         "guarantee": "1 ano",
-        "price": 8.99990,
+        "price": 8736.90,
         "oldPrice": 10999.90,
         "quantity": 10,
-        "badge": "40% OFF",
+        "badge": "",
         "star": 4.7
     }
     

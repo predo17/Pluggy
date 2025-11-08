@@ -7,9 +7,9 @@ import Header from './components/Header/Header.tsx'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-100 text-[#0D1117]">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-[#0D1117]">
       <Header />
-      <main className="container mx-auto px-2 md:px-4 py-6">
+      <main className="container mx-auto  md:px-4 py-6">
         <Routes>
           <Route path="/" element={<Home  />} />
           <Route path="/product/:id" element={<ProductPage />} />

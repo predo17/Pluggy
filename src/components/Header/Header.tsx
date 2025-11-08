@@ -23,7 +23,7 @@ export default function HeaderMinimal() {
     };
 
     return (
-        <header className="sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-2 md:px-6 py-3">
+        <header className="relative md:sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-2 md:px-6 py-3">
             <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto">
                 {/* Logo */}
 
@@ -51,7 +51,7 @@ export default function HeaderMinimal() {
                             key={link.href}
                             href={link.href}
                             aria-label={link.alt}
-                            className="text-gray-600 text-sm font-medium hover:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full"
+                            className="text-gray-600 text-sm font-medium hover:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full tracking-wide"
                         >
                             {link.label}
                         </a>
@@ -68,7 +68,7 @@ export default function HeaderMinimal() {
                         <input
                             type="text"
                             placeholder="Pesquisar..."
-                            className="flex-1 w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200"
+                            className="flex-1 w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200 tracking-wide"
                             aria-label="Pesquisar"
                         />
                         <Search
@@ -132,7 +132,7 @@ export default function HeaderMinimal() {
                                 <a
                                     href={link.href}
                                     aria-label={link.alt}
-                                    className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500  focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50"
+                                    className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500  focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50 tracking-wide"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.icon && <link.icon className="w-5 h-5 mr-4" />}
@@ -152,7 +152,7 @@ export default function HeaderMinimal() {
                                         <a
                                             href={link.href}
                                             aria-label={link.alt}
-                                            className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50"
+                                            className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50 tracking-wide"
                                             onClick={() => setIsMobileMenuOpen(false)}
                                         >
                                             {link.icon && <link.icon className="w-5 h-5 mr-4" />}

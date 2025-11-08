@@ -21,11 +21,13 @@
 }
 
 body {
+    width: 100vw;
     font-family: var(--font-primary);
     overflow-x: hidden
 }
 
-
 .custom-swiper .swiper-pagination-bullet {
-    @apply hidden;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50% !important;
 }
