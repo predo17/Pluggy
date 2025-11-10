@@ -51,9 +51,6 @@ export default function ProductCard({ id, img, text, price, description }: any) 
                             <span className="text-2xl font-semibold text-gray-900 block">R$ {price.toFixed(2)}</span>
                             <span className="text-sm text-green-500">ou 12x de R$ {(price / 12).toFixed(2)}</span>
                         </div>
-
-
-
                     </div>
                 </div>
             </Link>

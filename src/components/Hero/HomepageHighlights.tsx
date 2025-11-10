@@ -1,10 +1,10 @@
-import { CreditCard, UserCheck2 } from "lucide-react";
+import { ArrowRight, CreditCard, Shield, Truck, UserCheck2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function HomepageHighlights() {
     return (
         <div className="max-w-7xl mx-auto lg:h-60 mt-16">
-            <div className="grid grid-cols-1 lg:grid-cols-4 h-full gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-4 h-full gap-3">
 
                 {/* Bloco Principal - Promoção Relâmpago */}
                 <div className="relative group md:col-span-2 overflow-hidden rounded-xl border-b-2 border-gray-400/50">
@@ -49,7 +49,7 @@ export default function HomepageHighlights() {
                                 <img
                                     src="./controle_da_pluggy.png"
                                     alt="Smartphone promocional"
-                                    className="w-full h-full object-contain drop-shadow-2xl"
+                                    className="w-full h-full object-contain drop-shadow-2xl group-hover:rotate-12 transition-transform duration-500"
                                 />
                             </div>
                         </div>
@@ -59,22 +59,79 @@ export default function HomepageHighlights() {
 
                 {/* Bloco Secundário 1 - Novidades */}
                 <div className="relative group overflow-hidden rounded-xl bg-white border-4 border-gray-200 cursor-pointer ">
-                    <Link to="/">
-                        <div className="relative p-6 h-full flex flex-col">
-                            <UserCheck2 className="w-15 h-15 mb-3" />
-                            <h3 className="text-2xl font-bold group-hover:text-sky-500 tracking-wide transition-colors">Entre na sua conta</h3>
-                            <p className=" text-md group-hover:text-sky-500 tracking-wide transition-colors">Aproveite ofertas para tudo que queira</p>
+                    <Link to="/login">
+                        <div className="relative p-6 h-full flex flex-col justify-between text-black">
+                            {/* Efeitos de fundo */}
+                            <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
+
+                            {/* Conteúdo */}
+                            <div className="relative z-10 space-y-4">
+                                {/* Ícone */}
+                                <div className="inline-flex items-center justify-center w-12 h-12  bg-linear-to-br from-blue-600 via-blue-700 to-indigo-800 rounded-xl backdrop-blur-sm">
+                                    <UserCheck2 className="w-6 h-6 text-white" />
+                                </div>
+
+                                {/* Texto */}
+                                <div className="space-y-2">
+                                    <h3 className="text-xl font-bold leading-tight">
+                                        Área do Cliente
+                                    </h3>
+                                    <p className="text-gray-700 text-sm leading-relaxed">
+                                        Acesse ofertas personalizadas, histórico de pedidos e suporte prioritário
+                                    </p>
+                                </div>
+
+                                {/* Benefícios em lista */}
+
+                            </div>
+
+                            {/* CTA */}
+                            <div className="relative z-10 mt-2">
+                                <div className="inline-flex items-center gap-2 text-gray-900 group-hover:text-sky-500 transition-colors text-sm font-semibold">
+                                    Acessar minha conta
+                                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                </div>
+                            </div>
                         </div>
                     </Link>
                 </div>
 
                 {/* Bloco Secundário 2 - Frete Grátis */}
                 <div className="relative group overflow-hidden rounded-xl bg-white border-4 border-gray-200 cursor-pointer ">
-                    <Link to="/login">
-                        <div className="relative p-6 h-full flex flex-col">
-                            <CreditCard className="w-15 h-15 mb-3" />
-                            <h3 className="text-2xl font-bold group-hover:text-sky-500 transition-colors">Meios de Pagamento</h3>
-                            <p className=" text-md group-hover:text-sky-500 transition-colors">Pague suas compras com rapidez e segurança </p>
+                    <Link to="/forma-de-pagamento">
+                        <div className="relative p-6 h-full flex flex-col justify-between text-black">
+                            {/* Efeitos de fundo */}
+                            <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
+
+                            {/* Conteúdo */}
+                            <div className="relative z-10 space-y-4">
+                                {/* Ícone */}
+                                <div className="inline-flex items-center justify-center w-12 h-12 bg-linear-to-br from-green-600 via-emerald-700 to-teal-800 shadow-xl border border-green-500/30 rounded-xl backdrop-blur-sm">
+                                    <CreditCard className="w-6 h-6 text-white" />
+                                </div>
+
+                                {/* Texto */}
+                                <div className="space-y-2">
+                                    <h3 className="text-xl font-bold leading-tight">
+                                        Pagamento & Entrega
+                                    </h3>
+                                    <p className="text-gray-700 text-sm leading-relaxed">
+                                        Compra 100% segura com entrega rápida e parcelamento flexível
+                                    </p>
+                                </div>
+
+                                {/* Vantagens */}
+                                <div className="flex items-center justify-between gap-2 text-sm">
+                                    <div className="flex items-center p-2 gap-1">
+                                        <Truck className="w-4 h-4 mx-auto" />
+                                        <span className="text-gray-600 text-xs">Entrega Grátis</span>
+                                    </div>
+                                    <div className="flex items-center p-2 gap-1">
+                                        <Shield className="w-4 h-4 mx-auto" />
+                                        <span className="text-gray-600 text-xs">Compra Segura</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </Link>
                 </div>
@@ -82,6 +139,3 @@ export default function HomepageHighlights() {
         </div>
     );
 }
-
-// Componente para Promoção Relâmpago
-

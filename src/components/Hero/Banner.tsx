@@ -107,12 +107,6 @@ export default function ProfessionalBanner() {
                                     Comprar Agora
                                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                 </Link>
-
-                                {/* Garantia */}
-                                <div className="hidden md:flex items-center justify-center md:justify-start gap-2 mt-6 text-sm text-gray-300">
-                                    <Shield className="w-4 h-4" />
-                                    Garantia de 12 meses • Entrega em todo Brasil
-                                </div>
                             </div>
 
                             {/* Imagem do produto — visível apenas em telas grandes */}
@@ -137,26 +131,8 @@ export default function ProfessionalBanner() {
 
                 ))}
             </Swiper>
-
             {/* Paginação customizada */}
             <div className="custom-pagination absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-2" />
-
-            {/* Estilos customizados para a paginação */}
-            {/* <style>{`
-                .custom-bullet {
-                    width: 12px;
-                    height: 12px;
-                    background: rgba(255, 255, 255, 0.3);
-                    border-radius: 50%;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                }
-                .custom-bullet-active {
-                    background: linear-gradient(45deg, #FF7A00, #FF5E00);
-                    transform: scale(1.2);
-                    box-shadow: 0 0 10px rgba(255, 122, 0, 0.5);
-                }
-            `}</style> */}
         </div>
     );
 }

@@ -187,7 +187,7 @@
   }
   ],
   "templates": [
-    { "id": 21, "title": "Landing Page Freelancer", "price": 59.00, "description": "Template moderno para portfólios profissionais.", "file": "freelancer-landing.zip" },
+    { "id": 21, "img": "./controle_da_pluggy.png", "title": "Landing Page Freelancer", "price": 59.00, "description": "Template moderno para portfólios profissionais.", "file": "freelancer-landing.zip" },
     { "id": 22, "title": "React SaaS Template", "price": 79.00, "description": "Template completo para startups e SaaS.", "file": "react-saas.zip" },
     { "id": 23, "title": "Dashboard Admin Tailwind", "price": 89.00, "description": "Painel administrativo estilizado com Tailwind.", "file": "dashboard-tailwind.zip" },
     { "id": 24, "title": "E-commerce Modern", "price": 95.00, "description": "Loja online pronta com carrinho e checkout.", "file": "ecommerce-modern.zip" },
@@ -200,8 +200,7 @@
     { "id": 31, "title": "Modern Resume Site", "price": 38.00, "description": "Modelo de currículo online com animações.", "file": "resume-site.zip" },
     { "id": 32, "title": "Music App Template", "price": 50.00, "description": "Interface moderna para aplicativos de música.", "file": "music-app.zip" },
     { "id": 33, "title": "Digital Product Store", "price": 85.00, "description": "Template para lojas de produtos digitais.", "file": "digital-store.zip" },
-    { "id": 34, "title": "Gaming Website UI", "price": 64.00, "description": "Site com estilo gamer e animações responsivas.", "file": "gaming-ui.zip" },
-    { "id": 35, "title": "Event Landing Kit", "price": 42.00, "description": "Landing page para eventos e conferências.", "file": "event-landing.zip" }
+    { "id": 34, "title": "Gaming Website UI", "price": 64.00, "description": "Site com estilo gamer e animações responsivas.", "file": "gaming-ui.zip" }
   ],
   "ebooks": [
     { "id": 36, "title": "Guia de TypeScript Moderno", "price": 19.90, "description": "Aprenda TypeScript do zero ao avançado.", "file": "ebook-typescript.pdf" },

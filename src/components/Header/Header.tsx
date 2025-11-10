@@ -1,4 +1,4 @@
-import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, X } from "lucide-react";
+import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, Ticket, X } from "lucide-react";
 import { useState } from "react";
 
 export default function HeaderMinimal() {
@@ -8,7 +8,8 @@ export default function HeaderMinimal() {
     const navLinks = [
         { href: "/", label: "Home", alt:"início", icon: Home, },
         { href: "#", label: "Produtos", alt:"Produtos ", icon: Package, },
-        { href: "#", label: "Sobre", alt:"Sobre nós", icon: ScrollText, },
+        { href: "#", label: "Ofertas", alt:"deals ", icon: Ticket, },
+        { href: "#", label: "Sobre Nós", alt:"Sobre nós", icon: ScrollText, },
         { href: "#", label: "Contato", alt:"Contato", icon: Phone, },
     ];
 
