@@ -7,16 +7,16 @@ export default function HeaderMinimal() {
 
     const navLinks = [
         { href: "/", label: "Home", alt:"início", icon: Home, },
-        { href: "#", label: "Produtos", alt:"Produtos ", icon: Package, },
-        { href: "#", label: "Ofertas", alt:"deals ", icon: Ticket, },
-        { href: "#", label: "Sobre Nós", alt:"Sobre nós", icon: ScrollText, },
-        { href: "#", label: "Contato", alt:"Contato", icon: Phone, },
+        { href: "/", label: "Produtos", alt:"Produtos ", icon: Package, },
+        { href: "/", label: "Ofertas", alt:"deals ", icon: Ticket, },
+        { href: "/", label: "Sobre Nós", alt:"Sobre nós", icon: ScrollText, },
+        { href: "/", label: "Contato", alt:"Contato", icon: Phone, },
     ];
 
     const bottonLinks = [
-        { href: "#", label: "Carrinho", alt:"Carrinho, seus favoritos", icon: ShoppingCart, },
-        { href: "#", label: "Comprados", alt:"Comprados, produtos comprados", icon: ShoppingBag, },
-        { href: "#", label: "Login", alt:"Login, sua conta", icon: CircleUser, },
+        { href: "/", label: "Carrinho", alt:"Carrinho, seus favoritos", icon: ShoppingCart, },
+        { href: "/", label: "Comprados", alt:"Comprados, produtos comprados", icon: ShoppingBag, },
+        { href: "/", label: "Login", alt:"Login, sua conta", icon: CircleUser, },
     ];
 
     const toggleMobileMenu = () => {
@@ -37,7 +37,7 @@ export default function HeaderMinimal() {
 
                     {/* Imagem padrão (fallback, obrigatória) */}
                     <img
-                        src="./logo-pluggy-oficial.png"
+                        src="public/logo-pluggy-oficial.png"
                         alt="Logo da Pluggy"
                         className="w-auto md:w-full h-10 md:h-auto"
                         loading="eager"

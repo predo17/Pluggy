@@ -3,17 +3,22 @@
 
   {
     "id": 1,
-    "img": "./imgproduct/iphone-15-pro-mockup.png",
+    "badge": "NOVO",
+    "img": "/imgproduct/iphone-15-pro-mockup.png",
     "alt": "Mockup iPhone 15 Pro - fundo transparente",
     "name": "Mockup iPhone 15 Pro",
     "description": "Mockup 3D realista do iPhone 15 Pro, pronto para apresentações e landing pages.",
+    "cor": ["Lavanda Pálido"],
+    "imgColor": ["/imgproduct/iphone-15-pro-mockup.png"],
     "guarantee": "12 meses",
     "freight": "Frete grátis",
     "price": 39.9,
-    "quantity": 20
+    "quantity": 20,
+    "star": 4.2
   },
   {
     "id": 2,
+    "badge": "",
     "img": "images/smartphones/android-ui-kit.png",
     "alt": "Android UI Kit - fundo transparente",
     "name": "Android UI Kit",

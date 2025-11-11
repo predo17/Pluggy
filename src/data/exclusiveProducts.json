@@ -1,24 +1,56 @@
 [
     {
         "id": 1,
-        "img": "./controle_da_pluggy.png",
+        "property": "exclusive",
+        "state": "LANÇAMENTO",
+        "img": [
+            "/controle_da_pluggy.png",
+            "/fantasy-anime-style-scene.jpg",
+            "/controle_da_pluggy.png"
+        ],
         "alt": "Controle XPluggy GTX Ultra",
         "name": "PC XPluggy Jenkins",
-        "description": "PC de ultima geração",
-        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
-        "guarantee": "1 ano",
-        "price": 20999.99,
-        "quantity": 1,
+        "cor": [
+            "Personalizado"
+        ],
+        "imgColor": [
+            "/fantasy-anime-style-scene.jpg"
+        ],
+        "features": [
+            "Bluetooth 5.2",
+            "40h de bateria",
+            "Feedback háptico"
+        ],
+        "guarantee": "Vitalícia (ou até o fim dos tempos, o que vier primeiro)",
+        "price": 99999999.99,
+        "quantity": 10,
         "badge": "LANÇAMENTO",
-        "star": 4.9
+        "star": 4.9,
+        "description": "Apresentamos o XPluggy Jenkins: Não é um PC, é uma profecia.\n\n\nEsqueça tudo o que você sabe sobre computadores de alto desempenho. O XPluggy Jenkins não foi construído, foi forjado no núcleo de uma estrela anã branca e resfriado com o suor de deuses do hardware. Ele não processa dados, ele dobra a realidade ao seu redor para que os frames passem mais rápido.\n\nO Coração do Titã (Processador): Um processador que não tem 'núcleos', tem 'exércitos de cálculo'. Cada thread é um soldado disciplinado, pronto para aniquilar qualquer tarefa, desde planilhas complexas até a renderização de universos inteiros em tempo real. A Intel e a AMD se curvam ao seu nome.\n\nO Manto Visual (Placa de Vídeo): Sua GPU não renderiza pixels, ela invoca sonhos em 8K. Equipada com VRAM que desafia as leis da física, ela faz com que jogos pareçam janelas para outras dimensões. O Ray Tracing não é uma tecnologia, é a sua visão padrão. Ela não esquenta, ela brilha com a energia do Big Bang.\n\nO Sagrado Salão da Memória (RAM): Com uma quantidade de RAM que faria o servidor da NASA corar de vergonha, o XPluggy Jenkins não tem 'memória suficiente', ele tem 'domínio sobre o tempo'. Você pode abrir mais de 500 abas no Chrome, navegar em varios servidores da Minecraft, editar filmes em 4K e simular a economia de um país, tudo ao mesmo tempo, e ele ainda vai pedir por mais.\n\nA Cidadela dos Dados (Armazenamento): Seus SSDs NVMe não têm velocidades de leitura/gravação, eles operam no 'reino da transferência instantânea'. O sistema operacional boota antes de você terminar de pensar em ligar o PC. Jogos carregam tão rápido que você viaja no tempo.\n\nO Templo de Refrigeração (Cooling): Seu sistema de refrigeração líquida personalizada não usa água. Usa 'lágrimas de CPUs inferiores' mantidas em temperaturas criogênicas. Os fans não giram, sussurram cantos ancestrais que acalmam as tempestades de calor geradas no overclock.\n\nA Fonte Primordial (Fonte de Alimentação): A PSU não puxa energia da tomada, ela drena poder diretamente de uma dimensão paralela, fornecendo energia limpa, estável e infinita para todas as suas conquistas digitais.\n\nA Catedral (Gabinete): O gabinete não é de metal e vidro, é uma escultura de pura aura gamer. Com RGB tão customizável que pode sincronizar com suas ondas cerebrais, criando luzes que reagem aos seus batimentos cardíacos durante um boss fight.\n\nEm resumo, o XPluggy Jenkins não é para todos. É para aquele que olha para o horizonte digital e não pergunta 'o que é possível?', mas sim 'o que eu vou possibilitar hoje?'."
     },
+
     {
         "id": 2,
-        "img": "./controle_da_pluggy.png",
+        "proproety": "Exclusive",
+        "img": "/controle_da_pluggy.png",
         "alt": "Controle XPluggy GTX Ultra",
         "name": "XPluggy GTX Ultra",
         "description": "Controle sem fio premium",
-        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "features": [
+            "Bluetooth 5.2",
+            "40h de bateria",
+            "Feedback háptico"
+        ],
+        "imgColor": [
+            "/controle_da_pluggy.png",
+            "/fantasy-anime-style-scene.jpg",
+            "/controle_da_pluggy.png"
+        ],
+        "cor": [
+            "Preto",
+            "Branco",
+            "Vermelho"
+        ],
         "guarantee": "1 ano",
         "price": 299.90,
         "oldPrice": 399.90,
@@ -28,11 +60,16 @@
     },
     {
         "id": 3,
-        "img": "./fantasy-anime-style-scene.jpg",
+        "proproety": "Exclusive",
+        "img": "/fantasy-anime-style-scene.jpg",
         "alt": "Controle XPluggy GTX Ultra",
         "name": "XPluggy Pro",
         "description": "Fone de ouvido over-ear",
-        "features": ["ANC Ativo", "Som 360°", "30h bateria"],
+        "features": [
+            "ANC Ativo",
+            "Som 360°",
+            "30h bateria"
+        ],
         "guarantee": "1 ano",
         "price": 599.90,
         "oldPrice": 799.90,
@@ -42,11 +79,16 @@
     },
     {
         "id": 4,
-        "img": "./laptop_da_pluggy.png",
+        "proproety": "Exclusive",
+        "img": "/laptop_da_pluggy.png",
         "alt": "Controle XPluggy GTX Ultra",
         "name": "XPluggy Force",
         "description": "Laptop gamer profissional",
-        "features": ["RTX 4070", "32GB RAM", "SSD 1TB"],
+        "features": [
+            "RTX 4070",
+            "32GB RAM",
+            "SSD 1TB"
+        ],
         "guarantee": "1 ano",
         "price": 15999.90,
         "oldPrice": 10999.90,
@@ -56,11 +98,16 @@
     },
     {
         "id": 5,
-        "img": "./controle_da_pluggy.png",
+        "proproety": "Exclusive",
+        "img": "/controle_da_pluggy.png",
         "alt": "Controle XPluggy GTX Ultra",
         "name": "Xpluggy 19 Ultra",
         "description": "Laptop gamer profissional",
-        "features": ["Bluetooth 5.2", "40h de bateria", "Feedback háptico"],
+        "features": [
+            "Bluetooth 5.2",
+            "40h de bateria",
+            "Feedback háptico"
+        ],
         "guarantee": "1 ano",
         "price": 8736.90,
         "oldPrice": 10999.90,
@@ -68,5 +115,4 @@
         "badge": "",
         "star": 4.7
     }
-    
 ]

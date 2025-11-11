@@ -1,10 +1,17 @@
 // import { ShieldCheck, Truck } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function ProductCard({ id, img, text, price, description }: any) {
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate(`/product/${id}`);
+    };
+
+
     return (
         <article className="group relative w-40">
-            <Link to={`/product/${id}`} className="focus:outline-none">
+            <div onClick={handleNavigate} className="focus:outline-none">
                 {/* Header do Card */}
                 <div>
                     {/* Imagem */}
@@ -53,7 +60,7 @@ export default function ProductCard({ id, img, text, price, description }: any) 
                         </div>
                     </div>
                 </div>
-            </Link>
+            </div>
         </article >
     )
 }

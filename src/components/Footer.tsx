@@ -132,7 +132,7 @@ export default function Footer() {
                                 <MapPin className="w-5 h-5 text-blue-400 mt-1" />
                                 <div>
                                     <div className="font-medium">Teresina, PI</div>
-                                    <div className="text-sm">Av. Paulista, 1000</div>
+                                    <div className="text-sm">Av. Dos meus ovos, 1000</div>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ export default function Footer() {
                 <div className="max-w-7xl mx-auto px-4 py-4">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400">
                         <div>
-                            © 2024 Pluggy Technology. Todos os direitos reservados.
+                            © 2025 Pluggy Technology. Todos os direitos reservados.
                         </div>
                         <div className="flex flex-wrap gap-4">
                             <Link to="/privacy" className="hover:text-white transition-colors">

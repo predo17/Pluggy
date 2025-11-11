@@ -59,7 +59,7 @@ export default function FeaturedProducts({ products, title }: FeaturedProductsPr
 
     return (
         <>
-            <section className="max-w-7xl mx-auto  mt-16 bg-white rounded-md p-6 relative overflow-hidden">
+            <section className="max-w-7xl mx-auto mt-16 bg-white rounded-md p-6 relative overflow-hidden">
                 <h1 className="text-xl text-gray-950 tracking-wide font-medium mb-6">
                     {title}
                 </h1>

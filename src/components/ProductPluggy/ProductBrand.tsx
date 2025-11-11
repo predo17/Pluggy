@@ -1,7 +1,17 @@
 import { CreditCard, Rocket, Shield, ShieldCheck, Star } from "lucide-react";
 import exclusiveProducts from "../../data/exclusiveProducts.json";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 export default function ProductMarca() {
+    const navigate = useNavigate();
+    const handleNavigate = (id: number) => {
+        navigate(`/product/${id}?property=exclusive`);
+    };
+
+    const extractProducts = (data: any): any[] =>
+        Array.isArray(data) ? data : Object.values(data).flat();
+
+    const exclusives = extractProducts(exclusiveProducts);
 
     return (
         <section className="max-w-7xl mx-auto mt-20">
@@ -54,10 +64,10 @@ export default function ProductMarca() {
                         </div>
 
                         {/* Grid de Produtos Destacados */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {exclusiveProducts.map((product, index) => (
-                                <Link
-                                    to={`/product/${product.id}`}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+                            {exclusives.map((product, index) => (
+                                <div
+                                    onClick={() => handleNavigate(product.id)}
                                     key={product.id}
                                     className={`group relative backdrop-blur-sm rounded-2xl border border-white/10 transition-all duration-500 hover:duration-300 overflow-hidden cursor-pointer
                                 ${index === 0 ? 'md:col-span-2 md:row-span-2 bg-linear-to-br from-blue-500/10 to-purple-500/10' :
@@ -93,7 +103,7 @@ export default function ProductMarca() {
                                             <div className={`relative flex items-center justify-center ${index === 0 ? 'h-auto' : 'h-35'} overflow-hidden rounded-xl`}>
                                                 <div className="absolute inset-0 bg-linear-to-br from-white/5 to-transparent "></div>
                                                 <img
-                                                    src={product.img}
+                                                    src={product.img?.[0]}
                                                     alt={product.name}
                                                     className="w-full h-full object-contain transition-transform duration-700 p-4"
                                                 />
@@ -131,7 +141,7 @@ export default function ProductMarca() {
                                         {/* Efeito de brilho no hover */}
                                         <div className="absolute inset-0 bg-linear-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
                                     </div>
-                                </Link>
+                                </div>
                             ))}
                         </div>
 
