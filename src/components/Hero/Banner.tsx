@@ -44,7 +44,7 @@ export default function ProfessionalBanner() {
                             {/* Imagem como background em telas pequenas */}
                             <div className="absolute inset-0 md:hidden">
                                 <img
-                                    src={product.img}
+                                    src={product.img?.[0]}
                                     alt={product.alt}
                                     className="w-full h-full object-contain opacity-90 blur-xs scale-110"
                                 />
@@ -116,7 +116,7 @@ export default function ProfessionalBanner() {
                                     <div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl scale-150" />
 
                                     <img
-                                        src={product.img}
+                                        src={product.img?.[0]}
                                         alt={product.alt}
                                         className="relative w-full h-auto max-h-[500px] object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-700"
                                     />

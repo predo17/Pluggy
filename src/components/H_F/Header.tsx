@@ -24,29 +24,29 @@ export default function HeaderMinimal() {
     };
 
     return (
-        <header className="relative md:sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-2 md:px-6 py-3">
+        <header className="relative lg:sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-2 md:px-6 py-3">
             <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto">
                 {/* Logo */}
 
-                <picture className="w-24">
+                <picture className="lg:w-24">
                     {/* Imagem para telas maiores (a partir de 768px) */}
-                    <source media="(min-width: 768px)" srcSet="./logo-pluggy-oficial.png" />
+                    <source media="(min-width: 1024px)" srcSet="/logo-pluggy-oficial.png" />
 
                     {/* Imagem para telas menores (até 767px) */}
-                    <source media="(max-width: 767px)" srcSet="./logo-oficial.png" />
+                    <source media="(max-width: 1023px)" srcSet="/logo-oficial.png" />
 
                     {/* Imagem padrão (fallback, obrigatória) */}
                     <img
                         src="public/logo-pluggy-oficial.png"
                         alt="Logo da Pluggy"
-                        className="w-auto md:w-full h-10 md:h-auto"
+                        className="w-auto lg:w-full h-10 lg:h-auto"
                         loading="eager"
                     />
                 </picture>
 
 
                 {/* Navegação Central */}
-                <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
+                <nav className="hidden lg:flex items-center space-x-4 lg:space-x-8">
                     {navLinks.map((link) => (
                         <a
                             key={link.href}
@@ -60,10 +60,10 @@ export default function HeaderMinimal() {
                 </nav>
 
                 {/* Ações */}
-                <div className="flex items-center gap-4">
+                <div className="flex max-xl:flex-1 items-center gap-4">
 
                     <form
-                        className="relative flex items-center "
+                        className="relative w-full flex items-center "
                         onSubmit={(e) => e.preventDefault()}
                     >
                         <input
@@ -79,7 +79,7 @@ export default function HeaderMinimal() {
                     </form>
                     {/* bottons acoes */}
                     <button
-                        className="relative hidden md:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
+                        className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
                         <ShoppingCart className="w-5 h-5" />
@@ -88,7 +88,7 @@ export default function HeaderMinimal() {
                         </span>
                     </button>
                     <button
-                        className="relative hidden md:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
+                        className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
                         <ShoppingBag className="w-5 h-5" />
@@ -99,7 +99,7 @@ export default function HeaderMinimal() {
 
                     {/* Usuário */}
                     <button
-                        className="hidden md:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
+                        className="hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Perfil do usuário"
                     >
                         <CircleUser className="w-5 h-5" />
@@ -108,7 +108,7 @@ export default function HeaderMinimal() {
 
                 {/* Menu Mobile Button */}
                 <button
-                    className="md:hidden ml-2 p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 transition-colors rounded-sm"
+                    className="lg:hidden p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 transition-colors rounded-sm"
                     aria-label="Menu"
                     onClick={toggleMobileMenu}
                 >
@@ -124,7 +124,7 @@ export default function HeaderMinimal() {
             {/* Menu Mobile */}
             <div className={`
                 lg:hidden transition-all duration-300 ease-in-out
-                ${isMobileMenuOpen ? 'max-h-96 opacity-100 py-4 mb-2' : 'max-h-0 opacity-0 py-0 overflow-hidden'}
+                ${isMobileMenuOpen ? 'max-h-max opacity-100 py-4 mb-2' : 'max-h-0 opacity-0 py-0 overflow-hidden'}
             `}>
                 <nav>
                     <ul className="flex flex-col space-y-4">

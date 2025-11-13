@@ -75,7 +75,7 @@ export default function ProductMarca() {
                                 hover:border-white/20 hover:scale-105 hover:shadow-2xl
                             `}
                                 >
-                                    <div className="p-6 h-full flex flex-col">
+                                    <div className="p-6 max-h-max flex flex-col">
 
                                         {/* Header do Card */}
                                         <div className="flex items-start justify-between mb-4">
@@ -100,12 +100,12 @@ export default function ProductMarca() {
                                         {/* Conteúdo do Produto */}
                                         <div className="flex flex-col flex-1 gap-4">
                                             {/* Imagem */}
-                                            <div className={`relative flex items-center justify-center ${index === 0 ? 'h-auto' : 'h-35'} overflow-hidden rounded-xl`}>
+                                            <div className={`relative flex items-center justify-center ${index === 0 ? 'md:h-230 xl:h-130' : 'md:h-[50%]'} overflow-hidden rounded-xl`}>
                                                 <div className="absolute inset-0 bg-linear-to-br from-white/5 to-transparent "></div>
                                                 <img
                                                     src={product.img?.[0]}
                                                     alt={product.name}
-                                                    className="w-full h-full object-contain transition-transform duration-700 p-4"
+                                                    className="w-full h-full object-cover transition-transform duration-700 p-4"
                                                 />
                                             </div>
 
@@ -114,7 +114,8 @@ export default function ProductMarca() {
                                                 <h3 className="text-lg font-bold text-white leading-tight group-hover:text-blue-300 transition-colors">
                                                     {product.name}
                                                 </h3>
-                                                <p className="text-blue-100/80 text-sm leading-relaxed line-clamp-2">
+                                                <p className={`text-sm  leading-relaxed whitespace-pre-line truncate  ${index === 0 ? "lg:max-h-40 line-clamp-5" : "line-clamp-4"
+                                                    }`}>
                                                     {product.description}
                                                 </p>
 
@@ -153,7 +154,7 @@ export default function ProductMarca() {
                             <div className="flex items-center gap-4 text-blue-200 text-sm">
                                 <span className="flex lg:items-center gap-1">
                                     <ShieldCheck className="w-4 h-4 max-lg:mt-1" />
-                                    Garantia de 6 meses
+                                    Garantia de 12 meses
                                 </span>
                                 <span className="flex lg:items-center gap-1">
                                     <CreditCard className="w-4 h-4 max-lg:mt-1" />
