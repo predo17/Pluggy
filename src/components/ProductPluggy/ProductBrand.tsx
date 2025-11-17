@@ -49,7 +49,7 @@ export default function ProductMarca() {
                                 {/* Stats */}
                                 <div className="flex flex-wrap gap-6 mt-6">
                                     {[
-                                        { value: '4.5', label: 'Avaliação Média' },
+                                        { value: '4.7', label: 'Avaliação Média' },
                                         { value: '2K+', label: 'Clientes Satisfeitos' },
                                         { value: '24h', label: 'Suporte' }
                                     ].map((stat, index) => (
@@ -100,21 +100,27 @@ export default function ProductMarca() {
                                         {/* Conteúdo do Produto */}
                                         <div className="flex flex-col flex-1 gap-4">
                                             {/* Imagem */}
-                                            <div className={`relative flex items-center justify-center ${index === 0 ? 'md:h-230 xl:h-130' : 'md:h-[50%]'} overflow-hidden rounded-xl`}>
-                                                <div className="absolute inset-0 bg-linear-to-br from-white/5 to-transparent "></div>
+                                            <div
+                                                className={`relative flex items-center justify-center overflow-hidden rounded-xl group ${index === 0 ? "md:h-[450px] xl:h-[350px]" : "md:h-[250px]"} `}
+                                            >
+                                                {/* Iluminação suave */}
+                                                <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent pointer-events-none"></div>
+
+                                                {/* Imagem */}
                                                 <img
                                                     src={product.img?.[0]}
                                                     alt={product.name}
-                                                    className="w-full h-full object-cover transition-transform duration-700 p-4"
+                                                    className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-105 p-4 "
                                                 />
                                             </div>
+
 
                                             {/* Informações */}
                                             <div className="flex-1 flex flex-col gap-2">
                                                 <h3 className="text-lg font-bold text-white leading-tight group-hover:text-blue-300 transition-colors">
                                                     {product.name}
                                                 </h3>
-                                                <p className={`text-sm  leading-relaxed whitespace-pre-line truncate  ${index === 0 ? "lg:max-h-40 line-clamp-5" : "line-clamp-4"
+                                                <p className={`text-sm  leading-relaxed ${index === 0 ? "lg:max-h-40 line-clamp-6 " : "line-clamp-2"
                                                     }`}>
                                                     {product.description}
                                                 </p>

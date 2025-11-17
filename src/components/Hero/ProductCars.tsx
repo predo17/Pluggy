@@ -24,7 +24,7 @@ export default function ProductCard({ id, img, text, price, description }: any) 
                     </div>
                 </div>
                 {/* Conteúdo */}
-                <div className="relative pt-2">
+                <div className="relative">
                     <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-600 transition-colors">
                         {text}
                     </h3>
@@ -34,24 +34,6 @@ export default function ProductCard({ id, img, text, price, description }: any) 
                             {description}
                         </p>
                     </a>
-
-
-                    {/* Informações Adicionais */}
-                    {/* <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
-                        {guarantee && (
-                            <div className="flex items-center gap-1">
-                                <ShieldCheck className="w-4 h-4" />
-                                <span>Garantia de {guarantee}</span>
-                            </div>
-                        )}
-                        {freight && (
-                            <div className="flex items-center gap-1">
-                                <Truck className="w-4 h-4" />
-                                <span>{freight}</span>
-                            </div>
-                        )}
-                    </div> */}
-
                     {/* Preço e Ação */}
                     <div className="flex items-center justify-between">
                         <div>

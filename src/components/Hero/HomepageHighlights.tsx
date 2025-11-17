@@ -47,9 +47,9 @@ export default function HomepageHighlights() {
                         <div className="absolute right-5 bottom-1/2 translate-y-1/2">
                             <div className="w-52 h-52 transition-transform duration-500 group-hover:scale-110">
                                 <img
-                                    src="./controle_da_pluggy.png"
+                                    src="/smartphone_xpluggy.png"
                                     alt="Smartphone promocional"
-                                    className="w-full h-full object-contain drop-shadow-2xl group-hover:rotate-12 transition-transform duration-500"
+                                    className="w-full h-full object-contain group-hover:rotate-12 transition-transform duration-500"
                                 />
                             </div>
                         </div>

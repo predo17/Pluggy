@@ -78,7 +78,8 @@ export default function HeaderMinimal() {
                         />
                     </form>
                     {/* bottons acoes */}
-                    <button
+                    <a
+                        href="/profile"
                         className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
@@ -86,8 +87,9 @@ export default function HeaderMinimal() {
                         <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">
                             0
                         </span>
-                    </button>
-                    <button
+                    </a>
+                    <a
+                        href="/profile/user"
                         className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
@@ -95,15 +97,16 @@ export default function HeaderMinimal() {
                         <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">
                             0
                         </span>
-                    </button>
+                    </a>
 
                     {/* Usuário */}
-                    <button
+                    <a
+                        href="/profile/user"
                         className="hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Perfil do usuário"
                     >
                         <CircleUser className="w-5 h-5" />
-                    </button>
+                    </a>
                 </div>
 
                 {/* Menu Mobile Button */}

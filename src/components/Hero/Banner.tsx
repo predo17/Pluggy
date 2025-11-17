@@ -63,7 +63,7 @@ export default function ProfessionalBanner() {
                                 <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-white leading-tight mb-4">
                                     {product.name}
                                     <span className="block text-xl md:text-2xl text-blue-200 font-light mt-2">
-                                        {product.description}
+                                        {product.text_banner}
                                     </span>
                                 </h1>
 

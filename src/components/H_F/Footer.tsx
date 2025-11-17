@@ -35,7 +35,7 @@ export default function Footer() {
                     <div className="lg:col-span-1">
                         <div className="mb-6">
                             <img
-                                src="./logo-pluggy-oficial.png"
+                                src="/logo-pluggy-oficial.png"
                                 alt="Pluggy"
                                 className="h-8 w-auto"
                             />
