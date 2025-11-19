@@ -18,16 +18,16 @@ export default function App() {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-black text-[#0D1117]">
+    <div className="min-h-screen dark:bg-gray-100 :bg-black text-[#0D1117]">
       <Header />
-      <main className="container mx-auto xl:px-4 py-6">
+      <main className="container mx-auto xl:px-4 py-8">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:id" element={<ProductPage />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/profile/user" element={<User />} />
-          <Route path="/adm/pluggy" element={<Administrador />} />
+          <Route path="/admin/pluggy" element={<Administrador />} />
         </Routes>
       </main>
       <Footer />

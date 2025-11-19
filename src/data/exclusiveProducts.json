@@ -2,7 +2,6 @@
     {
         "id": 1,
         "property": "exclusive",
-        "state": "LANÇAMENTO",
         "img": [
             "/pc_xpluggy_jenkins_tra.png",
             "/pc_xpluggy_jenkins.png",
@@ -120,7 +119,7 @@
     },
     {
         "id": 2,
-        "proproety": "Exclusive",
+        "property": "exclusive",
         "img": [
             "/controle_xpluggy.png"
         ],
@@ -139,12 +138,12 @@
             "Feedback háptico"
         ],
         "guarantee": "Garantia de 12 meses",
-        "price": 699.90,
+        "price": 841.90,
         "oldPrice": 999.90,
         "quantity": 5,
-        "badge": "75% OFF",
+        "badge": "15% OFF",
         "star": 4.7,
-        "description": "O Controle XPluggy GTX Ultra é a evolução definitiva em precisão e conforto para jogos. Projetado para gamers que não aceitam compromissos, ele combina ergonomia avançada, tecnologia de resposta tátil de última geração e conectividade confiável. Sua bateria de longa duração garante horas ininterruptas de gameplay, enquanto o sistema de vibração HD oferece imersão realista em cada movimento. Compatível com as principais plataformas e com um peso equilibrado que evita fadiga durante maratonas de jogo, o XPluggy GTX Ultra é a escolha perfeita para quem busca vantagem competitiva e qualidade superior.",
+        "description": "O Controle XPluggy GTX Ultra é a evolução definitiva em precisão e conforto para jogos.\n\n Projetado para gamers que não aceitam compromissos, ele combina ergonomia avançada, tecnologia de resposta tátil de última geração e conectividade confiável. Sua bateria de longa duração garante horas ininterruptas de gameplay, enquanto o sistema de vibração HD oferece imersão realista em cada movimento.\n\n Compatível com as principais plataformas e com um peso equilibrado que evita fadiga durante maratonas de jogo, o XPluggy GTX Ultra é a escolha perfeita para quem busca vantagem competitiva e qualidade superior.",
         "specs": {
             "category": "controller",
             "modelo": "Controle XPluggy GTX Ultra",
@@ -190,7 +189,7 @@
     },
     {
         "id": 3,
-        "proproety": "Exclusive",
+        "property": "exclusive",
         "img": [
             "/fone_xpluggy_pro.png"
         ],
@@ -209,17 +208,15 @@
             "30h bateria"
         ],
         "guarantee": "Garantia de 12 meses",
-        "price": 599.90,
-        "oldPrice": 799.90,
+        "price": 799.90,
         "quantity": 10,
         "badge": "LANÇAMENTO",
         "star": 4.7,
-        "description": "O Fone de Ouvido XPluggy Quantum Sound 7 é a definição de excelência em áudio pessoal. Como um fone over-ear, ele oferece o máximo em conforto e isolamento acústico, ideal para longas sessões de música, jogos ou trabalho. Com drivers de alta precisão, cancelamento de ruído ativo de última geração e microfone com qualidade de estúdio, ele proporciona uma experiência sonora imersiva e cristalina. A bateria de longa duração, conectividade versátil e construção resistente completam o pacote, tornando-o o companheiro perfeito para quem exige qualidade superior em qualquer situação.",
+        "description": "O Fone de Ouvido XPluggy Quantum Sound 7 é a definição de excelência em áudio pessoal.\n\n Como um fone over-ear, ele oferece o máximo em conforto e isolamento acústico, ideal para longas sessões de música, jogos ou trabalho. Com drivers de alta precisão, cancelamento de ruído ativo de última geração e microfone com qualidade de estúdio, ele proporciona uma experiência sonora imersiva e cristalina.\n\n A bateria de longa duração, conectividade versátil e construção resistente completam o pacote, tornando-o o companheiro perfeito para quem exige qualidade superior em qualquer situação.",
         "specs": {
             "category": "headphones",
             "modelo": "XPluggy Quantum Sound 7",
             "especificacoes_tecnicas": {
-                "tipo": "Over-Ear (Circum-Aural)",
                 "drivers": {
                     "tamanho": "50 mm",
                     "tipo": "Neodymium Magnet com Diafragma de Berílio",
@@ -268,7 +265,7 @@
     },
     {
         "id": 4,
-        "proproety": "Exclusive",
+        "property": "exclusive",
         "img": [
             "/laptop_xpluggy_force_tra.png",
             "/laptop_xpluggy_force.png"
@@ -291,7 +288,7 @@
         "price": 10999.90,
         "oldPrice": 15999.90,
         "quantity": 10,
-        "badge": "40% OFF",
+        "badge": "31% OFF",
         "star": 4.8,
         "description": "O XPluggy Force não é um laptop, é uma fortaleza portátil.\n\nEnquanto os meros mortais carregam *notebooks gamer*, você carrega o XPluggy Force - uma obra-prima da engenharia que desafia as leis da física e do bom senso. Ele não foi projetado, foi forjado no núcleo de uma estrela de nêutrons e compactado com tecnologia quântica para caber em sua mochila.\n\nO Cérebro Cibernético (Processador): Um processador que não tem núcleos, tem *centros de comando tático*. Cada thread é um general estrategista, coordenando batalhas em múltiplas frentes - desde renderização 3D complexa até streaming em 4K e dezenas de abas no Chrome - sem perder um único frame.\n\nO Arsenal Visual (Placa de Vídeo): Sua GPU móvel é uma peça de museu do futuro. Ela não renderiza gráficos, conjura realidades alternativas em 240 FPS. Equipada com tecnologia de resfriamento alienígena, ela mantém o desempenho máximo mesmo quando os laptops comuns pedem misericórdia.\n\nO Campo de Batalha em Tempo Real (Tela): O display não é uma tela, é um portal dimensional de altíssima taxa de atualização e cores tão vivas que fazem o mundo real parecer sem graça. O G-Sync Ultimate garante que cada movimento seja tão suave quanto o pensamento.\n\nA Linha de Frente Térmica (Sistema de Resfriamento): O sistema de cooling do XPluggy Force não ventila, ele recicla a atmosfera ao seu redor. Com múltiplos heat pipes de vapor cobre e fans com tecnologia aerospacial, ele transforma calor em pura performance, mantendo um silêncio ensurdecedor sob carga total.\n\nA Retaguarda de Dados (Armazenamento): Seus SSDs em RAID não armazenam dados, eles arquivam a memória do universo. Jogos carregam instantaneamente, e arquivos grandes se transferem no espaço entre um piscar de olhos.A Fonte de Poder Móvel (Bateria): A bateria não usa íons de lítio, usa células de energia de fluxo contínuo. Ela dura mais que a paciência dos seus inimigos na fila do respawn, e recarrega em minutos graças à tecnologia de carga hiper-rápida.\n\nEm resumo, o XPluggy Force não é para jogadores casuais. É para o guerreiro digital que exige excelência absoluta em qualquer campo de batalha, em qualquer lugar do mundo.",
         "specs": {
@@ -323,7 +320,7 @@
                 "display": {
                     "tamanho": "16 polegadas",
                     "resolucao": "QHD+ (2560x1600)",
-                    "taxa_atualizacao": "1240 Hz",
+                    "taxa_atualizacao": "420 Hz",
                     "tecnologia": "IPS Quantum Dot",
                     "cobertura_cores": "100% DCI-P3",
                     "recursos": [
@@ -449,7 +446,7 @@
     },
     {
         "id": 5,
-        "proproety": "Exclusive",
+        "property": "exclusive",
         "img": [
             "/smartphone_xpluggy.png"
         ],
@@ -467,28 +464,34 @@
             "Feedback háptico"
         ],
         "guarantee": "Garantia de 12 meses",
-        "price": 8736.90,
-        "oldPrice": 10999.90,
+        "price": 10999.90,
         "quantity": 10,
-        "badge": "",
+        "badge": "Pendente",
         "star": 4.7,
-        "description": "O XPluggy 19 Ultra é a definição de excelência em um smartphone. Com um design elegante e recursos de ponta, ele foi criado para quem exige o máximo em performance, fotografia e durabilidade. Sua tela imersiva oferece cores vibrantes e detalhes nítidos, perfeita para maratonas de séries, jogos ou trabalho produtivo. O processador de última geração garante fluidez em qualquer tarefa, enquanto o sistema de câmeras captura momentos com clareza impressionante, de dia ou de noite. Com bateria de longa duração, carregamento ultra-rápido e resistência à água, o XPluggy 19 Ultra é o companheiro ideal para o dia a dia.",
+        "description": "O XPluggy 19 Ultra é a definição de excelência em um smartphone.\n\n Com um design elegante e recursos de ponta, ele foi criado para quem exige o máximo em performance, fotografia e durabilidade. Sua tela imersiva oferece cores vibrantes e detalhes nítidos, perfeita para maratonas de séries, jogos ou trabalho produtivo.\n\n O processador de última geração garante fluidez em qualquer tarefa, enquanto o sistema de câmeras captura momentos com clareza impressionante, de dia ou de noite. Com bateria de longa duração, carregamento ultra-rápido e resistência à água, o XPluggy 19 Ultra é o companheiro ideal para o dia a dia.",
         "specs": {
             "category": "smartphone",
             "modelo": "XPluggy 19 Ultra",
             "especificacoes_tecnicas": {
-                "tela": {
-                    "tecnologia": "Dynamic AMOLED 6.8",
-                    "resolucao": "QHD+ (3200 x 1440 pixels)",
-                    "taxa_atualizacao": "120 Hz Dinâmico",
-                    "protecao": "Vidro Gorilla Glass Victus 3",
-                    "brilho_maximo": "2500 nits (pico)"
+                "sistema": {
+                    "os": "Android 15",
+                    "interface": "XPluggy OS 3.0",
+                    "atualizacoes_garantidas": "5 anos de atualizações de SO e segurança"
                 },
                 "processador": {
                     "modelo": "XPluggy Quantum Core 3",
-                    "nucleos": "8 (1x Cortex-X4 + 3x Cortex-A720 + 4x Cortex-A520)",
+                    "nucleos": "10 (1x Cortex-X4 + 3x Cortex-A720 + 6x Cortex-A520)",
                     "gpu": "Adreno 780",
+                    "clock_base": "6.8 GHz",
+                    "clock_max": "7.2 GHz",
                     "arquitetura": "4 nm"
+                },
+                "tela": {
+                    "tecnologia": "Dynamic AMOLED 6.8",
+                    "resolucao": "QHD+ (3200 x 1440 pixels)",
+                    "taxa_atualizacao": "240 Hz Dinâmico",
+                    "protecao": "Vidro Gorilla Glass Victus 3",
+                    "brilho_maximo": "2500 nits (pico)"
                 },
                 "ram_rom": {
                     "ram": "16 TB LPDDR5X",
@@ -525,11 +528,6 @@
                         "reversivel": "15W"
                     },
                     "duracao_estimada": "Até 2 dias (uso moderado)"
-                },
-                "sistema": {
-                    "os": "Android 15",
-                    "interface": "XPluggy OS 3.0",
-                    "atualizacoes_garantidas": "5 anos de atualizações de SO e segurança"
                 },
                 "conectividade": {
                     "wi_fi": "Wi-Fi 7",

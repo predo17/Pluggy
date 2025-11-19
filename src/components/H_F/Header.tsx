@@ -1,22 +1,21 @@
 import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, Ticket, X } from "lucide-react";
 import { useState } from "react";
 
-export default function HeaderMinimal() {
+export const navLinks = [
+    { href: "/", label: "Home", alt: "início", icon: Home, },
+    { href: "/", label: "Produtos", alt: "Produtos ", icon: Package, },
+    { href: "/", label: "Ofertas", alt: "deals ", icon: Ticket, },
+    { href: "/", label: "Sobre Nós", alt: "Sobre nós", icon: ScrollText, },
+    { href: "/", label: "Contato", alt: "Contato", icon: Phone, },
+];
 
+export default function HeaderMinimal() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const navLinks = [
-        { href: "/", label: "Home", alt:"início", icon: Home, },
-        { href: "/", label: "Produtos", alt:"Produtos ", icon: Package, },
-        { href: "/", label: "Ofertas", alt:"deals ", icon: Ticket, },
-        { href: "/", label: "Sobre Nós", alt:"Sobre nós", icon: ScrollText, },
-        { href: "/", label: "Contato", alt:"Contato", icon: Phone, },
-    ];
-
     const bottonLinks = [
-        { href: "/", label: "Carrinho", alt:"Carrinho, seus favoritos", icon: ShoppingCart, },
-        { href: "/", label: "Comprados", alt:"Comprados, produtos comprados", icon: ShoppingBag, },
-        { href: "/", label: "Login", alt:"Login, sua conta", icon: CircleUser, },
+        { href: "/", label: "Carrinho", alt: "Carrinho, seus favoritos", icon: ShoppingCart, },
+        { href: "/", label: "Comprados", alt: "Comprados, produtos comprados", icon: ShoppingBag, },
+        { href: "/", label: "Login", alt: "Login, sua conta", icon: CircleUser, },
     ];
 
     const toggleMobileMenu = () => {
@@ -27,7 +26,6 @@ export default function HeaderMinimal() {
         <header className="relative lg:sticky top-0 left-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 px-2 md:px-6 py-3">
             <div className="flex items-center justify-between gap-4 max-w-7xl mx-auto">
                 {/* Logo */}
-
                 <picture className="lg:w-24">
                     {/* Imagem para telas maiores (a partir de 768px) */}
                     <source media="(min-width: 1024px)" srcSet="/logo-pluggy-oficial.png" />

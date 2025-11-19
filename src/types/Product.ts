@@ -19,11 +19,9 @@ export interface Product {
     // TIPAGEM PRINCIPAL DAS FICHAS TÉCNICAS
     specs?: PcSpecs | LaptopSpecs | ControllerSpecs | HeadphonesSpecs | SmartphoneSpecs;
 }
-
 /* ================================================================
    PC / LAPTOP
 ================================================================ */
-
 interface PcSpecs {
     category: "pc";
     sistema: Sistema;
@@ -49,6 +47,7 @@ interface Sistema {
 interface EspecificacoesTecnicas {
     processador: Processador;
     placa_de_video: PlacaDeVideo;
+    display: Display;
     memoria_ram: MemoriaRam;
     armazenamento: Armazenamento;
     placa_mae: PlacaMae;
@@ -57,14 +56,6 @@ interface EspecificacoesTecnicas {
     gabinete: Gabinete;
     teclado: Teclado;
     bateria: Bateria;
-
-    /* CAMPOS DE CONTROLLER (CASO NAO USE, FICA UNDEFINED) */
-    conexaoController?: ConexaoController;
-    bateriaController?: BateriaController;
-    duracaoController?: DuracaoController;
-    vibracao?: Vibracao;
-    compatibilidadeController?: CompatibilidadeController;
-    pesocontroller?: PesoController;
 }
 
 interface Processador {
@@ -80,6 +71,14 @@ interface PlacaDeVideo {
     vram: string;
     clock: string;
     recursos: string[];
+}
+
+interface Display {
+    tamanho: string;
+    resolucao: string;
+    taxa_atualizacao: string;
+    brilho_maximo: string;
+    protecao: string;
 }
 
 interface MemoriaRam {
@@ -149,14 +148,21 @@ interface Bateria {
     duracao_estimada: string;
     carregamento_rapido: string;
 }
-
 /* ================================================================
    CONTROLLER
 ================================================================ */
-
 interface ControllerSpecs {
     category: "controller";
-    especificacoes_tecnicas: EspecificacoesTecnicas;
+    especificacoes_tecnicas: EspecificacoesTecnicasController;
+}
+
+interface EspecificacoesTecnicasController {
+    conexao: ConexaoController;
+    bateria: BateriaController;
+    duracao: DuracaoController;
+    vibracao: Vibracao;
+    compatibilidade: CompatibilidadeController;
+    peso: PesoController;
 }
 
 interface ConexaoController {
@@ -164,7 +170,6 @@ interface ConexaoController {
     alcance: string;
     latencia: string;
 }
-
 interface BateriaController {
     tipo: string;
     capacidade: string;
@@ -192,63 +197,31 @@ interface PesoController {
     valor: string;
     distribuicao: string;
 }
-
 /* ================================================================
    HEADPHONES
 ================================================================ */
-
 export interface HeadphonesSpecs {
     category: "headphones";
     modelo: string;
+    tipo: string;
     especificacoes_tecnicas: {
-        tipo: string;
-        drivers: {
-            tamanho: string;
-            tipo: string;
-            resposta_frequencia: string;
-            impedancia: string;
-        };
+        drivers: Record<string, string>;
         cancelamento_ruido: {
             tecnologia: string;
             modos: string[];
             microfones_externos: number;
             reducao_ruido: string;
         };
-        microfone: {
-            tipo: string;
-            cancelamento_ruido_voz: string;
-            frequencia_captacao: string;
-            formato_gravacao: string;
-        };
-        bateria: {
-            capacidade: string;
-            duracao_com_anc: string;
-            duracao_sem_anc: string;
-            carregamento_rapido: string;
-            tempo_recarga_completa: string;
-        };
-        conectividade: {
-            sem_fio: string;
-            com_fio: string;
-            multi_pairing: string;
-            armazenamento: string;
-        };
-        resistencia_agua: {
-            certificacao: string;
-            protecao: string;
-        };
-        peso: {
-            valor: string;
-            observacao: string;
-        };
+        microfone: Record<string, string>;
+        bateria: Record<string, string>;
+        conectividade: Record<string, string>;
+        resistencia_agua: Record<string, string>;
+        peso: Record<string, string>;
     };
 }
-
-
 /* ================================================================
-   SMARTPHONE  (JSON COMPLETO)
+   SMARTPHONE
 ================================================================ */
-
 export interface SmartphoneSpecs {
     category: "smartphone";
     modelo: string;

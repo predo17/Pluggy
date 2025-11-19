@@ -1,3 +1,4 @@
+import { formatValue, formatLabel } from "../../types/FormatValue";
 import type { Product } from "../../types/Product";
 
 interface Props {
@@ -10,16 +11,12 @@ export default function ProductFichaTecnica({ product }: Props) {
     if (!info) {
         return <p className="text-gray-500">Nenhuma informação disponível.</p>;
     }
-    // 🔧 Função para exibir valores com fallback "-"
-    const safe = (value: any) => {
-        if (value === undefined || value === null || value === "") return "-";
-        return value;
-    };
     // 🔧 Função genérica para renderizar seções
     const renderSecao = (titulo: string, dados: Record<string, any>) => {
         if (!dados) return null;
 
         return (
+
             <div className="rounded p-4 transition border border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-700 mb-3">{titulo}</h3>
 
@@ -30,15 +27,14 @@ export default function ProductFichaTecnica({ product }: Props) {
                             className="flex justify-between p-3 text-sm"
                             style={{ backgroundColor: i % 2 === 0 ? "#e5e7ed" : "#ffffff" }}
                         >
-                            <span className="font-medium capitalize">
-                                {key.replaceAll("_", " ")}
+                            <span className="font-semibold ">
+                                {formatLabel(key)}
                             </span>
 
                             <span className="text-right">
-                                {typeof value === "object"
-                                    ? JSON.stringify(value)
-                                    : safe(value)}
+                                {formatValue(value)}
                             </span>
+
                         </li>
                     ))}
                 </ul>
@@ -83,7 +79,7 @@ export default function ProductFichaTecnica({ product }: Props) {
                 {renderSecao("Sistema", info.sistema)}
                 {renderSecao("Processador", info.especificacoes_tecnicas.processador)}
                 {renderSecao("Placa de Vídeo", info.especificacoes_tecnicas.placa_de_video)}
-                {renderSecao("Display", info.especificacoes_tecnicas.placa_de_video)}
+                {renderSecao("Display", info.especificacoes_tecnicas.display)}
                 {renderSecao("Memória RAM", info.especificacoes_tecnicas.memoria_ram)}
 
                 {renderSecao("Armazenamento", info.especificacoes_tecnicas.armazenamento
@@ -105,15 +101,14 @@ export default function ProductFichaTecnica({ product }: Props) {
         const spec = info.especificacoes_tecnicas;
 
         return (
-            <section className="space-y-4">
-                {renderSecao("Controle", {
-                    conexão: spec.conexaoController,
-                    bateria: spec.bateriaController,
-                    duração: spec.duracaoController,
-                    vibração: spec.vibracao,
-                    compatibilidade: spec.compatibilidadeController,
-                    peso: spec.pesocontroller,
-                })}
+            <section className="grid md:grid-cols-2 gap-3">
+                {renderSecao("Conexão", spec.conexao)}
+                {renderSecao("Bateria", spec.bateria)}
+                {renderSecao("Duração", spec.duracao)}
+                {renderSecao("Vibração", spec.vibracao)}
+                {renderSecao("Compatibilidade", spec.compatibilidade)}
+                {renderSecao("Peso", spec.peso)}
+
             </section>
         );
     }
@@ -123,17 +118,14 @@ export default function ProductFichaTecnica({ product }: Props) {
         const spec = info.especificacoes_tecnicas;
 
         return (
-            <section className="space-y-4">
-                {renderSecao("Fone de Ouvido", {
-                    Tipo: spec.tipo,
-                    Drivers: spec.drivers,
-                    "Cancelamento de Ruído": spec.cancelamento_ruido,
-                    Bateria: spec.bateria,
-                    Conectividade: spec.conectividade,
-                    Microfone: spec.microfone,
-                    "Resistência à Água": spec.resistencia_agua,
-                    Peso: spec.peso,
-                })}
+            <section className="grid md:grid-cols-2 gap-3">
+                {renderSecao("Drivers", spec.drivers)}
+                {renderSecao("Cancelamento de Ruido", spec.cancelamento_ruido)}
+                {renderSecao("Bateria", spec.bateria)}
+                {renderSecao("Conectividade", spec.conectividade)}
+                {renderSecao("Microfone", spec.microfone)}
+                {renderSecao("Resistencia à Água", spec.resistencia_agua)}
+                {renderSecao("Peso", spec.peso)}
             </section>
         );
     }
@@ -144,8 +136,9 @@ export default function ProductFichaTecnica({ product }: Props) {
 
         return (
             <section className="grid md:grid-cols-2 gap-3">
-                {renderSecao("Tela", spec.tela)}
+                {renderSecao("Sistema", spec.sistema)}
                 {renderSecao("Processador", spec.processador)}
+                {renderSecao("Tela", spec.tela)}
                 {renderSecao("Memória", {
                     RAM: spec.ram_rom?.ram,
                     Armazenamento: spec.ram_rom?.armazenamento,
@@ -161,8 +154,8 @@ export default function ProductFichaTecnica({ product }: Props) {
                     Carregamento: spec.bateria.carregamento,
                     "Duração Estimada": spec.bateria.duracao_estimada,
                 })}
-                {renderSecao("Sistema", spec.sistema)}
                 {renderSecao("Conectividade", spec.conectividade)}
+                {renderSecao("Chipe SIM", spec.chip_sim)}
                 {renderSecao("Resistência à Água", spec.resistencia_agua)}
             </section>
         );

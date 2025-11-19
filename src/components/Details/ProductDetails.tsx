@@ -15,6 +15,7 @@ import {
 import ProductFichaTecnica from "./TechnicalSheet";
 
 import type { Product } from "../../types/Product";
+import RelatedProductsCarousel from "./RelatedProductsCarousel";
 
 export default function ProductDetails() {
   const { id } = useParams<{ id: string }>();
@@ -69,7 +70,6 @@ export default function ProductDetails() {
       halfStar,
     };
   }, [product]);
-
   // 🔹 Imagens principais e de cores
   const productImages = useMemo(
     () =>
@@ -92,17 +92,28 @@ export default function ProductDetails() {
   );
 
   const quantityMax = product?.quantity || 1;
-
   // 🔹 Features fixas
   const features = [
     { icon: Truck, text: "Frete grátis para todo o Brasil", color: "text-green-500" },
     { icon: RotateCcw, text: "Devolução em até 30 dias", color: "text-purple-500" },
     { icon: Shield, text: String(product?.guarantee), color: "text-blue-500" },
   ];
-
-  // 🔹 Produtos relacionados (mesma categoria)
+  // 🔹 Produtos relacionados
+  const isExclusiveProduct = product?.property === "exclusive";
   const relatedProducts = allProducts
-    .filter((p) => p.category === product?.category && p.id !== product?.id)
+    .filter((p) => {
+      if (!product) return false;
+
+      if (p.id === product.id) return false;
+
+      if (p.category !== product.category) return false;
+
+      if (isExclusiveProduct) {
+        return p.property === "exclusive";
+      }
+
+      return p.property !== "exclusive";
+    })
     .slice(0, 8);
 
   // 🔹 Verifica se o produto foi encontrado
@@ -225,7 +236,7 @@ export default function ProductDetails() {
                 )}
               </div>
               <span className="text-sm text-gray-600">
-                {product.star} • (6.489 avaliações)
+                {product.star} • (6.489)
               </span>
             </div>
 
@@ -355,43 +366,20 @@ export default function ProductDetails() {
             </div>
           </div>
         </section>
-
-        <section className="space-y-3 max-xl:px-2">
-          <h2 className="text-2xl font-medium text-gray-900 border-b border-gray-200 pb-4">
-            Ficha Técnica
-          </h2>
-
+        {/* 🔹 Ficha Técnica */}
+        <section className="space-y-3 max-xl:px-2 ">
+          <h2 className="text-2xl font-medium text-gray-900 border-b border-gray-200 pb-4">Ficha Técnica</h2>
+          
           <ProductFichaTecnica product={product} />
         </section>
-
         {/* 🔹 Descrição completa */}
         <section className="space-y-3 max-xl:px-2">
           <h2 className="text-2xl font-medium text-gray-900 border-b border-gray-200 pb-4">Descrição do produto</h2>
           <p className="text-gray-700 whitespace-pre-line leading-relaxed">{product.description}</p>
         </section>
       </div>
-
-      <section className="relative p-3 xl:p-6 space-y-6 mt-12 overflow-hidden">
-        <h2 className="text-2xl font-medium text-gray-900">Produtos relacionados</h2>
-        <div className="flex items-center gap-3 overflow-x-scroll">
-          {relatedProducts.map((p) => (
-            <Link
-              key={p.id}
-              to={`/product/${p.id}${p.property ? `?property=${p.property}` : ""}`}
-              className="outline-0 rounded-md hover:shadow-md"
-            >
-              <div className="w-60  bg-white rounded-md">
-                <img src={Array.isArray(p.img) ? p.img[0] : p.img} alt={p.title} className="w-full h-50 py-3 mb-3 object-contain border-b border-gray-300" />
-                <div className="px-3">
-                  <h3 className="font-medium text-gray-900 truncate ">{p.title || p.name}</h3>
-                  <p className="text-sm line-clamp-2 mb-4">{p.description}</p>
-                  <span className="text-xl text-gray-800 font-medium ">{p.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* 🔹 Relacionados */}
+      <RelatedProductsCarousel relatedProducts={relatedProducts} />
 
     </main>
   );
