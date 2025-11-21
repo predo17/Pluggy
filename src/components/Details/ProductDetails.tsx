@@ -14,8 +14,9 @@ import {
 } from "lucide-react";
 import ProductFichaTecnica from "./TechnicalSheet";
 
-import type { Product } from "../../types/Product";
+import type { CartItem, Product } from "../../types/Product";
 import RelatedProductsCarousel from "./RelatedProductsCarousel";
+import { useCart } from "../../context/CartContext";
 
 export default function ProductDetails() {
   const { id } = useParams<{ id: string }>();
@@ -115,6 +116,32 @@ export default function ProductDetails() {
       return p.property !== "exclusive";
     })
     .slice(0, 8);
+  // 🔹 Adiciona ao carrinho
+  const { addToCart, isInCart, cart } = useCart();
+  const [added, setAdded] = useState(false);
+
+  function handleAddToCart() {
+    if (!product) return;
+
+    var item: CartItem = {
+      id: product.id,
+      property: product.property,
+      img: product.img,
+      name: product.name || product.title,
+      flash_description: product.flash_description,
+      price: product.price,
+    };
+    addToCart(item);
+  }
+
+  useEffect(() => {
+    if (!product) return;
+
+    const exists = isInCart(product.id, product.property);
+    if (exists) {
+      setAdded(true); // mantém a animação ativa
+    }
+  }, [product, cart]);
 
   // 🔹 Verifica se o produto foi encontrado
   if (!product)
@@ -343,14 +370,35 @@ export default function ProductDetails() {
 
               {/* Botões de Ação */}
               <div className="space-y-3">
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-3 transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-3 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer">
                   <ShoppingBag className="w-5 h-5" />
                   Comprar Agora
                 </button>
 
-                <button className="w-full bg-white text-blue-600 border-2 border-blue-600 py-4 rounded-xl font-semibold flex items-center justify-center gap-3 transition-all duration-300 hover:bg-blue-50 hover:shadow-md">
-                  <ShoppingCart className="w-5 h-5" />
-                  Adicionar ao Carrinho
+                <button
+                  onClick={handleAddToCart}
+                  disabled={!product}
+                  className={`
+    w-full py-4 rounded-xl font-semibold flex items-center justify-center gap-3
+    transition-all duration-300 border-2
+
+    ${added
+                      ? "bg-green-500 text-white border-green-500 scale-105 shadow-lg pointer-events-none cursor-not-allowed"
+                      : "bg-white text-blue-600 border-blue-600 hover:bg-blue-50 hover:shadow-md cursor-pointer"
+                    }
+  `}
+                >
+                  {added ? (
+                    <>
+                      <Check className="w-5 h-5" />
+                      Adicionado!
+                    </>
+                  ) : (
+                    <>
+                      <ShoppingCart className="w-5 h-5" />
+                      Adicionar ao Carrinho
+                    </>
+                  )}
                 </button>
               </div>
 
@@ -369,7 +417,7 @@ export default function ProductDetails() {
         {/* 🔹 Ficha Técnica */}
         <section className="space-y-3 max-xl:px-2 ">
           <h2 className="text-2xl font-medium text-gray-900 border-b border-gray-200 pb-4">Ficha Técnica</h2>
-          
+
           <ProductFichaTecnica product={product} />
         </section>
         {/* 🔹 Descrição completa */}

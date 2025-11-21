@@ -1,23 +1,54 @@
-import { ShoppingBag } from "lucide-react";
-import { PiTrashDuotone } from "react-icons/pi";
+import { ShoppingBag, Trash2 } from "lucide-react";
+import { useCart } from "../../context/CartContext";
 
 export default function Cart() {
+  const { cart, removeFromCart } = useCart();
+
   return (
-    <div className="w-full bg-gray-100 p-3 rounded-md flex gap-3">
-      <div className="max-w-15 h-15 w-full ">
-        <img src="" alt="imagem de um produto" className="w-full h-full border" />
-      </div>
+    <div className="space-y-4">
+      {cart.map((p) => (
+        <div
+          key={p.id}
+          className="w-full bg-linear-to-r from-white to-gray-50 rounded-xl p-4 border border-gray-200/60 shadow-sm"
+        >
+          <div className="flex gap-4">
 
-      <div className="w-full flex md:flex-col ">
-        <h4>Produto</h4>
-        <p className="line-clamp-1 leading-relaxed tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum provident itaque corrupti cupiditate iure. Laudantium, fuga repudiandae? Tenetur suscipit facilis id quae voluptates hic nostrum laudantium delectus. Officiis, ipsam.</p>
-      </div>
+            {/* imagem */}
+            <div className="w-20 h-20 bg-gray-100 rounded-xl overflow-hidden">
+              <img src={Array.isArray(p.img) ? p.img[0] : p.img} alt={p.name} className="w-full h-full object-contain" />
+            </div>
 
-      <div className="flex items-center justify-center gap-3">
-        <button className="bg-emerald-400 hover:bg-emerald-500 text-white w-10 h-10 rounded-full flex items-center justify-center hover:scale-105 transition-all duration-300 cursor-pointer"><ShoppingBag size={20}/></button>
-        <button className="bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:scale-105 transition-all duration-300 cursor-pointer"><PiTrashDuotone size={20}/></button>
-      </div>
+            {/* conteúdo */}
+            <div className="flex-1 space-y-1">
+              <div className="flex items-start justify-between">
+                <h4 className="font-semibold truncate">{p.name}</h4>
 
+                <button
+                  onClick={() => removeFromCart(p.id, p.property)}
+                  className="p-1 text-gray-400 hover:text-red-500 cursor-pointer"
+                >
+                  <Trash2 className="w-5 h-5" />
+                </button>
+              </div>
+
+              {p.flash_description && (
+                <p className="text-gray-600 text-sm line-clamp-2">
+                  {p.flash_description}
+                </p>
+              )}
+
+              <div className="flex max-lg:flex-col items-start lg:items-center justify-between mt-3">
+
+                <span className="text-lg font-bold ">{p.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span>
+
+                <div className="flex items-center gap-2"> <a href="/" className="bg-gray-100 hover:bg-gray-200 text-xs text-gray-900 px-6 py-1.5 rounded-sm flex items-center justify-center transition-all duration-300">Ver Produto</a> <a href="/" className="bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-1.5 rounded-sm flex items-center justify-center transition-all duration-300 cursor-pointer"> <ShoppingBag className="w-5 h-5" /> </a> </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      ))}
     </div>
-  )
+  );
 }

@@ -1,5 +1,6 @@
 export interface Product {
     id: number;
+    property: string;
     name: string;
     title: string;
     price: number;
@@ -10,15 +11,26 @@ export interface Product {
     star: number;
     cor: string[];
     features: string[];
+    flash_description: string;
     description: string;
     guarantee?: string;
     quantity?: number;
-    property?: string;
     category?: string;
 
     // TIPAGEM PRINCIPAL DAS FICHAS TÉCNICAS
     specs?: PcSpecs | LaptopSpecs | ControllerSpecs | HeadphonesSpecs | SmartphoneSpecs;
 }
+
+export interface CartItem {
+    id: number;
+    property: string;
+    img: string | string[];
+    name: string;
+    flash_description: string;
+    price: number;
+    addedAnimation?: boolean
+}
+
 /* ================================================================
    PC / LAPTOP
 ================================================================ */

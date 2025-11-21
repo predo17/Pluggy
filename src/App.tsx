@@ -1,16 +1,15 @@
+import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
-import ProductPage from './pages/ProductPage.tsx'
+import ProductPage from './pages/ProductPage'
 import Checkout from './pages/Checkout'
 import Profile from './pages/Profile'
-import Header from './components/H_F/Header.tsx'
-import Footer from './components/H_F/Footer.tsx'
-import { useEffect } from 'react'
-import User from './components/ContaUser/User.tsx'
-import Administrador from './pages/Administrador.tsx'
+import Header from './components/H_F/Header'
+import Footer from './components/H_F/Footer'
+import User from './components/ContaUser/User'
+import Administrador from './pages/Administrador'
 
 export default function App() {
-
   const location = useLocation();
 
   useEffect(() => {
@@ -18,7 +17,7 @@ export default function App() {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen dark:bg-gray-100 :bg-black text-[#0D1117]">
+    <div className="min-h-screen :bg-gray-100 dark:bg-black text-[#0D1117]">
       <Header />
       <main className="container mx-auto xl:px-4 py-8">
         <Routes>
@@ -32,5 +31,5 @@ export default function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
