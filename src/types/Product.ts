@@ -27,10 +27,17 @@ export interface CartItem {
     img: string | string[];
     name: string;
     flash_description: string;
+    star: number;
+    features: string[];
+    quantity: number;
     price: number;
     addedAnimation?: boolean
 }
 
+export interface AppContextType {
+    cart: CartItem[];
+    addToCart: (item: CartItem) => void;
+}
 /* ================================================================
    PC / LAPTOP
 ================================================================ */

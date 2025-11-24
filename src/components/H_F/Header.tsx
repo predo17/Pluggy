@@ -1,21 +1,23 @@
 import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, Ticket, X } from "lucide-react";
 import { useState } from "react";
+import LinkWithLoading from "../LinkWithLoading";
 
 export const navLinks = [
-    { href: "/", label: "Home", alt: "início", icon: Home, },
-    { href: "/", label: "Produtos", alt: "Produtos ", icon: Package, },
-    { href: "/", label: "Ofertas", alt: "deals ", icon: Ticket, },
-    { href: "/", label: "Sobre Nós", alt: "Sobre nós", icon: ScrollText, },
-    { href: "/", label: "Contato", alt: "Contato", icon: Phone, },
+    { href: "/", label: "Home", icon: Home },
+    { href: "/products", label: "Produtos", icon: Package },
+    { href: "/offers", label: "Ofertas", icon: Ticket },
+    { href: "/about", label: "Sobre Nós", icon: ScrollText },
+    { href: "/contact", label: "Contato", icon: Phone },
 ];
+
 
 export default function HeaderMinimal() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const bottonLinks = [
-        { href: "/", label: "Carrinho", alt: "Carrinho, seus favoritos", icon: ShoppingCart, },
-        { href: "/", label: "Comprados", alt: "Comprados, produtos comprados", icon: ShoppingBag, },
-        { href: "/", label: "Login", alt: "Login, sua conta", icon: CircleUser, },
+        { href: "/profile", label: "Carrinho", alt: "Carrinho, seus favoritos", icon: ShoppingCart, },
+        { href: "/profile", label: "Comprados", alt: "Comprados, produtos comprados", icon: ShoppingBag, },
+        { href: "/profile", label: "Login", alt: "Login, sua conta", icon: CircleUser, },
     ];
 
     const toggleMobileMenu = () => {
@@ -42,18 +44,17 @@ export default function HeaderMinimal() {
                     />
                 </picture>
 
-
                 {/* Navegação Central */}
                 <nav className="hidden lg:flex items-center space-x-4 lg:space-x-8">
                     {navLinks.map((link) => (
-                        <a
+                        <LinkWithLoading
                             key={link.href}
-                            href={link.href}
-                            aria-label={link.alt}
+                            to={link.href}
+                            aria-label={link.label}
                             className="text-gray-600 text-sm font-medium hover:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full tracking-wide"
                         >
                             {link.label}
-                        </a>
+                        </LinkWithLoading>
                     ))}
                 </nav>
 
@@ -75,9 +76,10 @@ export default function HeaderMinimal() {
                             aria-hidden="true"
                         />
                     </form>
-                    {/* bottons acoes */}
-                    <a
-                        href="/profile"
+
+                    {/* Carrinho */}
+                    <LinkWithLoading
+                        to="/profile"
                         className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
@@ -85,26 +87,28 @@ export default function HeaderMinimal() {
                         <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">
                             0
                         </span>
-                    </a>
-                    <a
-                        href="/profile/user"
+                    </LinkWithLoading>
+
+                    {/* Pedidos */}
+                    <LinkWithLoading
+                        to="/profile"
                         className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
-                        aria-label="Carrinho de compras"
+                        aria-label="Compras"
                     >
                         <ShoppingBag className="w-5 h-5" />
                         <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">
                             0
                         </span>
-                    </a>
+                    </LinkWithLoading>
 
-                    {/* Usuário */}
-                    <a
-                        href="/profile/user"
+                    {/* Perfil */}
+                    <LinkWithLoading
+                        to="/profile"
                         className="hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
-                        aria-label="Perfil do usuário"
+                        aria-label="Perfil"
                     >
                         <CircleUser className="w-5 h-5" />
-                    </a>
+                    </LinkWithLoading>
                 </div>
 
                 {/* Menu Mobile Button */}
@@ -130,16 +134,15 @@ export default function HeaderMinimal() {
                 <nav>
                     <ul className="flex flex-col space-y-4">
                         {navLinks.map((link) => (
-                            <li key={link.href}>
-                                <a
-                                    href={link.href}
-                                    aria-label={link.alt}
+                            <li key={link.href} onClick={() => setIsMobileMenuOpen(false)}>
+                                <LinkWithLoading
+                                    to={link.href}
+                                    aria-label={link.label}
                                     className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500  focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50 tracking-wide"
-                                    onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     {link.icon && <link.icon className="w-5 h-5 mr-4" />}
                                     {link.label}
-                                </a>
+                                </LinkWithLoading>
                             </li>
                         ))}
                     </ul>
@@ -150,16 +153,15 @@ export default function HeaderMinimal() {
                         <nav>
                             <ul className="flex flex-col space-y-4">
                                 {bottonLinks.map((link) => (
-                                    <li key={link.href}>
-                                        <a
-                                            href={link.href}
+                                    <li key={link.href} onClick={() => setIsMobileMenuOpen(false)}>
+                                        <LinkWithLoading
+                                            to={link.href}
                                             aria-label={link.alt}
                                             className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50 tracking-wide"
-                                            onClick={() => setIsMobileMenuOpen(false)}
                                         >
                                             {link.icon && <link.icon className="w-5 h-5 mr-4" />}
                                             {link.label}
-                                        </a>
+                                        </LinkWithLoading>
                                     </li>
                                 ))}
                             </ul>

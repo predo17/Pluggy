@@ -8,16 +8,36 @@ import Header from './components/H_F/Header'
 import Footer from './components/H_F/Footer'
 import User from './components/ContaUser/User'
 import Administrador from './pages/Administrador'
+import { useLoading } from './context/LoadingContext'
 
 export default function App() {
   const location = useLocation();
+   const { startLoading, stopLoading } = useLoading();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  useEffect(() => {
+    const handleNavigation = () => {
+      startLoading();
+
+      // Aguarda renderização do novo estado da página
+      setTimeout(() => {
+        stopLoading();
+      }, 300);
+    };
+
+    window.addEventListener("popstate", handleNavigation);
+
+    return () => {
+      window.removeEventListener("popstate", handleNavigation);
+    };
+  }, []);
+
+
   return (
-    <div className="min-h-screen :bg-gray-100 dark:bg-black text-[#0D1117]">
+    <div className="min-h-screen dark:bg-gray-100 :bg-black text-[#0D1117]">
       <Header />
       <main className="container mx-auto xl:px-4 py-8">
         <Routes>

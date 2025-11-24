@@ -1,13 +1,19 @@
-// import { ShieldCheck, Truck } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
+import { useLoading } from '../../context/LoadingContext';
 
 export default function ProductCard({ id, img, text, price, description }: any) {
     const navigate = useNavigate();
+    const { startLoading, stopLoading } = useLoading();
 
-    const handleNavigate = () => {
+    async function handleNavigate() {
+        startLoading();
+
+        await new Promise(res => setTimeout(res, 1000));
+
         navigate(`/product/${id}`);
-    };
-
+    
+        stopLoading();
+    }
 
     return (
         <article className="group relative w-40">

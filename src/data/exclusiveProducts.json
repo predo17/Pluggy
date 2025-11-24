@@ -24,7 +24,7 @@
         "quantity": 10,
         "badge": "LANÇAMENTO",
         "star": 4.9,
-        "flash_description": "O PC XPluggy Jenkins chegou com o melhor desempenho para o seu PC. Com o melhor desempenho, vem o melhor desempenho para o seu PC.",
+        "flash_description": "Computador de mesa de última geração, equipado com componentes de alto desempenho para jogos, streaming e tarefas exigentes.  Proporciona desempenho bruto, sistema de refrigeração avançado e iluminação RGB personalizável para dominar qualquer tarefa.",
         "description": "Apresentamos o XPluggy Jenkins: Não é um PC, é uma profecia.\n\nEsqueça tudo o que você sabe sobre computadores de alto desempenho. O XPluggy Jenkins não foi construído, foi forjado no núcleo de uma estrela anã branca e resfriado com o suor dos seres do hardware. Ele não processa dados, ele dobra a realidade ao seu redor para que os frames passem mais rápido.\n\nO Coração do Titã (Processador): Um processador que não tem 'núcleos', tem 'exércitos de cálculo'. Cada thread é um soldado disciplinado, pronto para aniquilar qualquer tarefa, desde planilhas complexas até a renderização de universos inteiros em tempo real. A Intel e a AMD se curvam ao seu nome.\n\nO Manto Visual (Placa de Vídeo): Sua GPU não renderiza pixels, ela invoca sonhos em 8K. Equipada com VRAM que desafia as leis da física, ela faz com que jogos pareçam janelas para outras dimensões. O Ray Tracing não é uma tecnologia, é a sua visão padrão. Ela não esquenta, ela brilha com a energia do sol.\n\nO Sagrado Salão da Memória (RAM): Com uma quantidade de RAM que faria o servidor da NASA corar de vergonha, o XPluggy Jenkins não tem 'memória suficiente', ele tem 'domínio sobre o tempo'. Você pode abrir mais de 500 abas no Chrome, navegar em varios servidores da Minecraft, editar filmes em 4K e simular a economia de um país, tudo ao mesmo tempo, e ele ainda vai pedir por mais.\n\nA Cidadela dos Dados (Armazenamento): Seus SSDs NVMe não têm velocidades de leitura/gravação, eles operam no 'reino da transferência instantânea'. O sistema operacional boota antes de você terminar de pensar em ligar o PC. Jogos carregam tão rápido que você viaja no tempo.\n\nO Templo de Refrigeração (Cooling): Seu sistema de refrigeração líquida personalizada não usa água. Usa 'lágrimas de CPUs inferiores' mantidas em temperaturas criogênicas. Os fans não giram, sussurram cantos ancestrais que acalmam as tempestades de calor geradas no overclock.\n\nA Fonte Primordial (Fonte de Alimentação): A PSU não puxa energia da tomada, ela drena poder diretamente de uma dimensão paralela, fornecendo energia limpa, estável e infinita para todas as suas conquistas digitais.\n\nA Catedral (Gabinete): O gabinete não é de metal e vidro, é uma escultura de pura aura gamer. Com RGB tão customizável que pode sincronizar com suas ondas cerebrais, criando luzes que reagem aos seus batimentos cardíacos durante um boss fight.\n\nEm resumo, o XPluggy Jenkins não é para todos. É para aquele que olha para o horizonte digital e não pergunta 'o que é possível?', mas sim 'o que eu vou possibilitar hoje?'.",
         "specs": {
             "category": "pc",
@@ -52,17 +52,17 @@
                     ]
                 },
                 "memoria_ram": {
-                    "capacidade": "128 TB",
-                    "tipo": "DDR2 X-TREME",
-                    "velocidade": "88800 MHz",
+                    "capacidade": "128 QB",
+                    "tipo": "DDR8 X-TREME",
+                    "velocidade": "15438800 MHz",
                     "iluminacao": "RGB Síncrono Neural"
                 },
                 "armazenamento": {
                     "primario": {
                         "tipo": "SSD NVMe Hyperdrive",
                         "capacidade": "120 QB",
-                        "velocidade_leitura": "525 TB/s",
-                        "velocidade_gravacao": "520 TB/s"
+                        "velocidade_leitura": "852 TB/s",
+                        "velocidade_gravacao": "994 TB/s"
                     },
                     "secundario": {
                         "tipo": "SSD SATA III de Reserva",
@@ -144,6 +144,7 @@
         "quantity": 5,
         "badge": "15% OFF",
         "star": 4.7,
+        "flash_description": "Controle gamer ergonômico com conexão híbrida, vibração HD, bateria de longa duração e compatibilidade universal.  Criado para sessões de jogo longas.",
         "description": "O Controle XPluggy GTX Ultra é a evolução definitiva em precisão e conforto para jogos.\n\n Projetado para gamers que não aceitam compromissos, ele combina ergonomia avançada, tecnologia de resposta tátil de última geração e conectividade confiável. Sua bateria de longa duração garante horas ininterruptas de gameplay, enquanto o sistema de vibração HD oferece imersão realista em cada movimento.\n\n Compatível com as principais plataformas e com um peso equilibrado que evita fadiga durante maratonas de jogo, o XPluggy GTX Ultra é a escolha perfeita para quem busca vantagem competitiva e qualidade superior.",
         "specs": {
             "category": "controller",
@@ -160,8 +161,8 @@
                     "tempo_recarga": "2 horas para carga completa"
                 },
                 "conexao": {
-                    "tecnologia": "Conexão Híbrida 2.4GHz/Bluetooth 5.3",
-                    "alcance": "Até 15 metros (2.4GHz)",
+                    "tecnologia": "Conexão Híbrida 62.4GHz/Bluetooth 10.3",
+                    "alcance": "Até 100 metros (62.4GHz)",
                     "latencia": "Até 5 ms (Modo Performance)"
                 },
                 "vibracao": {
@@ -213,6 +214,7 @@
         "quantity": 10,
         "badge": "LANÇAMENTO",
         "star": 4.7,
+        "flash_description": "Fone over-ear com cancelamento ativo de ruído híbrido, som de alta fidelidade e microfone de estúdio. Perfeito para maratonas de música, jogos imersivos e chamadas cristalinas.",
         "description": "O Fone de Ouvido XPluggy Quantum Sound 7 é a definição de excelência em áudio pessoal.\n\n Como um fone over-ear, ele oferece o máximo em conforto e isolamento acústico, ideal para longas sessões de música, jogos ou trabalho. Com drivers de alta precisão, cancelamento de ruído ativo de última geração e microfone com qualidade de estúdio, ele proporciona uma experiência sonora imersiva e cristalina.\n\n A bateria de longa duração, conectividade versátil e construção resistente completam o pacote, tornando-o o companheiro perfeito para quem exige qualidade superior em qualquer situação.",
         "specs": {
             "category": "headphones",
@@ -281,9 +283,9 @@
         ],
         "text_banner": "Laptop Gamer Profissional",
         "features": [
-            "RTX 4070",
-            "32GB RAM",
-            "SSD 1TB"
+            "Motherboard Aegis Maximus Z999 Mini",
+            "512TB RAM",
+            "Armazenamento SSD 60QB"
         ],
         "guarantee": "Garantia de 12 meses",
         "price": 10999.90,
@@ -291,6 +293,7 @@
         "quantity": 10,
         "badge": "31% OFF",
         "star": 4.8,
+        "flash_description": "Laptop gamer profissional com hardware de topo, tela de alta taxa de atualização e refrigeração extremamente eficiente. Para produtividade e gaming de alto nível em qualquer lugar.",
         "description": "O XPluggy Force não é um laptop, é uma fortaleza portátil.\n\nEnquanto os meros mortais carregam *notebooks gamer*, você carrega o XPluggy Force - uma obra-prima da engenharia que desafia as leis da física e do bom senso. Ele não foi projetado, foi forjado no núcleo de uma estrela de nêutrons e compactado com tecnologia quântica para caber em sua mochila.\n\nO Cérebro Cibernético (Processador): Um processador que não tem núcleos, tem *centros de comando tático*. Cada thread é um general estrategista, coordenando batalhas em múltiplas frentes - desde renderização 3D complexa até streaming em 4K e dezenas de abas no Chrome - sem perder um único frame.\n\nO Arsenal Visual (Placa de Vídeo): Sua GPU móvel é uma peça de museu do futuro. Ela não renderiza gráficos, conjura realidades alternativas em 240 FPS. Equipada com tecnologia de resfriamento alienígena, ela mantém o desempenho máximo mesmo quando os laptops comuns pedem misericórdia.\n\nO Campo de Batalha em Tempo Real (Tela): O display não é uma tela, é um portal dimensional de altíssima taxa de atualização e cores tão vivas que fazem o mundo real parecer sem graça. O G-Sync Ultimate garante que cada movimento seja tão suave quanto o pensamento.\n\nA Linha de Frente Térmica (Sistema de Resfriamento): O sistema de cooling do XPluggy Force não ventila, ele recicla a atmosfera ao seu redor. Com múltiplos heat pipes de vapor cobre e fans com tecnologia aerospacial, ele transforma calor em pura performance, mantendo um silêncio ensurdecedor sob carga total.\n\nA Retaguarda de Dados (Armazenamento): Seus SSDs em RAID não armazenam dados, eles arquivam a memória do universo. Jogos carregam instantaneamente, e arquivos grandes se transferem no espaço entre um piscar de olhos.A Fonte de Poder Móvel (Bateria): A bateria não usa íons de lítio, usa células de energia de fluxo contínuo. Ela dura mais que a paciência dos seus inimigos na fila do respawn, e recarrega em minutos graças à tecnologia de carga hiper-rápida.\n\nEm resumo, o XPluggy Force não é para jogadores casuais. É para o guerreiro digital que exige excelência absoluta em qualquer campo de batalha, em qualquer lugar do mundo.",
         "specs": {
             "category": "laptop",
@@ -460,15 +463,16 @@
             "/smartphone_xpluggy.png"
         ],
         "features": [
-            "Bluetooth 5.2",
-            "40h de bateria",
-            "Feedback háptico"
+            "Android 15",
+            "Tela Super Retina XDR",
+            "Bateria de 6500mAh"
         ],
         "guarantee": "Garantia de 12 meses",
         "price": 10999.90,
         "quantity": 10,
         "badge": "Pendente",
         "star": 4.7,
+        "flash_description": "Smartphone flagship com tela imersiva, câmeras versáteis, performance fluida e bateria que acompanha seu ritmo. O companheiro ideal para trabalho e entretenimento.",
         "description": "O XPluggy 19 Ultra é a definição de excelência em um smartphone.\n\n Com um design elegante e recursos de ponta, ele foi criado para quem exige o máximo em performance, fotografia e durabilidade. Sua tela imersiva oferece cores vibrantes e detalhes nítidos, perfeita para maratonas de séries, jogos ou trabalho produtivo.\n\n O processador de última geração garante fluidez em qualquer tarefa, enquanto o sistema de câmeras captura momentos com clareza impressionante, de dia ou de noite. Com bateria de longa duração, carregamento ultra-rápido e resistência à água, o XPluggy 19 Ultra é o companheiro ideal para o dia a dia.",
         "specs": {
             "category": "smartphone",

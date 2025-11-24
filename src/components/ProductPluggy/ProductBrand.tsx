@@ -1,11 +1,21 @@
 import { CreditCard, Rocket, Shield, ShieldCheck, Star } from "lucide-react";
 import exclusiveProducts from "../../data/exclusiveProducts.json";
 import { useNavigate } from "react-router-dom";
+import { useLoading } from "../../context/LoadingContext";
 
 export default function ProductMarca() {
     const navigate = useNavigate();
-    const handleNavigate = (id: number) => {
+
+    const { startLoading, stopLoading } = useLoading();
+
+    async function handleNavigate(id: number) {
+        startLoading();
+
+        await new Promise(res => setTimeout(res, 1000));
+
         navigate(`/product/${id}?property=exclusive`);
+
+        stopLoading();
     };
 
     const extractProducts = (data: any): any[] =>

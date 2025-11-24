@@ -1,8 +1,9 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useMemo } from "react";
 import type { CartItem } from "../types/Product";
 
 interface CartContextType {
   cart: CartItem[];
+  cartCount: number;
   addToCart: (item: CartItem) => void;
   removeFromCart: (id: number, property: string) => void;
   isInCart: (id: number, property: string) => boolean;
@@ -35,6 +36,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       prev.filter(p => !(p.id === id && p.property === property))
     );
   }
+  const cartCount = useMemo(() => cart.length, [cart]);
 
   // ← para checar no botão se já está no carrinho
   function isInCart(id: number, property: string) {
@@ -43,7 +45,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, isInCart }}
+      value={{ cart, addToCart, removeFromCart, isInCart, cartCount }}
     >
       {children}
     </CartContext.Provider>

@@ -8,10 +8,6 @@
     --font-secondary: 'Poppins', sans-serif;
 }
 
-* {
-    scroll-behavior: smooth;
-}
-
 .inter {
     font-family: var(--font-primary);
 }
@@ -23,5 +19,5 @@
 body {
     width: 100vw;
     font-family: var(--font-primary);
-    overflow-x: hidden
+    overflow-x: hidden;
 }

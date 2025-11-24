@@ -4,6 +4,7 @@ import {
 import { RiTwitterXFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { navLinks } from "./Header";
+import LinkWithLoading from "../LinkWithLoading";
 
 export default function Footer() {
     return (
@@ -49,13 +50,14 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {navLinks.map((link, index) => (
                                 <li key={index}>
-                                    <Link
+                                    <LinkWithLoading
                                         to={link.href}
+                                        aria-label={link.label}
                                         className="text-gray-500 hover:text-sky-500 transition-colors flex items-center gap-2 max-w-max"
                                     >
                                         <ArrowRight className="w-3 h-3" />
                                         {link.label}
-                                    </Link>
+                                    </LinkWithLoading>
                                 </li>
                             ))}
                         </ul>
@@ -73,12 +75,13 @@ export default function Footer() {
                                 { label: "Perguntas Frequentes", href: "/faq" }
                             ].map((link, index) => (
                                 <li key={index}>
-                                    <Link
+                                    <LinkWithLoading
                                         to={link.href}
+                                        aria-label={link.label}
                                         className="text-gray-500 hover:text-sky-500 transition-colors"
                                     >
                                         {link.label}
-                                    </Link>
+                                    </LinkWithLoading>
                                 </li>
                             ))}
                         </ul>

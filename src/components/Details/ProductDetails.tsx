@@ -129,6 +129,9 @@ export default function ProductDetails() {
       img: product.img,
       name: product.name || product.title,
       flash_description: product.flash_description,
+      star: product.star,
+      features: product.features,
+      quantity: quantity,
       price: product.price,
     };
     addToCart(item);
