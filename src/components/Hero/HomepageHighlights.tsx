@@ -1,5 +1,5 @@
 import { ArrowRight, CreditCard, Shield, Truck, UserCheck2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import LinkWithLoading from "../LinkWithLoading";
 
 export default function HomepageHighlights() {
     return (
@@ -35,11 +35,11 @@ export default function HomepageHighlights() {
                             </div>
 
                             <div className="mt-4">
-                                <Link
+                                <LinkWithLoading
                                     to="/login"
                                     className="inline-flex items-center gap-2 py-2 px-4 text-sm font-semibold transition-colors text-white bg-white/10 backdrop-blur-sm rounded-full hover:bg-white/20"
                                 >
-                                    Fazer login </Link>
+                                    Fazer login </LinkWithLoading>
                             </div>
                         </div>
 
@@ -59,7 +59,7 @@ export default function HomepageHighlights() {
 
                 {/* Bloco Secundário 1 - Novidades */}
                 <div className="relative group overflow-hidden rounded-xl bg-white border-4 border-gray-200 cursor-pointer ">
-                    <Link to="/login">
+                    <LinkWithLoading to="/login">
                         <div className="relative p-6 h-full flex flex-col justify-between text-black">
                             {/* Efeitos de fundo */}
                             <div className="absolute top-0 right-0 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
@@ -93,12 +93,12 @@ export default function HomepageHighlights() {
                                 </div>
                             </div>
                         </div>
-                    </Link>
+                    </LinkWithLoading>
                 </div>
 
                 {/* Bloco Secundário 2 - Frete Grátis */}
                 <div className="relative group overflow-hidden rounded-xl bg-white border-4 border-gray-200 cursor-pointer ">
-                    <Link to="/forma-de-pagamento">
+                    <LinkWithLoading to="/forma-de-pagamento">
                         <div className="relative p-6 h-full flex flex-col justify-between text-black">
                             {/* Efeitos de fundo */}
                             <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full blur-xl"></div>
@@ -133,7 +133,7 @@ export default function HomepageHighlights() {
                                 </div>
                             </div>
                         </div>
-                    </Link>
+                    </LinkWithLoading>
                 </div>
             </div>
         </div>

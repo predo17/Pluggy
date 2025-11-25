@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import LinkWithLoading from "../LinkWithLoading";
 
 
 export default function RelatedProductsCarousel({ relatedProducts }: any) {
@@ -60,7 +60,7 @@ export default function RelatedProductsCarousel({ relatedProducts }: any) {
 
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {visibleProducts.map((p?: any) => (
-                    <Link
+                    <LinkWithLoading
                         key={p.id}
                         to={`/product/${p.id}${p.property ? `?property=${p.property}` : ""}`}
                         className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
@@ -100,7 +100,7 @@ export default function RelatedProductsCarousel({ relatedProducts }: any) {
 
 
                         </div>
-                    </Link>
+                    </LinkWithLoading>
                 ))}
             </div>
         </section>

@@ -1,12 +1,11 @@
-import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, Ticket, X } from "lucide-react";
+import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, X } from "lucide-react";
 import { useState } from "react";
 import LinkWithLoading from "../LinkWithLoading";
 
 export const navLinks = [
     { href: "/", label: "Home", icon: Home },
     { href: "/products", label: "Produtos", icon: Package },
-    { href: "/offers", label: "Ofertas", icon: Ticket },
-    { href: "/about", label: "Sobre Nós", icon: ScrollText },
+    { href: "/aboutus", label: "Sobre Nós", icon: ScrollText },
     { href: "/contact", label: "Contato", icon: Phone },
 ];
 
@@ -59,7 +58,7 @@ export default function HeaderMinimal() {
                 </nav>
 
                 {/* Ações */}
-                <div className="flex max-xl:flex-1 items-center gap-4">
+                <div className="flex max-lg:flex-1 xl:w-xl items-center gap-4">
 
                     <form
                         className="relative w-full flex items-center "

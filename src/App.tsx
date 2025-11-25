@@ -4,11 +4,11 @@ import Home from './pages/Home'
 import ProductPage from './pages/ProductPage'
 import Checkout from './pages/Checkout'
 import Profile from './pages/Profile'
-import Header from './components/H_F/Header'
+import HeaderMinimal from './components/H_F/Header'
 import Footer from './components/H_F/Footer'
-import User from './components/ContaUser/User'
 import Administrador from './pages/Administrador'
 import { useLoading } from './context/LoadingContext'
+import AboutUs from './pages/AboutUs'
 
 export default function App() {
   const location = useLocation();
@@ -38,14 +38,15 @@ export default function App() {
 
   return (
     <div className="min-h-screen dark:bg-gray-100 :bg-black text-[#0D1117]">
-      <Header />
+      <HeaderMinimal />
       <main className="container mx-auto xl:px-4 py-8">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<ProductPage />} />
           <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/profile/user" element={<User />} />
           <Route path="/admin/pluggy" element={<Administrador />} />
         </Routes>
       </main>

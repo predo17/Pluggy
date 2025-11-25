@@ -1,7 +1,6 @@
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
-import DataProducts from "../../data/products.json";
-import exclusiveProducts from "../../data/exclusiveProducts.json";
+import { useAllProducts, useProductById,} from "../../hooks/useProducts";
 import {
   Check,
   ChevronRight,
@@ -14,7 +13,7 @@ import {
 } from "lucide-react";
 import ProductFichaTecnica from "./TechnicalSheet";
 
-import type { CartItem, Product } from "../../types/Product";
+import type { CartItem } from "../../types/Product";
 import RelatedProductsCarousel from "./RelatedProductsCarousel";
 import { useCart } from "../../context/CartContext";
 
@@ -22,7 +21,7 @@ export default function ProductDetails() {
   const { id } = useParams<{ id: string }>();
   const [searchParams] = useSearchParams();
   const property = searchParams.get("property");
-  const [product, setProduct] = useState<Product | null>(null);
+  // useProductById hook below provides the 'product' value; removed duplicate useState declaration
 
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedImageColor, setSelectedImageColor] = useState(0);
@@ -30,21 +29,7 @@ export default function ProductDetails() {
   const [quantity, setQuantity] = useState(1);
 
   // 🔹 Extrai produtos genéricos
-  const extractProducts = (data: any): any[] =>
-    Array.isArray(data) ? data : Object.values(data).flat();
-
-  const allProducts = useMemo(
-    () => [...extractProducts(DataProducts), ...exclusiveProducts],
-    []
-  );
-
-  // 🔹 Busca o produto correto
-  useEffect(() => {
-    const base =
-      property === "exclusive" ? exclusiveProducts : extractProducts(DataProducts);
-    const found = base.find((item) => item.id === Number(id));
-    setProduct(found || null);
-  }, [id, property, allProducts]);
+  const product = useProductById(Number(id), property ?? undefined);
 
   // 🔹 Tratamento de valores
   const details = useMemo(() => {
@@ -100,22 +85,23 @@ export default function ProductDetails() {
     { icon: Shield, text: String(product?.guarantee), color: "text-blue-500" },
   ];
   // 🔹 Produtos relacionados
-  const isExclusiveProduct = product?.property === "exclusive";
-  const relatedProducts = allProducts
-    .filter((p) => {
-      if (!product) return false;
-
-      if (p.id === product.id) return false;
-
-      if (p.category !== product.category) return false;
-
-      if (isExclusiveProduct) {
-        return p.property === "exclusive";
-      }
-
-      return p.property !== "exclusive";
-    })
-    .slice(0, 8);
+    const isExclusiveProduct = product?.property === "exclusive";
+    const allProducts = useAllProducts() ?? [];
+    const relatedProducts = allProducts
+      .filter((p) => {
+        if (!product) return false;
+  
+        if (p.id === product.id) return false;
+  
+        if (p.category !== product.category) return false;
+  
+        if (isExclusiveProduct) {
+          return p.property === "exclusive";
+        }
+  
+        return p.property !== "exclusive";
+      })
+      .slice(0, 8);
   // 🔹 Adiciona ao carrinho
   const { addToCart, isInCart, cart } = useCart();
   const [added, setAdded] = useState(false);
