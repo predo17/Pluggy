@@ -109,7 +109,7 @@ export default function Us() {
             </section>
             {/* FOOTER */}
             <footer className="py-10 text-center text-gray-500 text-sm">
-                © {new Date().getFullYear()} Pluggy — e tudo falso
+                © {new Date().getFullYear()} Pluggy — E tudo mentira.
             </footer>
         </div>
     );

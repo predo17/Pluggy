@@ -1,6 +1,9 @@
-import { CircleUser, Home, Menu, Package, Phone, ScrollText, Search, ShoppingBag, ShoppingCart, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { CircleUser, Home, Menu, Package, Phone, ScrollText, ShoppingBag, ShoppingCart, X } from "lucide-react";
+import SearchBar from "../SearchBar";
 import LinkWithLoading from "../LinkWithLoading";
+import { useCart } from "../../context/CartContext";
+import { formatCount } from "../Shopping/History";
 
 export const navLinks = [
     { href: "/", label: "Home", icon: Home },
@@ -9,9 +12,22 @@ export const navLinks = [
     { href: "/contact", label: "Contato", icon: Phone },
 ];
 
-
 export default function HeaderMinimal() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { cartCount } = useCart();
+
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        if (!cartCount) return;
+
+        setAnimate(true);
+
+        const timeout = setTimeout(() => setAnimate(false), 600);
+
+        return () => clearTimeout(timeout);
+    }, [cartCount]);
+
 
     const bottonLinks = [
         { href: "/profile", label: "Carrinho", alt: "Carrinho, seus favoritos", icon: ShoppingCart, },
@@ -59,33 +75,24 @@ export default function HeaderMinimal() {
 
                 {/* Ações */}
                 <div className="flex max-lg:flex-1 xl:w-xl items-center gap-4">
-
-                    <form
-                        className="relative w-full flex items-center "
-                        onSubmit={(e) => e.preventDefault()}
-                    >
-                        <input
-                            type="text"
-                            placeholder="Pesquisar..."
-                            className="flex-1 w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200 tracking-wide"
-                            aria-label="Pesquisar"
-                        />
-                        <Search
-                            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none"
-                            aria-hidden="true"
-                        />
-                    </form>
+                    <SearchBar />
 
                     {/* Carrinho */}
+
                     <LinkWithLoading
                         to="/profile"
                         className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
                         <ShoppingCart className="w-5 h-5" />
-                        <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">
-                            0
-                        </span>
+
+                        {formatCount(cartCount) && (
+                            <span
+                                className={`absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center transition-transform duration-300 ${animate ? "scale-125 animate-bounce" : "scale-100"} `}
+                            >
+                                {formatCount(cartCount)}
+                            </span>
+                        )}
                     </LinkWithLoading>
 
                     {/* Pedidos */}

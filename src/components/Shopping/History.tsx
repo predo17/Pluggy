@@ -13,6 +13,12 @@ import {
 import { useLoading } from "../../context/LoadingContext";
 import { useCart } from "../../context/CartContext";
 
+export function formatCount(count: number, limit: number = 9) {
+    if (count <= 0) return "";
+    if (count > limit) return `${limit}+`;
+    return String(count);
+}
+
 export default function History() {
     const [activeSection, setActiveSection] = useState("cart");
     const [searchTerm, setSearchTerm] = useState("");
@@ -29,11 +35,7 @@ export default function History() {
         stopLoading();
     }
 
-    function formatCount(count: number, limit: number = 9) {
-        if (count <= 0) return "";    
-        if (count > limit) return `${limit}+`;
-        return String(count);
-    }
+
 
     const menuItems = [
         { id: "cart", icon: ShoppingCart, label: "Carrinho", count: formatCount(cartCount), color: "blue" },
@@ -169,7 +171,7 @@ export default function History() {
 
                                     {showCart === 0 ? (
                                         <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
-                                            <ShoppingCart className="w-12 h-12 text-blue-500 mb-4" />
+                                            <img src="imgsnull/carrinho-vazio.png" alt="Carrinho Vazio" className="w-45 h-40 mb-4" />
                                             <p>Seu carrinho de compras está vazio</p>
                                         </div>
                                     ) : (
@@ -189,7 +191,7 @@ export default function History() {
                                     </header>
 
                                     <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
-                                        <Package className="w-12 h-12 text-green-400 mb-4" />
+                                        <img src="imgsnull/saco-vazio.png" alt="Histórico de Pedidos" className="w-40 h-40 mb-4" />
                                         <p>Configurações do histórico em desenvolvimento</p>
                                     </div>
 
@@ -202,7 +204,7 @@ export default function History() {
                                     <h2 className="text-xl font-bold text-gray-900 mb-6">Notificações</h2>
 
                                     <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
-                                        <Bell className="w-12 h-12 text-yellow-400 mb-4" />
+                                        <img src="imgsnull/no-notifications.png" alt="Notificações" className="w-40 h-40 mb-4" />
                                         <p>Configurações das notificações em desenvolvimento</p>
                                     </div>
 
@@ -215,7 +217,7 @@ export default function History() {
                                     <h2 className="text-xl font-bold text-gray-900 mb-6">Meu Perfil</h2>
 
                                     <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
-                                        <User className="w-12 h-12 text-gray-400 mb-4" />
+                                        <img src="imgsnull/user.png" alt="usuário" className="w-45 h-40 mb-4" />
                                         <p>Configurações do perfil em desenvolvimento</p>
                                     </div>
                                 </section>

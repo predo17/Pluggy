@@ -1,4 +1,4 @@
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { useAllProducts, useProductById,} from "../../hooks/useProducts";
 import {
@@ -16,12 +16,12 @@ import ProductFichaTecnica from "./TechnicalSheet";
 import type { CartItem } from "../../types/Product";
 import RelatedProductsCarousel from "./RelatedProductsCarousel";
 import { useCart } from "../../context/CartContext";
+import BackButton from "../BackButton";
 
 export default function ProductDetails() {
   const { id } = useParams<{ id: string }>();
   const [searchParams] = useSearchParams();
   const property = searchParams.get("property");
-  // useProductById hook below provides the 'product' value; removed duplicate useState declaration
 
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedImageColor, setSelectedImageColor] = useState(0);
@@ -144,9 +144,7 @@ export default function ProductDetails() {
     <main className="max-w-7xl mx-auto xl:px-4 -mt-6 xl:mt-0">
       {/* 🔹 Breadcrumb */}
       <nav className="hidden xl:flex items-center gap-2 text-sm text-blue-500 mb-3">
-        <Link to="/" className="hover:text-blue-600 transition">
-          Voltar
-        </Link>
+        <BackButton />
         <ChevronRight className="w-4 h-4 text-gray-400" />
         <span className="text-gray-500">Pluggy</span>
         <ChevronRight className="w-4 h-4 text-gray-400" />
