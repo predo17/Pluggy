@@ -38,7 +38,7 @@ export default function App() {
 
 
   return (
-    <div className="min-h-screen dark:bg-gray-100 :bg-black text-[#0D1117]">
+    <div className="min-h-screen :bg-gray-100 dark:bg-black text-[#0D1117]">
       <HeaderMinimal />
       <main className="container mx-auto xl:px-4 py-8">
        
