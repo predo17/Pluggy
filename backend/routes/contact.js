@@ -9,7 +9,7 @@ router.post("/", (req, res) => {
     id: Date.now(),
     de: "Pluggy Support",
     to: name,
-    text: `Olá, ${name}! Seja muito bem-vindo(a)! 😊 Recebemos sua mensagem e em breve entraremos em contato`,
+    text: `Olá, ${name}! Seja muito bem-vindo(a) à nossa loja! 😊`,
     date: `${new Date().getDate().toString().padStart(2, '0')}-${(new Date().getMonth() + 1).toString().padStart(2, '0')}-${new Date().getFullYear()}`
   };
 

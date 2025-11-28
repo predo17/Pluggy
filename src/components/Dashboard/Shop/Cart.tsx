@@ -1,21 +1,12 @@
 import { ShoppingBag, Star, Trash2 } from "lucide-react";
-import { useCart } from "../../context/CartContext";
-import { useLoading } from "../../context/LoadingContext";
-import { Link } from "react-router-dom";
+import { useCart } from "../../../context/CartContext";
+import { useRemoveItem } from "../../../hooks/useRemoveItem";
+import LinkWithLoading from "../../LinkWithLoading";
 
 export default function Cart() {
   const { cart, removeFromCart } = useCart();
-  const { startLoading, stopLoading } = useLoading();
 
-  async function handleRemove(id: number, property: string) {
-    startLoading();
-
-    await new Promise(res => setTimeout(res, 1000));
-
-    removeFromCart(id, property);
-
-    stopLoading();
-  }
+  const { removeItem } = useRemoveItem(removeFromCart);
 
   return (
     <div className="space-y-4">
@@ -38,7 +29,7 @@ export default function Cart() {
                 <h4 className="font-semibold truncate max-md:text-lg max-md:flex-1">{p.name}</h4>
 
                 <button
-                  onClick={() => handleRemove(p.id, p.property)}
+                  onClick={() => removeItem(p.id, p.property)}
                   className="p-1 text-gray-400 hover:text-red-500 cursor-pointer"
                 >
                   <Trash2 className="w-5 h-5" />
@@ -82,13 +73,13 @@ export default function Cart() {
                 <span className="text-lg font-bold max-md:text-xl">{p.price.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })}</span>
 
                 <div className="flex items-center gap-2 max-md:w-full max-md:justify-stretch">
-                  <Link to={
+                  <LinkWithLoading to={
                     p.property === "exclusive"
                       ? `/product/${p.id}?property=exclusive`
                       : `/product/${p.id}`
                   } className="bg-gray-100 hover:bg-gray-200 text-xs text-gray-900 px-6 py-1.5 rounded-sm flex items-center justify-center transition-all duration-300 max-md:flex-1 max-md:py-2.5">
                     Ver Produto
-                  </Link>
+                  </LinkWithLoading>
                   <a href="/" className="bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-1.5 rounded-sm flex items-center justify-center transition-all duration-300 cursor-pointer max-md:flex-1 max-md:py-2.5">
                     <ShoppingBag className="w-5 h-5" />
                   </a>

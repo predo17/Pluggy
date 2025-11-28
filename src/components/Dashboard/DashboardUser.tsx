@@ -1,16 +1,10 @@
 import { useEffect, useState } from "react";
-import Cart from "./Cart";
-import { ShoppingCart, Package, User, Star, Bell, Search, Filter, ChevronRight, Mail, } from "lucide-react";
+import Cart from "./Shop/Cart";
+import { ShoppingCart, Package, User, Star, Bell, Search, Filter, } from "lucide-react";
 import { useLoading } from "../../context/LoadingContext";
 import { useCart } from "../../context/CartContext";
-
-interface notifications {
-    id: number;
-    de: string;
-    to: string;
-    text: string;
-    date: string;
-}
+import { Notification} from "./Notification";
+import { useNotifications } from "../../hooks/useNotifications";
 
 export function formatCount(count: number, limit: number = 9) {
     if (count <= 0) return "";
@@ -18,49 +12,35 @@ export function formatCount(count: number, limit: number = 9) {
     return String(count);
 }
 
-export default function History() {
-    const [activeSection, setActiveSection] = useState("cart");
+export default function DashboardUser() {
+    const [activeSection, setActiveSection] = useState(() => { return localStorage.getItem("activeSection") || "cart"; });
     const [searchTerm, setSearchTerm] = useState("");
     const { startLoading, stopLoading } = useLoading();
+
     const { cart, cartCount } = useCart();
     const showCart = cart.length;
-
-    const [notifications, setNotifications] = useState<notifications[]>([]);
-    const [loadingNotifications, setLoadingNotifications] = useState(true);
+    const { totalCount } = useNotifications();
 
     async function handleChangeSection(sectionId: string) {
         startLoading();
         // tempo para que o React atualize tudo
         await new Promise(res => setTimeout(res, 300));
         setActiveSection(sectionId);
+        localStorage.setItem("activeSection", sectionId);
 
         stopLoading();
     }
 
     useEffect(() => {
-        async function fetchNotifications() {
-            if (activeSection !== "notifications") return;
-
-            setLoadingNotifications(true);
-
-            try {
-                const res = await fetch("http://localhost:3001/api/notifications");
-                const data = await res.json();
-                setNotifications(data);
-            } catch (error) {
-                console.error("Erro ao carregar notificações:", error);
-            } finally {
-                setLoadingNotifications(false);
-            }
-        }
-
-        fetchNotifications();
-    }, [activeSection]);
+        return () => {
+            localStorage.setItem("activeSection", activeSection);
+        };
+    }, []);
 
     const menuItems = [
         { id: "cart", icon: ShoppingCart, label: "Carrinho", count: formatCount(cartCount), color: "blue" },
         { id: "orders", icon: Package, label: "Meus Pedidos", color: "green" },
-        { id: "notifications", icon: Bell, label: "Novidades", color: "yellow" },
+        { id: "notifications", icon: Bell, label: "Novidades", count: formatCount(totalCount), color: "yellow" },
         { id: "profile", icon: User, label: "Perfil", color: "purple" },
     ];
 
@@ -154,10 +134,10 @@ export default function History() {
                                 <h1 className="text-2xl font-bold text-gray-900">
                                     {menuItems.find(item => item.id === activeSection)?.label}
                                 </h1>
-                                <p className="text-gray-600">Gerencie suas compras e pedidos</p>
+                                <p className="text-gray-600">{activeSection === "cart" || activeSection === "orders" ? "Gerencie suas compras e pedidos" : activeSection === "notifications" ? "Verifique suas notificações mais recentes" : "Administre seus dados pessoais"}</p>
                             </div>
 
-                            <div className="flex items-center gap-3">
+                            <div className={`flex items-center gap-3 ${activeSection === "profile" ? "pointer-events-none opacity-50" : ""}`}>
                                 <div className="relative">
                                     <Search className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
                                     <input
@@ -192,7 +172,7 @@ export default function History() {
                                     {showCart === 0 ? (
                                         <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
                                             <img src="imgsnull/carrinho-vazio.png" alt="Carrinho Vazio" className="w-45 h-40 mb-4" />
-                                            <p>Seu carrinho de compras está vazio</p>
+                                            <p className="text-center">Seu carrinho de compras está vazio</p>
                                         </div>
                                     ) : (
                                         <div className="flex-1 overflow-y-auto pr-1 md:pr-2 xl:pr-4">
@@ -207,12 +187,12 @@ export default function History() {
                             {activeSection === "orders" && (
                                 <section className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 animate-fadeIn h-full flex flex-col">
                                     <header className="flex items-center justify-between mb-6">
-                                        <h2 className="text-xl font-bold text-gray-900">Histórico de Pedidos</h2>
+                                        <h2 className="text-xl font-bold text-gray-900">Histórico de Compras</h2>
                                     </header>
 
                                     <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
                                         <img src="imgsnull/saco-vazio.png" alt="Histórico de Pedidos" className="w-40 h-40 mb-4" />
-                                        <p>Configurações do histórico em desenvolvimento</p>
+                                        <p className="text-center">Configurações do histórico em desenvolvimento</p>
                                     </div>
 
                                 </section>
@@ -223,63 +203,10 @@ export default function History() {
                                 <section className="bg-white rounded-2xl shadow-md border border-gray-200 p-6 animate-fadeIn h-full flex flex-col">
                                     <h2 className="text-xl font-bold text-gray-900 mb-6">Notificações</h2>
 
-                                    {loadingNotifications ? (
-                                        <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
-                                            <p>Carregando notificações...</p>
-                                        </div>
-                                    ) : notifications.length === 0 ? (
-                                        <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
-                                            <img src="imgsnull/no-notifications.png" alt="Notificações" className="w-40 h-40 mb-4" />
-                                            <p>Nenhuma notificação disponível</p>
-                                        </div>
-                                    ) : (
-                                        <div className="space-y-4 overflow-y-auto flex-1 pr-2">
+                                    <Notification />
 
-                                            {notifications.map((n) => (
-                                                <div
-                                                    key={n.id}
-                                                    className="group p-4 rounded-xl bg-white border-l-4 border-blue-500 shadow-md hover:shadow-lg transition-all duration-300 hover:translate-x-1 relative"
-                                                >
-                                                    {/* Indicador de status */}
-                                                    <div className="absolute top-1/2 -left-2 w-4 h-4 rounded-full border-4 border-white bg-gray-400 group-hover:bg-green-500 group-hover:animate-pulse"
-                                                    ></div>
-
-                                                    <div className="flex items-start gap-3">
-                                                        {/* Ícone */}
-                                                        <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
-                                                            <Mail className="w-4 h-4 text-blue-500" />
-                                                        </div>
-
-                                                        {/* Conteúdo */}
-                                                        <div className="flex-1 min-w-0">
-                                                            {/* Header */}
-                                                            <div className="flex items-center gap-2 mb-2">
-                                                                <span className="font-bold text-gray-900 text-sm">{n.de}</span>
-                                                                <ChevronRight className="w-3 h-3 text-gray-500 shrink-0" />
-                                                                <span className="text-gray-600 text-sm truncate flex-1">{n.to}</span>
-                                                                <span className="text-xs text-gray-500 bg-gray-100 px-2 py-1 rounded-full">
-                                                                    {n.date}
-                                                                </span>
-                                                            </div>
-
-                                                            {/* Mensagem */}
-                                                            <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line mb-3">
-                                                                {n.text}
-                                                            </p>
-
-                                                            <button className="text-red-500 hover:text-red-600 text-xs font-medium transition-colors cursor-pointer ">
-                                                                Excluir
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            ))}
-
-                                        </div>
-                                    )}
                                 </section>
                             )}
-
 
                             {/* PERFIL */}
                             {activeSection === "profile" && (
@@ -288,15 +215,13 @@ export default function History() {
 
                                     <div className="flex-1 flex flex-col items-center justify-center text-gray-500">
                                         <img src="imgsnull/user.png" alt="usuário" className="w-45 h-40 mb-4" />
-                                        <p>Configurações do perfil em desenvolvimento</p>
+                                        <p className="text-center">Configurações do perfil em desenvolvimento</p>
                                     </div>
                                 </section>
                             )}
 
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>

@@ -15,4 +15,16 @@ router.get("/", (req, res) => {
     return res.json(notifications);
 });
 
+router.delete("/:id", (req, res) => {
+    const filePath = path.join(__dirname, "..", "notifications.json");
+
+    const notifications = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const newList = notifications.filter(n => n.id !== Number(req.params.id));
+
+    fs.writeFileSync(filePath, JSON.stringify(newList, null, 2));
+
+    return res.json({ success: true });
+});
+
+
 module.exports = router;

@@ -46,8 +46,8 @@ export default function Contact() {
   useEffect(() => {
     const alreadySent = localStorage.getItem("formSent");
     if (alreadySent) {
-      setFormDisabled(false); // false, porque o backend ainda está em teste.
-      setFormSuccess(false); // false, porque o backend ainda está em teste.
+      setFormDisabled(true); 
+      setFormSuccess(true); 
     }
   }, []);
 
@@ -98,7 +98,7 @@ export default function Contact() {
 
       const animationTime = Math.min(Math.max(backendTime, 800), 2500);
 
-      console.log(`🟣 Tempo da animação: ${animationTime.toFixed(0)}ms`);
+      console.log(`Tempo da animação: ${animationTime.toFixed(0)}ms`);
       // Faz uma pausa dramática para a animação aparecer
       await new Promise(res => setTimeout(res, animationTime));
 
@@ -147,7 +147,7 @@ export default function Contact() {
             ) : (
               <div className="bg-white rounded-xl shadow-xl border border-gray-200 p-6 md:p-8">
 
-                <div className="flex md:items-center gap-3 mb-8">
+                <div className="flex md:items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                     <span className="text-2xl text-blue-600">💬</span>
                   </div>
@@ -156,7 +156,7 @@ export default function Contact() {
                     <p className="text-gray-600 ">Responderemos em até 24 horas</p>
                   </div>
                 </div>
-                <form className={`space-y-6 ${formDisabled ? "pointer-events-none" : ""}`} ref={form} onSubmit={handleSubmit}>
+                <form className={`space-y-3 ${formDisabled ? "hidden" : ""}`} ref={form} onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-gray-700">Nome *</label>
@@ -208,7 +208,7 @@ export default function Contact() {
                     <label className="text-sm font-medium text-gray-700">Mensagem *</label>
                     <textarea
                       name="message"
-                      rows={5}
+                      rows={4}
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none"
                       placeholder="Como podemos ajudá-lo?"
                       required

@@ -3,7 +3,7 @@ import { CircleUser, Home, Menu, Package, Phone, ScrollText, ShoppingBag, Shoppi
 import SearchBar from "../SearchBar";
 import LinkWithLoading from "../LinkWithLoading";
 import { useCart } from "../../context/CartContext";
-import { formatCount } from "../Shopping/History";
+import { formatCount } from "../Dashboard/DashboardUser";
 
 export const navLinks = [
     { href: "/", label: "Home", icon: Home },
@@ -66,7 +66,7 @@ export default function HeaderMinimal() {
                             key={link.href}
                             to={link.href}
                             aria-label={link.label}
-                            className="text-gray-600 text-sm font-medium hover:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full tracking-wide"
+                            className="text-gray-600 text-sm font-medium hover:text-blue-600 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full tracking-wide"
                         >
                             {link.label}
                         </LinkWithLoading>
@@ -78,10 +78,9 @@ export default function HeaderMinimal() {
                     <SearchBar />
 
                     {/* Carrinho */}
-
                     <LinkWithLoading
                         to="/profile"
-                        className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
+                        className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 cursor-pointer"
                         aria-label="Carrinho de compras"
                     >
                         <ShoppingCart className="w-5 h-5" />
@@ -119,14 +118,16 @@ export default function HeaderMinimal() {
 
                 {/* Menu Mobile Button */}
                 <button
-                    className="lg:hidden p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 transition-colors rounded-sm"
-                    aria-label="Menu"
+                    className="lg:hidden p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 transition-all duration-200 rounded-sm"
+                    aria-label={isMobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
                     onClick={toggleMobileMenu}
+                    aria-expanded={isMobileMenuOpen}
+                    aria-haspopup="true"
                 >
                     {isMobileMenuOpen ? (
-                        <X className="w-5 h-5" />
+                        <X className="w-5 h-5" aria-hidden="true" />
                     ) : (
-                        <Menu className="w-5 h-5" />
+                        <Menu className="w-5 h-5" aria-hidden="true" />
                     )}
                 </button>
 

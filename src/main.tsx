@@ -6,15 +6,18 @@ import App from './App.tsx'
 import { CartProvider } from './context/CartContext'
 import { LoadingProvider } from './context/LoadingContext.tsx'
 import GlobalLoader from './GlobalLoader.tsx'
+import { NotificationsProvider } from './hooks/useNotifications.ts'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <LoadingProvider>
       <GlobalLoader />
       <CartProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
+        <NotificationsProvider>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </NotificationsProvider>
       </CartProvider>
     </LoadingProvider>
   </StrictMode>,

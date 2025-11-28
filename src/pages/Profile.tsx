@@ -1,9 +1,9 @@
-import History from "../components/Shopping/History";
+import DashboardUser from "../components/Dashboard/DashboardUser";
 
 export default function Profile() {
   return (
     <>
-      <History/>
+      <DashboardUser/>
     </>
   )
 }
