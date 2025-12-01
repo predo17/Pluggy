@@ -38,10 +38,9 @@ export default function App() {
 
 
   return (
-    <div className="min-h-screen :bg-gray-100 dark:bg-black text-[#0D1117]">
+    <div className="min-h-screen dark:bg-gray-100 :bg-black text-[#0D1117] max-md:overflow-x-hidden">
       <HeaderMinimal />
       <main className="container mx-auto xl:px-4 py-8">
-       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductPage />} />

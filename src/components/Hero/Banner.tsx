@@ -1,32 +1,57 @@
-import { ShoppingCart, ArrowRight, Star, Shield } from "lucide-react";
+import { useRef } from "react";
+import { ShoppingCart, ArrowRight } from "lucide-react";
 import exclusiveProducts from "../../data/exclusiveProducts.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-import { Link } from "react-router-dom";
+import LinkWithLoading from "../LinkWithLoading";
 
 export default function ProfessionalBanner() {
     const products = exclusiveProducts.slice(1, 4);
+    const swiperRef = useRef<any | null>(null);
+
+    // função que ativa animações apenas no slide ativo
+    const animateActiveSlide = (swiper: any) => {
+        if (!swiper || !swiper.slides) return;
+
+        // remove is-animated de todas as slides (e de elementos internos)
+        swiper.slides.forEach((slideEl: HTMLElement) => {
+            slideEl.querySelectorAll(".is-animated").forEach((el) => {
+                el.classList.remove("is-animated");
+            });
+        });
+
+        // pega a slide ativa (quando loop:true o activeIndex aponta para o slide DOM correto)
+        const activeSlide = swiper.slides[swiper.activeIndex] as HTMLElement | undefined;
+        if (!activeSlide) return;
+
+        // seleciona elementos que devem animar e adiciona a classe
+        const elemsToAnimate = activeSlide.querySelectorAll(
+            ".fade-slide-up, .fade-slide-up-delay-1, .fade-slide-up-delay-2, .fade-slide-up-delay-3, .fade-slide-up-link"
+        );
+
+        elemsToAnimate.forEach((el) => {
+            // força reflow opcional para reiniciar animação em alguns browsers:
+            void (el as HTMLElement).offsetWidth;
+            el.classList.add("is-animated");
+        });
+    };
 
     return (
-        <div className="relative max-w-7xl mx-auto h-[70vh] min-h-[600px] bg-linear-to-br from-gray-900 via-blue-900 to-purple-900 overflow-hidden md:rounded-2xl shadow-2xl cursor-default">
-            {/* Elementos de fundo decorativos */}
-            <div className="absolute inset-0 bg-grid-white/[0.02] bg-position[60px_60px]" />
-            <div className="absolute top-0 left-0 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
-
+        <div className="relative max-w-7xl mx-auto sm:h-[40vh] md:h-[70vh] min-h-[255px] max-h-[480px] bg-linear-to-br from-[#0078FF] via-[#0099FF] to-[#00CCFF] sm:rounded-2xl sm:px-4 overflow-hidden cursor-default">
             <Swiper
                 modules={[Autoplay, EffectFade, Pagination]}
-                spaceBetween={0}
                 slidesPerView={1}
+                spaceBetween={30}
                 loop={true}
                 effect="fade"
                 fadeEffect={{ crossFade: true }}
                 autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false
+                    delay: 3500,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
                 }}
                 speed={1200}
                 pagination={{
@@ -34,62 +59,47 @@ export default function ProfessionalBanner() {
                     el: '.custom-pagination',
                     bulletClass: 'custom-bullet',
                     bulletActiveClass: 'custom-bullet-active',
+                    renderBullet: (className) => `<span class="${className}"><div class="bullet-progress"></div></span>`,
                 }}
                 className="w-full h-full"
+                onSwiper={(swiper) => {
+                    swiperRef.current = swiper;
+                    // anima o slide inicial
+                    // esperar um tick para garantir que DOM esteja pronto
+                    setTimeout(() => animateActiveSlide(swiper), 50);
+                }}
+                onSlideChange={(swiper) => {
+                    // anima quando muda de slide
+                    animateActiveSlide(swiper);
+                }}
             >
                 {products.map((product) => (
                     <SwiperSlide key={product.id}>
-                        <div className="relative w-full h-full flex flex-col md:flex-row items-center justify-between px-3 md:px-6 lg:px-16 overflow-hidden">
+                        <div className="relative w-full h-full flex flex-row items-center justify-between p-2 md:p-8">
 
-                            {/* Imagem como background em telas pequenas */}
-                            <div className="absolute inset-0 md:hidden">
-                                <img
-                                    src={product.img?.[0]}
-                                    alt={product.alt}
-                                    className="w-full h-full object-contain opacity-90 blur-xs scale-110"
-                                />
-                                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
-                            </div>
+                            {/* TEXTO */}
+                            <div className="relative z-20 flex-1 max-w-2xl py-10 text-left">
 
-                            {/* Conteúdo textual */}
-                            <div className="relative z-10 flex-1 max-w-2xl py-12 md:py-0 text-center md:text-left">
-                                {/* Badge */}
-                                <div className="inline-flex items-center gap-2 bg-linear-to-r from-orange-500 to-red-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg cursor-default">
-                                    <Shield className="w-4 h-4" />
-                                    {product.badge}
-                                </div>
+                                {/* Título */}
+                                <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight mb-2 md:mb-4">
+                                    <span className="fade-slide-up tracking-tight ">{product.name}</span>
 
-                                {/* Título principal */}
-                                <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide font-bold text-white leading-tight mb-4">
-                                    {product.name}
-                                    <span className="block text-xl md:text-2xl text-blue-200 font-light mt-2">
+                                    <span className="block text-base md:text-xl lg:text-2xl text-blue-100 font-light mt-0.5 fade-slide-up fade-slide-up-delay-1">
                                         {product.text_banner}
                                     </span>
                                 </h1>
 
-                                {/* Features */}
-                                <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
-                                    {product.features.map((feature, index) => (
-                                        <div
-                                            key={index}
-                                            className="flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2"
-                                        >
-                                            <Star className="w-4 h-4 text-yellow-400" />
-                                            <span className="text-white text-sm font-medium">{feature}</span>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Preço */}
-                                <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-6">
-                                    <div className="text-3xl font-bold text-white">
+                                {/* Preços */}
+                                <div className="flex flex-col sm:flex-row sm:items-center justify-start sm:gap-4 mb-4">
+                                    <div className="text-2xl md:text-4xl font-bold text-white fade-slide-up fade-slide-up-delay-2">
                                         {product.price.toLocaleString("pt-BR", {
                                             style: "currency",
                                             currency: "BRL",
                                         })}
                                     </div>
+
                                     {product.oldPrice && (
-                                        <div className="text-xl text-gray-300 line-through">
+                                        <div className="text-base md:text-xl text-blue-200 line-through opacity-80 fade-slide-up fade-slide-up-delay-3">
                                             {product.oldPrice.toLocaleString("pt-BR", {
                                                 style: "currency",
                                                 currency: "BRL",
@@ -99,40 +109,41 @@ export default function ProfessionalBanner() {
                                 </div>
 
                                 {/* Botão CTA */}
-                                <Link
-                                    to="/checkout"
-                                    className="group max-w-max mx-auto md:mx-0 bg-linear-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-3 shadow-2xl hover:shadow-orange-500/25 transition-all duration-300 hover:scale-105 cursor-pointer"
+                                <LinkWithLoading
+                                    to={`/checkout/${product.id}?property=exclusive`}
+                                    className="
+                                            text-xs md:text-base fade-slide-up fade-slide-up-delay-3
+                                            group bg-linear-to-r from-orange-500 to-orange-600
+                                            hover:from-orange-600 hover:to-orange-700 
+                                            text-white px-4 py-2 md:px-8 md:py-4 rounded md:rounded-xl font-semibold
+                                            flex items-center gap-2 shadow-2xl hover:shadow-orange-500/40
+                                            transition-all duration-300 hover:scale-105 active:scale-95
+                                            w-max"
                                 >
-                                    <ShoppingCart className="w-5 h-5" />
+                                    <ShoppingCart className="w-4 h-4 md:w-5 md:h-5" />
                                     Comprar Agora
-                                    <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                                </Link>
+                                    <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
+                                </LinkWithLoading>
                             </div>
 
-                            {/* Imagem do produto — visível apenas em telas grandes */}
-                            <div className="hidden md:flex md:flex-1 items-center justify-center h-full relative">
-                                <div className="relative w-full max-w-2xl">
-                                    {/* Efeito de brilho atrás da imagem */}
-                                    <div className="absolute inset-0 bg-linear-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-2xl scale-150" />
-
+                            {/* IMAGEM */}
+                            <div className="absolute max-sm:-right-5 sm:relative flex md:flex-1 justify-center ">
+                                <div className="relative w-full max-w-2xl max-sm:opacity-80">
                                     <img
                                         src={product.img?.[0]}
                                         alt={product.alt}
-                                        className="relative w-full h-auto max-h-[500px] object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-700"
+                                        className="
+                                                relative w-50 h-50 sm:w-full md:h-auto md:max-h-[300px] lg:max-h-[450px] p-2 object-contain
+                                                fade-slide-up fade-slide-up-delay-3
+                                            "
                                     />
-
-                                    {/* Efeito de partículas */}
-                                    <div className="absolute -top-4 -right-4 w-8 h-8 bg-yellow-400 rounded-full blur-sm animate-pulse" />
-                                    <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-blue-400 rounded-full blur-sm animate-pulse delay-1000" />
                                 </div>
                             </div>
+
                         </div>
                     </SwiperSlide>
-
                 ))}
             </Swiper>
-            {/* Paginação customizada */}
-            <div className="custom-pagination absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-2" />
         </div>
     );
 }

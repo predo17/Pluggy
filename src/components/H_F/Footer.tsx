@@ -123,9 +123,9 @@ export default function Footer() {
                     <div className="text-center">
                         <h3 className="text-2xl font-bold mb-1">Fique por dentro das novidades</h3>
                         <p className="text-gray-500 mb-4">Receba ofertas exclusivas e atualizações dos produtos</p>
-                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 whitespace-nowrap cursor-pointer">
+                        <LinkWithLoading to="/contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 whitespace-nowrap cursor-pointer">
                          <Mail className="w-5 h-5 inline-block -mt-0.5 mr-2" /> Inscrever-se Agora
-                        </button>
+                        </LinkWithLoading>
                     </div>
                 </div>
             </div>
