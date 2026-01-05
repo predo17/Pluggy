@@ -1,0 +1,6 @@
+{
+  "ignore": [
+    "confirmation.json",
+    "src/data/*.json"
+  ]
+}

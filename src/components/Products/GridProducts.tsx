@@ -14,7 +14,7 @@ export default function GridProducts({ products }: GridProductsProps) {
     // 🔎 Filtra os produtos de acordo com o termo da busca
     const filteredProducts = products.filter((product) => {
         const text =
-            `${product.name} ${product.title} ${product.flash_description}`
+            `${product?.name}`
                 .toLowerCase();
         return text.includes(searchQuery);
     });
@@ -27,30 +27,31 @@ export default function GridProducts({ products }: GridProductsProps) {
                         to="/products"
                         className="flex items-center max-w-max text-blue-500 "
                     >
-                      <ArrowLeft className="w-4 h-4 mr-2"/>  Voltar
+                        <ArrowLeft className="w-4 h-4 mr-2" />  Voltar
                     </LinkWithLoading>
                 </div>
             )}
-            <div className=" max-w-7xl mx-auto min-h-screen grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4">
+            <div className="max-w-7xl mx-auto h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 p-4">
                 {filteredProducts.map((product) => (
                     <LinkWithLoading
                         to={
                             product.property === "exclusive"
                                 ? `/product/${product.id}?property=exclusive`
                                 : `/product/${product.id}`
+
                         }
                         key={product.id}
-                        className="max-h-max group bg-white rounded-lg border border-gray-200 transition-all duration-300 overflow-hidden"
+                        className="bg-white rounded-lg border border-gray-200 transition-all duration-300 overflow-hidden"
                     >
-                        <div className="relative aspect-square overflow-hidden bg-gray-50">
+                        <div className="relative aspect-square overflow-hidden group">
                             <img
                                 src={Array.isArray(product.img) ? product.img[0] : product.img}
-                                alt={product.title}
+                                alt={product.name}
                                 className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
                             />
 
                             {product.property === "exclusive" && (
-                                <div className="absolute top-2 left-2 bg-white border border-gray-200 p-1.5 rounded-full text-xs font-bold">
+                                <div className="absolute top-2 left-2  border border-gray-200 p-1.5 rounded-full text-xs font-bold">
                                     <Star className="w-4 h-4 text-yellow-300 fill-current" />
                                 </div>
                             )}
@@ -58,7 +59,7 @@ export default function GridProducts({ products }: GridProductsProps) {
 
                         <div className="p-3 space-y-2">
                             <h3 className="font-medium text-gray-900 text-sm line-clamp-2 leading-tight">
-                                {product.name || product.title}
+                                {product.name}
                             </h3>
 
                             <p className="text-gray-500 text-xs line-clamp-2">

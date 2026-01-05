@@ -5,21 +5,19 @@
 
 :root {
     --font-primary: 'Inter', sans-serif;
-    --font-secondary: 'Poppins', sans-serif;
-}
-
-.inter {
-    font-family: var(--font-primary);
-}
-
-.poppins {
-    font-family: var(--font-secondary);
 }
 
 body {
     width: 100%;
     font-family: var(--font-primary);
     overflow-x: hidden;
+}
+
+button,
+a,
+img,
+i {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .fade-slide-up {
@@ -48,4 +46,19 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.swiper-slide [data-animate] {
+    opacity: 0;
+    filter: blur(6px);
+    transition: all 0.9s ease;
+}
+
+.swiper-slide-active [data-animate] {
+    opacity: 1;
+    filter: blur(0);
+}
+
+.swiper-slide-active [data-animate] {
+    transition-delay: .2s
 }

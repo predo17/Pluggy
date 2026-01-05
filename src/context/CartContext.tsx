@@ -7,6 +7,7 @@ interface CartContextType {
   addToCart: (item: CartItem) => void;
   removeFromCart: (id: number, property: string) => void;
   isInCart: (id: number, property: string) => boolean;
+  toggleHideItem: (id: number) => void
 }
 
 const CartContext = createContext<CartContextType>(null!);
@@ -23,10 +24,10 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   function addToCart(product: CartItem) {
     setCart(prev => [
-      ...prev,
+      ...prev, 
       {
         ...product,
-        addedAnimation: true, // <-- salva animação
+        hidden: false,
       }
     ]);
   }
@@ -36,6 +37,15 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
       prev.filter(p => !(p.id === id && p.property === property))
     );
   }
+
+  const toggleHideItem = (id: number) => {
+    setCart(prev =>
+      prev.map(item =>
+        item.id === id ? { ...item, hidden: !item.hidden } : item
+      )
+    );
+  };
+
   const cartCount = useMemo(() => cart.length, [cart]);
 
   // ← para checar no botão se já está no carrinho
@@ -45,7 +55,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, isInCart, cartCount }}
+      value={{ cart, addToCart, removeFromCart, isInCart, cartCount, toggleHideItem }}
     >
       {children}
     </CartContext.Provider>

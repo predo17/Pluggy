@@ -1,4 +1,3 @@
-// Dicionário — muito mais eficiente que vários .replace()
 const AUTO_ACCENT_MAP: Record<string, string> = {
     geracao: "Geração",
     potencia: "Potência",
@@ -19,7 +18,20 @@ const AUTO_ACCENT_MAP: Record<string, string> = {
     duracao_com_anc: "Duração com ANC",
     duracao_sem_anc: "Duração sem ANC",
     tempo_recarga_completa: "Tempo de Recarga Completa",
+    atualizacoes_garantidas: "Atualizações Garantidas",
+    carga_rapida: "Carga Rápida",
+    duracao_estimada: "Duração Estimada",
+    compatibility: "Compatibilidade",
+    brilho_maximo: "Brilho Máximo",
+    conexao: "Conexão",
+    conexoes: "Conexões",
+    ajuste_altura: "Ajuste de Altura",
+    velocidade_dados: "Velocidade de Dados",
     compatibilidade: "Compatibilidade",
+    fixacao: "Fixação",
+    rotacao: "Rotação",
+    instalacao: "Instalação",
+    alimentacao: "Alimentação",
     certificacao: "Certificação",
     protecao: "Proteção",
     expansao: "Expansão",
@@ -32,12 +44,12 @@ const AUTO_ACCENT_MAP: Record<string, string> = {
 // 📌 FORMATAÇÃO DA LABEL
 export function formatLabel(key: string): string {
     const normKey = normalizeKey(key);
-    // 1️⃣ Se existir no dicionário, retorna a versão acentuada
+    //  Se existir no dicionário, retorna a versão acentuada
     if (AUTO_ACCENT_MAP[normKey]) {
         return AUTO_ACCENT_MAP[normKey];
     }   
     const normalized = key.toLowerCase().replace(/_/g, " ");
-    // 2️⃣ Caso contrário, apenas capitaliza corretamente
+    // Caso contrário, apenas capitaliza corretamente
     return normalized.replace(/\b\w/g, (match) => match.toUpperCase());
 
 }

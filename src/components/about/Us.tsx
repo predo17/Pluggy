@@ -17,7 +17,7 @@ export default function Us() {
             </section>
 
             {/* INTRO */}
-            <section className="max-w-6xl mx-auto p-6 sm:p-12">
+            <section className="max-w-6xl mx-auto p-2 sm:p-12">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4">
                     Quem Somos
                 </h2>
@@ -34,7 +34,7 @@ export default function Us() {
 
             {/* MISSÃO - VISÃO - VALORES */}
             <section className="bg-white py-12">
-                <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 p-6">
+                <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 p-2 sm:p-6">
 
                     <div className="bg-gray-50 rounded-xl shadow-sm p-6 text-center hover:shadow-md transition">
                         <img
@@ -80,7 +80,7 @@ export default function Us() {
             </section>
 
             {/* HISTÓRIA */}
-            <section className="max-w-6xl mx-auto py-12 px-6">
+            <section className="max-w-6xl mx-auto py-6 sm:py-12 px-2 sm:px-6">
                 <div className="grid md:grid-cols-2 gap-10 items-center">
 
                     <img

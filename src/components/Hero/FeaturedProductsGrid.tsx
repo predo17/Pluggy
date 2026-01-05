@@ -13,10 +13,7 @@ export default function FeaturedProductsGrid({ title, products }: FeaturedProduc
                 {title}
             </h1>
             <div
-                className="
-      grid gap-y-8 gap-x-1 
-      grid-cols-[repeat(auto-fit,minmax(160px,160px))] 
-    "
+                className="max-w-7xl mx-auto grid gap-y-8 gap-x-4.5 grid-cols-[repeat(auto-fit,minmax(160px,160px))]"
             >
                 {products.map((item) => (
                     <div key={item.id} className="">

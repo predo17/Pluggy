@@ -1,6 +1,6 @@
 import DashboardUser from "../components/Dashboard/DashboardUser";
 
-export default function Profile() {
+export default function Dashboard() {
   return (
     <>
       <DashboardUser/>

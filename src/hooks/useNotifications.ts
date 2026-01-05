@@ -2,8 +2,9 @@ import { createElement, createContext, useContext, useState, useEffect } from "r
 
 interface NotificationType {
     id: number;
-    de: string;
+    from: string;
     to: string;
+    email: string;
     text: string;
     date: string;
 }

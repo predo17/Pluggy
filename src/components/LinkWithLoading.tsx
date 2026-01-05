@@ -14,10 +14,10 @@ export default function LinkWithLoading({ to, className, children }: Props) {
   async function handleClick(e: React.MouseEvent) {
     e.preventDefault();
     startLoading();
-
+    
     // Uma pequena pausa para animação aparecer
     await new Promise(res => setTimeout(res, 1000));
-
+    
     navigate(to);
     stopLoading();
   }

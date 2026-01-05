@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
-import { CircleUser, Home, Menu, Package, Phone, ScrollText, ShoppingBag, ShoppingCart, X } from "lucide-react";
+import { useState } from "react";
+import { Home, LayoutDashboard, Menu, Package, Phone, ScrollText, X } from "lucide-react";
 import SearchBar from "../SearchBar";
 import LinkWithLoading from "../LinkWithLoading";
 import { useCart } from "../../context/CartContext";
-import { formatCount } from "../Dashboard/DashboardUser";
 
 export const navLinks = [
     { href: "/", label: "Home", icon: Home },
@@ -15,25 +14,6 @@ export const navLinks = [
 export default function HeaderMinimal() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { cartCount } = useCart();
-
-    const [animate, setAnimate] = useState(false);
-
-    useEffect(() => {
-        if (!cartCount) return;
-
-        setAnimate(true);
-
-        const timeout = setTimeout(() => setAnimate(false), 600);
-
-        return () => clearTimeout(timeout);
-    }, [cartCount]);
-
-
-    const bottonLinks = [
-        { href: "/profile", label: "Carrinho", alt: "Carrinho, seus favoritos", icon: ShoppingCart, },
-        { href: "/profile", label: "Comprados", alt: "Comprados, produtos comprados", icon: ShoppingBag, },
-        { href: "/profile", label: "Login", alt: "Login, sua conta", icon: CircleUser, },
-    ];
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -60,13 +40,13 @@ export default function HeaderMinimal() {
                 </picture>
 
                 {/* Navegação Central */}
-                <nav className="hidden lg:flex items-center space-x-4 lg:space-x-8">
+                <nav className="hidden lg:flex items-center space-x-4">
                     {navLinks.map((link) => (
                         <LinkWithLoading
                             key={link.href}
                             to={link.href}
                             aria-label={link.label}
-                            className="text-gray-600 text-sm font-medium hover:text-blue-600 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full tracking-wide"
+                            className="text-gray-600 text-sm font-medium hover:text-blue-600 px-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-600 after:transition-all after:duration-200 hover:after:w-full tracking-wide"
                         >
                             {link.label}
                         </LinkWithLoading>
@@ -79,46 +59,25 @@ export default function HeaderMinimal() {
 
                     {/* Carrinho */}
                     <LinkWithLoading
-                        to="/profile"
+                        to="/dashboard"
                         className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 cursor-pointer"
-                        aria-label="Carrinho de compras"
+                        aria-label="Painel de controle"
                     >
-                        <ShoppingCart className="w-5 h-5" />
+                        <LayoutDashboard className="w-5 h-5" />
 
-                        {formatCount(cartCount) && (
+                        {cartCount > 0 && (
                             <span
-                                className={`absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center transition-transform duration-300 ${animate ? "scale-125 animate-bounce" : "scale-100"} `}
+                                className={`absolute top-0 right-0 bg-blue-600 text-white  w-3 h-3 rounded-full flex items-center justify-center transition-transform duration-300 animate-pulse  `}
                             >
-                                {formatCount(cartCount)}
+
                             </span>
                         )}
-                    </LinkWithLoading>
-
-                    {/* Pedidos */}
-                    <LinkWithLoading
-                        to="/profile"
-                        className="relative hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
-                        aria-label="Compras"
-                    >
-                        <ShoppingBag className="w-5 h-5" />
-                        <span className="absolute -top-1 -right-1 bg-blue-600 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">
-                            0
-                        </span>
-                    </LinkWithLoading>
-
-                    {/* Perfil */}
-                    <LinkWithLoading
-                        to="/profile"
-                        className="hidden lg:block p-2 text-gray-500 hover:text-blue-600 transition-colors cursor-pointer"
-                        aria-label="Perfil"
-                    >
-                        <CircleUser className="w-5 h-5" />
                     </LinkWithLoading>
                 </div>
 
                 {/* Menu Mobile Button */}
                 <button
-                    className="lg:hidden p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 transition-all duration-200 rounded-sm"
+                    className="relative lg:hidden p-2 text-gray-500 hover:text-blue-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 transition-all duration-200 rounded-sm"
                     aria-label={isMobileMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
                     onClick={toggleMobileMenu}
                     aria-expanded={isMobileMenuOpen}
@@ -128,6 +87,13 @@ export default function HeaderMinimal() {
                         <X className="w-5 h-5" aria-hidden="true" />
                     ) : (
                         <Menu className="w-5 h-5" aria-hidden="true" />
+                    )}
+                    {cartCount > 0 && !isMobileMenuOpen && (
+                        <span
+                            className={`absolute top-0 right-0 bg-blue-600 text-white  w-3 h-3 rounded-full flex items-center justify-center transition-all duration-300 animate-pulse`}
+                        >
+
+                        </span>
                     )}
                 </button>
 
@@ -157,22 +123,29 @@ export default function HeaderMinimal() {
                 <hr className="my-2 border-t border-gray-200" />
                 <div>
                     <div className="flex flex-col space-y-4 ">
-                        <nav>
-                            <ul className="flex flex-col space-y-4">
-                                {bottonLinks.map((link) => (
-                                    <li key={link.href} onClick={() => setIsMobileMenuOpen(false)}>
-                                        <LinkWithLoading
-                                            to={link.href}
-                                            aria-label={link.alt}
-                                            className="flex items-center text-gray-600 text-base font-medium focus:outline-none focus:ring-2 focus:ring-blue-500 focus:text-blue-600 focus:bg-blue-50 transition-colors duration-200 py-2 px-1 rounded-lg hover:bg-blue-50 tracking-wide"
-                                        >
-                                            {link.icon && <link.icon className="w-5 h-5 mr-4" />}
-                                            {link.label}
-                                        </LinkWithLoading>
-                                    </li>
-                                ))}
-                            </ul>
-                        </nav>
+
+                        <LinkWithLoading
+                            to="/dashboard"
+                            className="relative p-2 text-gray-600 hover:text-blue-600 transition-colors focus-visible:outline-blue-500 focus-visible:outline-offset-2 focus-visible:text-blue-600 cursor-pointer"
+                            aria-label="Painel de controle"
+                        >
+                            {cartCount > 0 && (
+                                <span
+                                    className={`absolute top-1/2 right-2 transform -translate-y-1/2 bg-blue-600 text-white  w-3 h-3 rounded-full flex items-center justify-center transition-transform duration-300 animate-pulse `}
+                                >
+
+                                </span>
+                            )}
+                            <div
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="flex items-center"
+                            >
+                                <LayoutDashboard className="w-5 h-5 mr-4" />
+                                <span className="text-base font-medium">Painel de Controle</span>
+
+                            </div>
+                        </LinkWithLoading>
+
                     </div>
                 </div>
             </div>

@@ -2,7 +2,6 @@ import {
     Facebook, Instagram, Youtube, Mail, Phone, MapPin, CreditCard, Shield, Truck, ArrowRight
 } from "lucide-react";
 import { RiTwitterXFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
 import { navLinks } from "./Header";
 import LinkWithLoading from "../LinkWithLoading";
 
@@ -68,20 +67,18 @@ export default function Footer() {
                         <h4 className="text-lg font-semibold mb-6">Suporte</h4>
                         <ul className="space-y-3">
                             {[
-                                { label: "Central de Ajuda", href: "/help" },
-                                { label: "Política de Trocas", href: "/returns" },
-                                { label: "Garantia", href: "/warranty" },
-                                { label: "Status do Pedido", href: "/tracking" },
-                                { label: "Perguntas Frequentes", href: "/faq" }
+                                { label: "Central de Ajuda"},
+                                { label: "Política de Trocas"},
+                                { label: "Garantia" },
+                                { label: "Status do Pedido" },
+                                { label: "Perguntas Frequentes"}
                             ].map((link, index) => (
                                 <li key={index}>
-                                    <LinkWithLoading
-                                        to={link.href}
-                                        aria-label={link.label}
-                                        className="text-gray-500 hover:text-sky-500 transition-colors"
+                                    <div
+                                        className="text-gray-500 hover:text-sky-500 transition-colors cursor-default"
                                     >
                                         {link.label}
-                                    </LinkWithLoading>
+                                    </div>
                                 </li>
                             ))}
                         </ul>
@@ -101,7 +98,7 @@ export default function Footer() {
                             <div className="flex items-center gap-3 text-gray-500">
                                 <Mail className="w-5 h-5 text-blue-400" />
                                 <div>
-                                    <div className="font-medium">contato@pluggy.com</div>
+                                    <div className="font-medium">pluggy@gamil.com</div>
                                     <div className="text-sm">Respondemos em 24h</div>
                                 </div>
                             </div>
@@ -173,15 +170,15 @@ export default function Footer() {
                             © 2025 Pluggy Technology. Todos os direitos reservados.
                         </div>
                         <div className="flex flex-wrap gap-4">
-                            <Link to="/privacy" className="hover:text-gray-500 transition-colors">
+                            <div className="hover:text-gray-500 transition-colors cursor-default">
                                 Política de Privacidade
-                            </Link>
-                            <Link to="/terms" className="hover:text-gray-500 transition-colors">
+                            </div>
+                            <div className="hover:text-gray-500 transition-colors cursor-default">
                                 Termos de Uso
-                            </Link>
-                            <Link to="/cookies" className="hover:text-gray-500 transition-colors">
+                            </div>
+                            <div className="hover:text-gray-500 transition-colors cursor-default">
                                 Política de Cookies
-                            </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

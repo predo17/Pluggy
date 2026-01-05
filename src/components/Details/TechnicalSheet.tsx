@@ -11,15 +11,12 @@ export default function ProductFichaTecnica({ product }: Props) {
     if (!info) {
         return <p className="text-gray-500">Nenhuma informação disponível.</p>;
     }
-    // 🔧 Função genérica para renderizar seções
-    const renderSecao = (titulo: string, dados: Record<string, any>) => {
+
+    const SectionCard = ({ titulo, dados }: { titulo: string; dados?: Record<string, any> }) => {
         if (!dados) return null;
-
         return (
-
-            <div className="rounded p-4 transition border border-gray-200">
+            <div className=" rounded p-4 transition border border-gray-200 mb-3">
                 <h3 className="text-lg font-semibold text-gray-700 mb-3">{titulo}</h3>
-
                 <ul className="space-y-2 text-gray-800 rounded overflow-hidden">
                     {Object.entries(dados).map(([key, value], i) => (
                         <li
@@ -27,140 +24,142 @@ export default function ProductFichaTecnica({ product }: Props) {
                             className="flex justify-between p-3 text-sm"
                             style={{ backgroundColor: i % 2 === 0 ? "#e5e7ed" : "#ffffff" }}
                         >
-                            <span className="font-semibold ">
-                                {formatLabel(key)}
-                            </span>
-
-                            <span className="text-right">
-                                {formatValue(value)}
-                            </span>
-
+                            <span className="font-semibold ">{formatLabel(key)}</span>
+                            <span className="text-right">{formatValue(value)}</span>
                         </li>
                     ))}
                 </ul>
             </div>
         );
     };
-    // 📌 PC
-    if (info.category === "pc") {
-        return (
-            <section className="grid md:grid-cols-2 gap-3">
-                {renderSecao("Sistema", info.sistema)}
-                {renderSecao("Processador", info.especificacoes_tecnicas.processador)}
-                {renderSecao("Placa de Vídeo", info.especificacoes_tecnicas.placa_de_video)}
-                {renderSecao("Memória RAM", info.especificacoes_tecnicas.memoria_ram)}
 
-                {renderSecao(
-                    "Armazenamento Primário",
-                    info.especificacoes_tecnicas.armazenamento.primario
-                )}
+    const getSections = (info: any): [string, any][] => {
+        const e = info.especificacoes_tecnicas;
 
-                {renderSecao(
-                    "Armazenamento Secundário",
-                    info.especificacoes_tecnicas.armazenamento.secundario
-                )}
+        switch (info?.category) {
+            case "pc":
+                return [
+                    ["Sistema", info.sistema],
+                    ["Processador", e?.processador],
+                    ["Placa de Vídeo", e?.placa_de_video],
+                    ["Memória RAM", e?.memoria_ram],
+                    ["Armazenamento Primário", e?.armazenamento?.primario],
+                    ["Armazenamento Secundário", e?.armazenamento?.secundario],
+                    ["Placa Mãe", e?.placa_mae],
+                    ["Fonte", e?.fonte],
+                    ["Refrigeração", e?.refrigeracao?.detalhes],
+                    ["Gabinete", e?.gabinete],
+                ];
 
-                {renderSecao("Placa Mãe", info.especificacoes_tecnicas.placa_mae)}
-                {renderSecao("Fonte", info.especificacoes_tecnicas.fonte)}
+            case "laptop":
+                return [
+                    ["Sistema", info.sistema],
+                    ["Processador", e?.processador],
+                    ["Placa de Vídeo", e?.placa_de_video],
+                    ["Display", e?.display],
+                    ["Memória RAM", e?.memoria_ram],
+                    ["Armazenamento", e?.armazenamento],
+                    ["Placa Mãe", e?.placa_mae],
+                    ["Fonte", e?.fonte],
+                    ["Refrigeração", e?.refrigeracao],
+                    ["Teclado", e?.teclado],
+                    ["Bateria", e?.bateria],
+                ];
 
-                {renderSecao(
-                    "Refrigeração",
-                    info.especificacoes_tecnicas.refrigeracao.detalhes
-                )}
+            case "controller":
+                return [
+                    ["Conexão", e?.conexao],
+                    ["Bateria", e?.bateria],
+                    ["Duração", e?.duracao],
+                    ["Vibração", e?.vibracao],
+                    ["Compatibilidade", e?.compatibilidade],
+                    ["Peso", e?.peso],
+                ];
 
-                {renderSecao("Gabinete", info.especificacoes_tecnicas.gabinete)}
-            </section>
-        );
-    }
-    // 📌 Laptop
-    if (info.category === "laptop") {
-        return (
-            <section className="grid md:grid-cols-2 gap-3">
-                {renderSecao("Sistema", info.sistema)}
-                {renderSecao("Processador", info.especificacoes_tecnicas.processador)}
-                {renderSecao("Placa de Vídeo", info.especificacoes_tecnicas.placa_de_video)}
-                {renderSecao("Display", info.especificacoes_tecnicas.display)}
-                {renderSecao("Memória RAM", info.especificacoes_tecnicas.memoria_ram)}
+            case "headphones":
+                return [
+                    ["Drivers", e?.drivers],
+                    ["Cancelamento de Ruido", e?.cancelamento_ruido],
+                    ["Bateria", e?.bateria],
+                    ["Conectividade", e?.conectividade],
+                    ["Microfone", e?.microfone],
+                    ["Resistência à Água", e?.resistencia_agua],
+                    ["Peso", e?.peso],
+                ];
 
-                {renderSecao("Armazenamento", info.especificacoes_tecnicas.armazenamento
-                )}
-                {renderSecao("Placa Mãe", info.especificacoes_tecnicas.placa_mae)}
-                {renderSecao("Fonte", info.especificacoes_tecnicas.fonte)}
+            case "smartphone":
+                return [
+                    ["Sistema", e?.sistema],
+                    ["Processador", e?.processador],
+                    ["Tela", e?.tela],
+                    [
+                        "Memória",
+                        {
+                            RAM: e?.ram_rom?.ram,
+                            Armazenamento: e?.ram_rom?.armazenamento,
+                            Expansão: e?.ram_rom?.expansao,
+                        },
+                    ],
+                    [
+                        "Câmeras",
+                        {
+                            Principal: e?.camera?.principal,
+                            Frontal: e?.camera?.frontal,
+                            Recursos: e?.camera?.recursos?.join?.(", "),
+                        },
+                    ],
+                    [
+                        "Bateria",
+                        {
+                            Capacidade: e?.bateria?.capacidade,
+                            Carregamento: e?.bateria?.carregamento,
+                            duracao_estimada: e?.bateria?.duracao_estimada,
+                        },
+                    ],
+                    ["Conectividade", e?.conectividade],
+                    ["Chip SIM", e?.chip_sim],
+                    ["Resistência à Água", e?.resistencia_agua],
+                ];
 
-                {renderSecao("Refrigeração", info.especificacoes_tecnicas?.refrigeracao
-                )}
-                {renderSecao("Teclado", info.especificacoes_tecnicas?.teclado
-                )}
-                {renderSecao("Bateria", info.especificacoes_tecnicas?.bateria
-                )}
-            </section>
-        );
-    }
-    // 📌 CONTROLLER
-    if (info.category === "controller") {
-        const spec = info.especificacoes_tecnicas;
+            default:
+                // fallback genérico para 'geral'
+                const geral = (info as any)?.especificacoes_tecnicas?.geral;
+                if (geral) return [["Geral", geral]];
+                return [];
+        }
+    };
 
-        return (
-            <section className="grid md:grid-cols-2 gap-3">
-                {renderSecao("Conexão", spec.conexao)}
-                {renderSecao("Bateria", spec.bateria)}
-                {renderSecao("Duração", spec.duracao)}
-                {renderSecao("Vibração", spec.vibracao)}
-                {renderSecao("Compatibilidade", spec.compatibilidade)}
-                {renderSecao("Peso", spec.peso)}
+    const sections = getSections(info);
 
-            </section>
-        );
-    }
+    return (
+        <section className="relative max-w-7xl mx-auto">
+            {/* Container para telas grandes */}
+            <div className="hidden md:flex gap-2 lg:gap-4">
+                {/* Primeira coluna - itens ímpares */}
+                <div className="w-6/12 lg:w-1/2 lg:space-y-8">
+                    {sections
+                        .filter((_, index) => index % 2 === 0) // Índices pares (0, 2, 4...) = 1º, 3º, 5º itens
+                        .map(([titulo, dados], i) => (
+                            <SectionCard key={titulo + i} titulo={titulo} dados={dados} />
+                        ))}
+                </div>
 
-    // 📌 HEADPHONES
-    if (info.category === "headphones") {
-        const spec = info.especificacoes_tecnicas;
+                {/* Segunda coluna - itens pares */}
+                <div className="w-6/12 lg:w-1/2 lg:space-y-8">
+                    {sections
+                        .filter((_, index) => index % 2 === 1) // Índices ímpares (1, 3, 5...) = 2º, 4º, 6º itens
+                        .map(([titulo, dados], i) => (
+                            <SectionCard key={titulo + i} titulo={titulo} dados={dados} />
+                        ))}
+                </div>
+            </div>
 
-        return (
-            <section className="grid md:grid-cols-2 gap-3">
-                {renderSecao("Drivers", spec.drivers)}
-                {renderSecao("Cancelamento de Ruido", spec.cancelamento_ruido)}
-                {renderSecao("Bateria", spec.bateria)}
-                {renderSecao("Conectividade", spec.conectividade)}
-                {renderSecao("Microfone", spec.microfone)}
-                {renderSecao("Resistencia à Água", spec.resistencia_agua)}
-                {renderSecao("Peso", spec.peso)}
-            </section>
-        );
-    }
-
-    // 📌 SMARTPHONE
-    if (info.category === "smartphone") {
-        const spec = info.especificacoes_tecnicas;
-
-        return (
-            <section className="grid md:grid-cols-2 gap-3">
-                {renderSecao("Sistema", spec.sistema)}
-                {renderSecao("Processador", spec.processador)}
-                {renderSecao("Tela", spec.tela)}
-                {renderSecao("Memória", {
-                    RAM: spec.ram_rom?.ram,
-                    Armazenamento: spec.ram_rom?.armazenamento,
-                    Expansão: spec.ram_rom?.expansao,
-                })}
-                {renderSecao("Câmeras", {
-                    Principal: spec.camera.principal,
-                    Frontal: spec.camera.frontal,
-                    Recursos: spec.camera.recursos?.join(", "),
-                })}
-                {renderSecao("Bateria", {
-                    Capacidade: spec.bateria.capacidade,
-                    Carregamento: spec.bateria.carregamento,
-                    "Duração Estimada": spec.bateria.duracao_estimada,
-                })}
-                {renderSecao("Conectividade", spec.conectividade)}
-                {renderSecao("Chipe SIM", spec.chip_sim)}
-                {renderSecao("Resistência à Água", spec.resistencia_agua)}
-            </section>
-        );
-    }
-
-
-    return <p className="text-gray-900">Ficha técnica não disponível.</p>;
+            {/* Container para telas menores */}
+            <div className="md:hidden space-y-6">
+                {sections.map(([titulo, dados], i) => (
+                    <SectionCard key={titulo + i} titulo={titulo} dados={dados} />
+                ))}
+            </div>
+        </section>
+    );
 }

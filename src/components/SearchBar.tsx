@@ -17,7 +17,7 @@ export default function SearchBar() {
 
         await new Promise(res => setTimeout(res, 1000));
 
-        navigate(`/products?q=${query}`, {replace: true});
+        navigate(`/products?q=${encodeURIComponent(query)}`);
         window.location.reload();
 
         stopLoading();
@@ -32,9 +32,8 @@ export default function SearchBar() {
                 type="text"
                 placeholder="Pesquisar..."
                 className="flex-1 w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-50 text-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition-all duration-200 tracking-wide"
-                aria-label="Pesquisar"
-                value={search}
-                defaultValue={search || ""}
+                aria-label="Pesquisar por produtos"
+                defaultValue={search}
                 onChange={(e) => setSearch(e.target.value)}
             />
 

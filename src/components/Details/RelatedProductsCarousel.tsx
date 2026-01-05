@@ -63,8 +63,9 @@ export default function RelatedProductsCarousel({ relatedProducts }: any) {
                     <LinkWithLoading
                         key={p.id}
                         to={`/product/${p.id}${p.property ? `?property=${p.property}` : ""}`}
-                        className="bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+                        className="relative bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 "
                     >
+
                         <div className="w-full aspect-4/3 border-b border-gray-200 flex items-center justify-center p-3 bg-white rounded-t-xl">
                             <img
                                 src={Array.isArray(p.img) ? p.img[0] : p.img}
@@ -97,8 +98,6 @@ export default function RelatedProductsCarousel({ relatedProducts }: any) {
                                     })} sem juros
                                 </p>
                             </div>
-
-
                         </div>
                     </LinkWithLoading>
                 ))}

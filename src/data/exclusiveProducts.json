@@ -1,551 +1,560 @@
 [
-    {
-        "id": 1,
-        "property": "exclusive",
-        "img": [
-            "/pc_xpluggy_jenkins_tra.png",
-            "/pc_xpluggy_jenkins.png",
-            "/monitor_xpluggy_jenkins.png"
-        ],
-        "alt": "PC XPluggy Jenkins",
-        "name": "PC XPluggy Jenkins",
-        "cor": [
-            "Personalizavel"
-        ],
-        "imgColor": [
-            "/pc_xpluggy_jenkins_tra.png"
-        ],
-        "features": [
-            "Conexão neural por meio de ondas cerebrais",
-            "Alto reparo"
-        ],
-        "guarantee": "Garantia Vitalícia (ou até o fim dos tempos, o que vier primeiro)",
-        "price": 1285999.99,
-        "quantity": 10,
-        "badge": "LANÇAMENTO",
-        "star": 4.9,
-        "flash_description": "Computador de mesa de última geração, equipado com componentes de alto desempenho para jogos, streaming e tarefas exigentes.  Proporciona desempenho bruto, sistema de refrigeração avançado e iluminação RGB personalizável para dominar qualquer tarefa.",
-        "description": "Apresentamos o XPluggy Jenkins: Não é um PC, é uma profecia.\n\nEsqueça tudo o que você sabe sobre computadores de alto desempenho. O XPluggy Jenkins não foi construído, foi forjado no núcleo de uma estrela anã branca e resfriado com o suor dos seres do hardware. Ele não processa dados, ele dobra a realidade ao seu redor para que os frames passem mais rápido.\n\nO Coração do Titã (Processador): Um processador que não tem 'núcleos', tem 'exércitos de cálculo'. Cada thread é um soldado disciplinado, pronto para aniquilar qualquer tarefa, desde planilhas complexas até a renderização de universos inteiros em tempo real. A Intel e a AMD se curvam ao seu nome.\n\nO Manto Visual (Placa de Vídeo): Sua GPU não renderiza pixels, ela invoca sonhos em 8K. Equipada com VRAM que desafia as leis da física, ela faz com que jogos pareçam janelas para outras dimensões. O Ray Tracing não é uma tecnologia, é a sua visão padrão. Ela não esquenta, ela brilha com a energia do sol.\n\nO Sagrado Salão da Memória (RAM): Com uma quantidade de RAM que faria o servidor da NASA corar de vergonha, o XPluggy Jenkins não tem 'memória suficiente', ele tem 'domínio sobre o tempo'. Você pode abrir mais de 500 abas no Chrome, navegar em varios servidores da Minecraft, editar filmes em 4K e simular a economia de um país, tudo ao mesmo tempo, e ele ainda vai pedir por mais.\n\nA Cidadela dos Dados (Armazenamento): Seus SSDs NVMe não têm velocidades de leitura/gravação, eles operam no 'reino da transferência instantânea'. O sistema operacional boota antes de você terminar de pensar em ligar o PC. Jogos carregam tão rápido que você viaja no tempo.\n\nO Templo de Refrigeração (Cooling): Seu sistema de refrigeração líquida personalizada não usa água. Usa 'lágrimas de CPUs inferiores' mantidas em temperaturas criogênicas. Os fans não giram, sussurram cantos ancestrais que acalmam as tempestades de calor geradas no overclock.\n\nA Fonte Primordial (Fonte de Alimentação): A PSU não puxa energia da tomada, ela drena poder diretamente de uma dimensão paralela, fornecendo energia limpa, estável e infinita para todas as suas conquistas digitais.\n\nA Catedral (Gabinete): O gabinete não é de metal e vidro, é uma escultura de pura aura gamer. Com RGB tão customizável que pode sincronizar com suas ondas cerebrais, criando luzes que reagem aos seus batimentos cardíacos durante um boss fight.\n\nEm resumo, o XPluggy Jenkins não é para todos. É para aquele que olha para o horizonte digital e não pergunta 'o que é possível?', mas sim 'o que eu vou possibilitar hoje?'.",
-        "specs": {
-            "category": "pc",
-            "sistema": {
-                "nome": "XPluggy Jenkins",
-                "geracao": "Ultima Geração Absoluta",
-                "lema": "Não é um PC, é uma profecia.",
-                "status": "Lendário"
-            },
-            "especificacoes_tecnicas": {
-                "processador": {
-                    "modelo": "Quantum-Core Titan XE",
-                    "nucleos": 964,
-                    "threads": 1528,
-                    "clock_base": "565.2 GHz",
-                    "clock_turbo": "665.5 GHz (com Overclock Divino)"
-                },
-                "placa_de_video": {
-                    "modelo": "GPU Ragnarok PTX 1090 ",
-                    "vram": "518 TB GDDR7X",
-                    "clock": "308.2 GHz",
-                    "recursos": [
-                        "Ray Tracing Nível Realidade",
-                        "DLSS 5.0 - Geração de Pixels Quânticos"
-                    ]
-                },
-                "memoria_ram": {
-                    "capacidade": "128 QB",
-                    "tipo": "DDR8 X-TREME",
-                    "velocidade": "15438800 MHz",
-                    "iluminacao": "RGB Síncrono Neural"
-                },
-                "armazenamento": {
-                    "primario": {
-                        "tipo": "SSD NVMe Hyperdrive",
-                        "capacidade": "120 QB",
-                        "velocidade_leitura": "852 TB/s",
-                        "velocidade_gravacao": "994 TB/s"
-                    },
-                    "secundario": {
-                        "tipo": "SSD SATA III de Reserva",
-                        "capacidade": "512 QB",
-                        "observacao": "Para armazenar coisas 'menos importantes', como a biblioteca inteira da Steam."
-                    }
-                },
-                "placa_mae": {
-                    "modelo": "Motherboard Aegis Maximus Z999",
-                    "soquete": "LGA-2551",
-                    "chipset": "Quantum-Z",
-                    "recursos": [
-                        "15 Portas PCIe 7.0",
-                        "Wi-Fi 15G",
-                        "Bluetooth 10.0",
-                        "Áudio 16.1 Canais com Som Holográfico"
-                    ]
-                },
-                "fonte": {
-                    "modelo": "Fonte Pura Força 2200W 80+ Titanium",
-                    "potencia": "2200W",
-                    "eficiencia": "80+ Titanium Plus",
-                    "recursos": [
-                        "Cabos Management Aura",
-                        "Conversão de Energia 110% Eficiente"
-                    ]
-                },
-                "refrigeracao": {
-                    "sistema": "Loop Líquido Customizado Criogênico",
-                    "detalhes": {
-                        "radiadores": "3x Radiadores de 480mm",
-                        "fans": "12x Fans de Fluxo Turbinado",
-                        "liquido": "Líquido Refrigerante com Nanopartículas de Diamante"
-                    }
-                },
-                "gabinete": {
-                    "modelo": "Catedral VX-10",
-                    "tamanho": "Full-Tower (Tamanho: 'Majestoso')",
-                    "materiais": [
-                        "Alumínio Aerospacial",
-                        "Vidro Templado com Revestimento Anti-Gravidade"
-                    ],
-                    "iluminacao": "Sistema RGB Omnisciente (16.8 Milhões de Cores, Controlado por Ondas Cerebrais)"
-                }
-            },
-            "recursos_extras": [
-                "Boot em 0.8 segundos",
-                "Suporte a 12 monitores 16K simultâneos",
-                "Portal de Overclock Dimensional integrado",
-                "Assistente de IA 'Jenkins' que faz café virtual",
-                "Garantia: Vitalícia (ou até o fim dos tempos, o que vier primeiro)"
-            ],
-            "observacao_final": "Aviso: O uso prolongado do XPluggy Jenkins pode causar deslumbre, inveja entre amigos e a constante necessidade de desafiar as leis da física. Use com responsabilidade (ou não)."
+  {
+    "id": 1,
+    "property": "exclusive",
+    "img": [
+      "/pc_xpluggy_jenkins_tra.png",
+      "/pc_xpluggy_jenkins.png",
+      "/monitor_xpluggy_jenkins.png"
+    ],
+    "alt": "PC XPluggy Jenkins",
+    "name": "PC XPluggy Jenkins",
+    "cor": [
+      "Personalizavel"
+    ],
+    "imgColor": [
+      "/pc_xpluggy_jenkins_tra.png"
+    ],
+    "features": [
+      "Conexão neural por meio de ondas cerebrais",
+      "Alto reparo"
+    ],
+    "guarantee": "Garantia Vitalícia (ou até o fim dos tempos, o que vier primeiro)",
+    "price": 1285999.99,
+    "quantity": 0,
+    "badge": "LANÇAMENTO",
+    "star": 4.9,
+    "flash_description": "Computador de mesa de última geração, equipado com componentes de alto desempenho para jogos, streaming e tarefas exigentes.  Proporciona desempenho bruto, sistema de refrigeração avançado e iluminação RGB personalizável para dominar qualquer tarefa.",
+    "description": "Apresentamos o XPluggy Jenkins: Não é um PC, é uma profecia.\n\nEsqueça tudo o que você sabe sobre computadores de alto desempenho. O XPluggy Jenkins não foi construído, foi forjado no núcleo de uma estrela anã branca e resfriado com o suor dos seres do hardware. Ele não processa dados, ele dobra a realidade ao seu redor para que os frames passem mais rápido.\n\nO Coração do Titã (Processador): Um processador que não tem 'núcleos', tem 'exércitos de cálculo'. Cada thread é um soldado disciplinado, pronto para aniquilar qualquer tarefa, desde planilhas complexas até a renderização de universos inteiros em tempo real. A Intel e a AMD se curvam ao seu nome.\n\nO Manto Visual (Placa de Vídeo): Sua GPU não renderiza pixels, ela invoca sonhos em 8K. Equipada com VRAM que desafia as leis da física, ela faz com que jogos pareçam janelas para outras dimensões. O Ray Tracing não é uma tecnologia, é a sua visão padrão. Ela não esquenta, ela brilha com a energia do sol.\n\nO Sagrado Salão da Memória (RAM): Com uma quantidade de RAM que faria o servidor da NASA corar de vergonha, o XPluggy Jenkins não tem 'memória suficiente', ele tem 'domínio sobre o tempo'. Você pode abrir mais de 500 abas no Chrome, navegar em varios servidores da Minecraft, editar filmes em 4K e simular a economia de um país, tudo ao mesmo tempo, e ele ainda vai pedir por mais.\n\nA Cidadela dos Dados (Armazenamento): Seus SSDs NVMe não têm velocidades de leitura/gravação, eles operam no 'reino da transferência instantânea'. O sistema operacional boota antes de você terminar de pensar em ligar o PC. Jogos carregam tão rápido que você viaja no tempo.\n\nO Templo de Refrigeração (Cooling): Seu sistema de refrigeração líquida personalizada não usa água. Usa 'lágrimas de CPUs inferiores' mantidas em temperaturas criogênicas. Os fans não giram, sussurram cantos ancestrais que acalmam as tempestades de calor geradas no overclock.\n\nA Fonte Primordial (Fonte de Alimentação): A PSU não puxa energia da tomada, ela drena poder diretamente de uma dimensão paralela, fornecendo energia limpa, estável e infinita para todas as suas conquistas digitais.\n\nA Catedral (Gabinete): O gabinete não é de metal e vidro, é uma escultura de pura aura gamer. Com RGB tão customizável que pode sincronizar com suas ondas cerebrais, criando luzes que reagem aos seus batimentos cardíacos durante um boss fight.\n\nEm resumo, o XPluggy Jenkins não é para todos. É para aquele que olha para o horizonte digital e não pergunta 'o que é possível?', mas sim 'o que eu vou possibilitar hoje?'.",
+    "specs": {
+      "category": "pc",
+      "sistema": {
+        "nome": "XPluggy Jenkins",
+        "geracao": "Ultima Geração Absoluta",
+        "lema": "Não é um PC, é uma profecia.",
+        "status": "Lendário"
+      },
+      "especificacoes_tecnicas": {
+        "processador": {
+          "modelo": "Quantum-Core Titan XE",
+          "nucleos": 964,
+          "threads": 1528,
+          "clock_base": "565.2 GHz",
+          "clock_turbo": "665.5 GHz (com Overclock Divino)"
+        },
+        "placa_de_video": {
+          "modelo": "GPU Ragnarok PTX 1090 ",
+          "vram": "518 TB GDDR7X",
+          "clock": "308.2 GHz",
+          "recursos": [
+            "Ray Tracing Nível Realidade",
+            "DLSS 5.0 - Geração de Pixels Quânticos"
+          ]
+        },
+        "memoria_ram": {
+          "capacidade": "128 QB",
+          "tipo": "DDR8 X-TREME",
+          "velocidade": "15438800 MHz",
+          "iluminacao": "RGB Síncrono Neural"
+        },
+        "armazenamento": {
+          "primario": {
+            "tipo": "SSD NVMe Hyperdrive",
+            "capacidade": "120 QB",
+            "velocidade_leitura": "852 TB/s",
+            "velocidade_gravacao": "994 TB/s"
+          },
+          "secundario": {
+            "tipo": "SSD SATA III de Reserva",
+            "capacidade": "512 QB",
+            "observacao": "Para armazenar coisas 'menos importantes', como a biblioteca inteira da Steam."
+          }
+        },
+        "placa_mae": {
+          "modelo": "Motherboard Aegis Maximus Z999",
+          "soquete": "LGA-2551",
+          "chipset": "Quantum-Z",
+          "recursos": [
+            "15 Portas PCIe 7.0",
+            "Wi-Fi 15G",
+            "Bluetooth 10.0",
+            "Áudio 16.1 Canais com Som Holográfico"
+          ]
+        },
+        "fonte": {
+          "modelo": "Fonte Pura Força 2200W 80+ Titanium",
+          "potencia": "2200W",
+          "eficiencia": "80+ Titanium Plus",
+          "recursos": [
+            "Cabos Management Aura",
+            "Conversão de Energia 110% Eficiente"
+          ]
+        },
+        "refrigeracao": {
+          "sistema": "Loop Líquido Customizado Criogênico",
+          "detalhes": {
+            "radiadores": "3x Radiadores de 480mm",
+            "fans": "12x Fans de Fluxo Turbinado",
+            "liquido": "Líquido Refrigerante com Nanopartículas de Diamante"
+          }
+        },
+        "gabinete": {
+          "modelo": "Catedral VX-10",
+          "tamanho": "Full-Tower (Tamanho: 'Majestoso')",
+          "materiais": [
+            "Alumínio Aerospacial",
+            "Vidro Templado com Revestimento Anti-Gravidade"
+          ],
+          "iluminacao": "Sistema RGB Omnisciente (16.8 Milhões de Cores, Controlado por Ondas Cerebrais)"
         }
-    },
-    {
-        "id": 2,
-        "property": "exclusive",
-        "img": [
-            "/controle_xpluggy.png"
-        ],
-        "alt": "Controle XPluggy GTX Ultra",
-        "name": "XPluggy GTX Ultra",
-        "cor": [
-            "Cinza Aço Fosco"
-        ],
-        "imgColor": [
-            "/controle_xpluggy.png"
-        ],
-        "text_banner": "Controle sem fio premium",
-        "features": [
-            "Bluetooth 5.2",
-            "40h de bateria",
-            "Feedback háptico"
-        ],
-        "guarantee": "Garantia de 12 meses",
-        "price": 841.90,
-        "oldPrice": 999.90,
-        "quantity": 5,
-        "badge": "15% OFF",
-        "star": 4.7,
-        "flash_description": "Controle gamer ergonômico com conexão híbrida, vibração HD, bateria de longa duração e compatibilidade universal.  Criado para sessões de jogo longas.",
-        "description": "O Controle XPluggy GTX Ultra é a evolução definitiva em precisão e conforto para jogos.\n\n Projetado para gamers que não aceitam compromissos, ele combina ergonomia avançada, tecnologia de resposta tátil de última geração e conectividade confiável. Sua bateria de longa duração garante horas ininterruptas de gameplay, enquanto o sistema de vibração HD oferece imersão realista em cada movimento.\n\n Compatível com as principais plataformas e com um peso equilibrado que evita fadiga durante maratonas de jogo, o XPluggy GTX Ultra é a escolha perfeita para quem busca vantagem competitiva e qualidade superior.",
-        "specs": {
-            "category": "controller",
-            "modelo": "Controle XPluggy GTX Ultra",
-            "especificacoes_tecnicas": {
-                "bateria": {
-                    "tipo": "Bateria de Íon-Lítio Recarregável",
-                    "capacidade": "2000 mAh",
-                    "carregamento": "USB-C Rápido"
-                },
-                "duracao": {
-                    "tempo_jogo": "Até 40 horas (com vibração desativada)",
-                    "tempo_standby": "Até 600 horas",
-                    "tempo_recarga": "2 horas para carga completa"
-                },
-                "conexao": {
-                    "tecnologia": "Conexão Híbrida 62.4GHz/Bluetooth 10.3",
-                    "alcance": "Até 100 metros (62.4GHz)",
-                    "latencia": "Até 5 ms (Modo Performance)"
-                },
-                "vibracao": {
-                    "tipo": "Motores Duplos de Vibração HD",
-                    "intensidade_ajustavel": "4 níveis personalizáveis",
-                    "recursos": "Vibração por Gatilho e Imersão Contextual"
-                },
-                "compatibilidade": {
-                    "plataformas": [
-                        "PlayStation 5",
-                        "PlayStation 4",
-                        "Xbox Series X/S",
-                        "Xbox One",
-                        "PC (Windows 10/11)",
-                        "Nintendo Switch",
-                        "Android (versão 9.0+)"
-                    ],
-                    "observacao": "Modo de compatibilidade automática por botão"
-                },
-                "peso": {
-                    "valor": "285 gramas",
-                    "distribuicao": "Peso balanceado centralmente"
-                }
-            }
-        }
-    },
-    {
-        "id": 3,
-        "property": "exclusive",
-        "img": [
-            "/fone_xpluggy_pro.png"
-        ],
-        "alt": "Controle XPluggy GTX Ultra",
-        "name": "XPluggy Quantum Sound 7",
-        "cor": [
-            "Cinza Aço Fosco"
-        ],
-        "imgColor": [
-            "/fone_xpluggy_pro.png"
-        ],
-        "text_banner": "Fone de ouvido over-ear",
-        "features": [
-            "ANC Ativo",
-            "Som 360°",
-            "30h bateria"
-        ],
-        "guarantee": "Garantia de 12 meses",
-        "price": 799.90,
-        "quantity": 10,
-        "badge": "LANÇAMENTO",
-        "star": 4.7,
-        "flash_description": "Fone over-ear com cancelamento ativo de ruído híbrido, som de alta fidelidade e microfone de estúdio. Perfeito para maratonas de música, jogos imersivos e chamadas cristalinas.",
-        "description": "O Fone de Ouvido XPluggy Quantum Sound 7 é a definição de excelência em áudio pessoal.\n\n Como um fone over-ear, ele oferece o máximo em conforto e isolamento acústico, ideal para longas sessões de música, jogos ou trabalho. Com drivers de alta precisão, cancelamento de ruído ativo de última geração e microfone com qualidade de estúdio, ele proporciona uma experiência sonora imersiva e cristalina.\n\n A bateria de longa duração, conectividade versátil e construção resistente completam o pacote, tornando-o o companheiro perfeito para quem exige qualidade superior em qualquer situação.",
-        "specs": {
-            "category": "headphones",
-            "modelo": "XPluggy Quantum Sound 7",
-            "especificacoes_tecnicas": {
-                "drivers": {
-                    "tamanho": "50 mm",
-                    "tipo": "Neodymium Magnet com Diafragma de Berílio",
-                    "resposta_frequencia": "5 Hz - 40 kHz",
-                    "impedancia": "32 ohms"
-                },
-                "cancelamento_ruido": {
-                    "tecnologia": "ANC Híbrido (Ativo + Passivo)",
-                    "modos": [
-                        "Modo Máximo",
-                        "Modo Transparência",
-                        "Modo Adaptativo"
-                    ],
-                    "microfones_externos": 4,
-                    "reducao_ruido": "Até 45 dB"
-                },
-                "microfone": {
-                    "tipo": "Array de 3 microfones com IA",
-                    "cancelamento_ruido_voz": "Sim, com tecnologia Beamforming",
-                    "frequencia_captacao": "100 Hz - 10 kHz",
-                    "formato_gravacao": "Áudio Espacial 3D para chamadas e jogos"
-                },
-                "bateria": {
-                    "capacidade": "1200 mAh",
-                    "duracao_com_anc": "Até 45 horas",
-                    "duracao_sem_anc": "Até 60 horas",
-                    "carregamento_rapido": "15 minutos = 8 horas de uso (com ANC)",
-                    "tempo_recarga_completa": "2 horas via USB-C"
-                },
-                "conectividade": {
-                    "sem_fio": "Bluetooth 5.4 com codecs LDAC, aptX Adaptive, AAC e SBC",
-                    "com_fio": "Entrada P2 de 3.5 mm e USB-C para áudio lossless",
-                    "multi_pairing": "Conecta com até 3 dispositivos simultaneamente",
-                    "armazenamento": "Dobrável e vem com case de proteção rígida"
-                },
-                "resistencia_agua": {
-                    "certificacao": "IPX4",
-                    "protecao": "Resistente a respingos e suor"
-                },
-                "peso": {
-                    "valor": "315 gramas",
-                    "observacao": "Peso distribuído para conforto prolongado, almofadas de espuma com memória de forma e arco de cabeça ajustável"
-                }
-            }
-        }
-    },
-    {
-        "id": 4,
-        "property": "exclusive",
-        "img": [
-            "/laptop_xpluggy_force_tra.png",
-            "/laptop_xpluggy_force.png"
-        ],
-        "alt": "Controle XPluggy GTX Ultra",
-        "name": "XPluggy Force",
-        "cor": [
-            "Preto Cosmic"
-        ],
-        "imgColor": [
-            "/laptop_xpluggy_force_tra.png"
-        ],
-        "text_banner": "Laptop Gamer Profissional",
-        "features": [
-            "Motherboard Aegis Maximus Z999 Mini",
-            "512TB RAM",
-            "Armazenamento SSD 60QB"
-        ],
-        "guarantee": "Garantia de 12 meses",
-        "price": 10999.90,
-        "oldPrice": 15999.90,
-        "quantity": 10,
-        "badge": "31% OFF",
-        "star": 4.8,
-        "flash_description": "Laptop gamer profissional com hardware de topo, tela de alta taxa de atualização e refrigeração extremamente eficiente. Para produtividade e gaming de alto nível em qualquer lugar.",
-        "description": "O XPluggy Force não é um laptop, é uma fortaleza portátil.\n\nEnquanto os meros mortais carregam *notebooks gamer*, você carrega o XPluggy Force - uma obra-prima da engenharia que desafia as leis da física e do bom senso. Ele não foi projetado, foi forjado no núcleo de uma estrela de nêutrons e compactado com tecnologia quântica para caber em sua mochila.\n\nO Cérebro Cibernético (Processador): Um processador que não tem núcleos, tem *centros de comando tático*. Cada thread é um general estrategista, coordenando batalhas em múltiplas frentes - desde renderização 3D complexa até streaming em 4K e dezenas de abas no Chrome - sem perder um único frame.\n\nO Arsenal Visual (Placa de Vídeo): Sua GPU móvel é uma peça de museu do futuro. Ela não renderiza gráficos, conjura realidades alternativas em 240 FPS. Equipada com tecnologia de resfriamento alienígena, ela mantém o desempenho máximo mesmo quando os laptops comuns pedem misericórdia.\n\nO Campo de Batalha em Tempo Real (Tela): O display não é uma tela, é um portal dimensional de altíssima taxa de atualização e cores tão vivas que fazem o mundo real parecer sem graça. O G-Sync Ultimate garante que cada movimento seja tão suave quanto o pensamento.\n\nA Linha de Frente Térmica (Sistema de Resfriamento): O sistema de cooling do XPluggy Force não ventila, ele recicla a atmosfera ao seu redor. Com múltiplos heat pipes de vapor cobre e fans com tecnologia aerospacial, ele transforma calor em pura performance, mantendo um silêncio ensurdecedor sob carga total.\n\nA Retaguarda de Dados (Armazenamento): Seus SSDs em RAID não armazenam dados, eles arquivam a memória do universo. Jogos carregam instantaneamente, e arquivos grandes se transferem no espaço entre um piscar de olhos.A Fonte de Poder Móvel (Bateria): A bateria não usa íons de lítio, usa células de energia de fluxo contínuo. Ela dura mais que a paciência dos seus inimigos na fila do respawn, e recarrega em minutos graças à tecnologia de carga hiper-rápida.\n\nEm resumo, o XPluggy Force não é para jogadores casuais. É para o guerreiro digital que exige excelência absoluta em qualquer campo de batalha, em qualquer lugar do mundo.",
-        "specs": {
-            "category": "laptop",
-            "sistema": {
-                "nome": "XPluggy Force",
-                "lema": "Força da Próxima Dimensão",
-                "status": "Lendário-Móvel"
-            },
-            "especificacoes_tecnicas": {
-                "processador": {
-                    "modelo": "Quantum-Core Titan XE",
-                    "nucleos": 724,
-                    "threads": 1232,
-                    "clock_base": "317.4 GHz",
-                    "clock_max_turbo": "485.8 GHz"
-                },
-                "placa_de_video": {
-                    "modelo": "GPU Ragnarok PTX 1070",
-                    "arquitetura": "Ada Lovelace",
-                    "vram": "128 TB GDDR6X",
-                    "clock_gpu": "2295 MHz (Boost)",
-                    "tdp": "175W (Dynamic Boost)",
-                    "recursos": [
-                        "DLSS 4",
-                        "Ray Tracing de 5ª Geração"
-                    ]
-                },
-                "display": {
-                    "tamanho": "16 polegadas",
-                    "resolucao": "QHD+ (2560x1600)",
-                    "taxa_atualizacao": "420 Hz",
-                    "tecnologia": "IPS Quantum Dot",
-                    "cobertura_cores": "100% DCI-P3",
-                    "recursos": [
-                        "G-SYNC Ultimate",
-                        "HDR1000",
-                        "Anti-Reflexo",
-                        "Dolby Vision"
-                    ]
-                },
-                "memoria_ram": {
-                    "capacidade": "64 TB",
-                    "tipo": "DDR5 SO-DIMM",
-                    "velocidade": "55600 MHz",
-                    "configuracao": "Dual Channel",
-                    "upgradable": "sim"
-                },
-                "armazenamento": {
-                    "configuracao": "Dual NVMe PCIe 4.0 SSD in RAID 0",
-                    "capacidade_total": "64 QB",
-                    "velocidade_leitura": "14 TB/s",
-                    "velocidade_gravacao": "12 TB/s"
-                },
-                "placa_mae": {
-                    "modelo": "Motherboard Aegis Maximus Z999 Mini",
-                    "soquete": "LGA-2551",
-                    "chipset": "Quantum-Z",
-                    "recursos": [
-                        "15 Portas PCIe 7.0",
-                        "Wi-Fi 15G",
-                        "Bluetooth 10.0",
-                        "Áudio 16.1 Canais com Som Holográfico"
-                    ]
-                },
-                "fonte": {
-                    "modelo": "Fonte Pura Força 2200W 80+ Titanium",
-                    "potencia": "2200W",
-                    "eficiencia": "80+ Titanium Plus",
-                    "recursos": [
-                        "Cabos Management Aura",
-                        "Conversão de Energia 110% Eficiente"
-                    ]
-                },
-                "refrigeracao": {
-                    "sistema": "FrostForce Ultra - Tri-Fan Cooling",
-                    "componentes": [
-                        "7 heat pipes de cobre",
-                        "2 fans de turbina com 102 lâminas cada",
-                        "4 saídas de ar independentes",
-                        "Pasta térmica líquida metal"
-                    ],
-                    "modos": [
-                        "Silencioso (35 dBA)",
-                        "Balanceado (45 dBA)",
-                        "Extremo (55 dBA)",
-                        "Overclock Automático"
-                    ],
-                    "controle": "Software AI Smart Cooling"
-                },
-                "teclado": {
-                    "tipo": "Mecânico de Baixo Perfil",
-                    "switch": "XPluggy Optical Switches",
-                    "travel": "1.8mm",
-                    "actuation": "0.8mm",
-                    "iluminacao": "RGB per-key Chroma Force",
-                    "recursos": [
-                        "Anti-ghosting N-key",
-                        "Macros dedicadas",
-                        "Tecla XPluggy Turbo"
-                    ]
-                },
-                "audio": {
-                    "sistema": "Force Sound 7.1",
-                    "alto_falantes": "6 speakers (2 woofers + 4 tweeters)",
-                    "potencia": "8W total",
-                    "tecnologias": [
-                        "Dolby Atmos",
-                        "AI Noise Cancellation",
-                        "Smart Amplifier"
-                    ],
-                    "microfone": "Array de 4 mics com redução de ruído"
-                },
-                "conectividade": {
-                    "wireless": [
-                        "Wi-Fi 7 (802.11be)",
-                        "Bluetooth 5.4"
-                    ],
-                    "portas": [
-                        "2x Thunderbolt 4",
-                        "3x USB 4.0",
-                        "1x HDMI 2.1",
-                        "1x SD Card Reader UHS-III",
-                        "1x Ethernet 2.5G",
-                        "1x Áudio Combo"
-                    ]
-                },
-                "bateria": {
-                    "capacidade": "99.9 Wh",
-                    "tecnologia": "HyperCharge Quantum",
-                    "duracao_estimada": "23 horas (uso normal)",
-                    "carregamento_rapido": "80% em 20 minutos"
-                },
-                "chassis": {
-                    "material": "Liga de Magnésio e Fibra de Carbono",
-                    "dimensoes": "35.9 x 27.2 x 1.99 cm",
-                    "peso": "2.4 kg",
-                    "cor": "Preto Cosmic com detalhes em ciano",
-                    "durabilidade": "MIL-STD-810H certificado"
-                }
-            },
-            "recursos_extras": [
-                "XPluggy Command Center - Controle unificado de performance",
-                "Modo Batalha - Otimização automática para gaming",
-                "Projection Force - Transmite aura RGB pela mesa",
-                "AI Performance Optimizer - Ajuste automático de clocks",
-                "Cryo Mode - Resfriamento extremo para sessões maratonas"
-            ],
-            "performance_estimada": {
-                "jogos_1080p": "300+ FPS (Ultra)",
-                "jogos_1440p": "180+ FPS (Ultra)",
-                "jogos_4k": "90+ FPS (Ultra)"
-            }
-        }
-    },
-    {
-        "id": 5,
-        "property": "exclusive",
-        "img": [
-            "/smartphone_xpluggy.png"
-        ],
-        "alt": "Controle XPluggy GTX Ultra",
-        "name": "Xpluggy 19 Ultra",
-        "cor": [
-            "Azul-Carvão Escuro"
-        ],
-        "imgColor": [
-            "/smartphone_xpluggy.png"
-        ],
-        "features": [
-            "Android 15",
-            "Tela Super Retina XDR",
-            "Bateria de 6500mAh"
-        ],
-        "guarantee": "Garantia de 12 meses",
-        "price": 10999.90,
-        "quantity": 10,
-        "badge": "Pendente",
-        "star": 4.7,
-        "flash_description": "Smartphone flagship com tela imersiva, câmeras versáteis, performance fluida e bateria que acompanha seu ritmo. O companheiro ideal para trabalho e entretenimento.",
-        "description": "O XPluggy 19 Ultra é a definição de excelência em um smartphone.\n\n Com um design elegante e recursos de ponta, ele foi criado para quem exige o máximo em performance, fotografia e durabilidade. Sua tela imersiva oferece cores vibrantes e detalhes nítidos, perfeita para maratonas de séries, jogos ou trabalho produtivo.\n\n O processador de última geração garante fluidez em qualquer tarefa, enquanto o sistema de câmeras captura momentos com clareza impressionante, de dia ou de noite. Com bateria de longa duração, carregamento ultra-rápido e resistência à água, o XPluggy 19 Ultra é o companheiro ideal para o dia a dia.",
-        "specs": {
-            "category": "smartphone",
-            "modelo": "XPluggy 19 Ultra",
-            "especificacoes_tecnicas": {
-                "sistema": {
-                    "os": "Android 15",
-                    "interface": "XPluggy OS 3.0",
-                    "atualizacoes_garantidas": "5 anos de atualizações de SO e segurança"
-                },
-                "processador": {
-                    "modelo": "XPluggy Quantum Core 3",
-                    "nucleos": "10 (1x Cortex-X4 + 3x Cortex-A720 + 6x Cortex-A520)",
-                    "gpu": "Adreno 780",
-                    "clock_base": "6.8 GHz",
-                    "clock_max": "7.2 GHz",
-                    "arquitetura": "4 nm"
-                },
-                "tela": {
-                    "tecnologia": "Dynamic AMOLED 6.8",
-                    "resolucao": "QHD+ (3200 x 1440 pixels)",
-                    "taxa_atualizacao": "240 Hz Dinâmico",
-                    "protecao": "Vidro Gorilla Glass Victus 3",
-                    "brilho_maximo": "2500 nits (pico)"
-                },
-                "ram_rom": {
-                    "ram": "16 TB LPDDR5X",
-                    "armazenamento": "518 TB UFS 4.0",
-                    "expansao": "Não (armazenamento fixo)"
-                },
-                "chip_sim": {
-                    "suporte": "Dual SIM (Nano-SIM + eSIM)",
-                    "conectividade": "5G SA/NSA, 4G VoLTE, VoWiFi"
-                },
-                "camera": {
-                    "principal": {
-                        "sensor_principal": "200 MP (f/1.7, OIS)",
-                        "ultra_wide": "50 MP (f/2.2, 125°)",
-                        "teleobjetiva": "64 MP (f/2.5, OIS, zoom óptico 5x)",
-                        "video_principal": "8K@30fps, 4K@120fps"
-                    },
-                    "frontal": {
-                        "resolucao": "32 MP (f/2.0)",
-                        "video_frontal": "4K@60fps"
-                    },
-                    "recursos": [
-                        "Modo Noturno Avançado",
-                        "IA para Cenas",
-                        "HDR20",
-                        "Gravação ProRes"
-                    ]
-                },
-                "bateria": {
-                    "capacidade": "6500 mAh",
-                    "carregamento": {
-                        "com_fio": "120W (0-100% em 18 min)",
-                        "sem_fio": "50W",
-                        "reversivel": "15W"
-                    },
-                    "duracao_estimada": "Até 2 dias (uso moderado)"
-                },
-                "conectividade": {
-                    "wi_fi": "Wi-Fi 7",
-                    "bluetooth": "5.4",
-                    "nfc": "Sim",
-                    "portas": "USB Type-C 3.2",
-                    "gps": "GPS Tri-Band (L1+L2+L5)"
-                },
-                "resistencia_agua": {
-                    "certificacao": "IP68",
-                    "profundidade_maxima": "1,5 metros por até 30 minutos"
-                }
-            }
-        }
+      },
+      "recursos_extras": [
+        "Boot em 0.8 segundos",
+        "Suporte a 12 monitores 16K simultâneos",
+        "Portal de Overclock Dimensional integrado",
+        "Assistente de IA 'Jenkins' que faz café virtual",
+        "Garantia: Vitalícia (ou até o fim dos tempos, o que vier primeiro)"
+      ],
+      "observacao_final": "Aviso: O uso prolongado do XPluggy Jenkins pode causar deslumbre, inveja entre amigos e a constante necessidade de desafiar as leis da física. Use com responsabilidade (ou não)."
     }
+  },
+  {
+    "id": 2,
+    "property": "exclusive",
+    "img": [
+      "/controle_xpluggy.png"
+    ],
+    "alt": "Controle XPluggy GTX Ultra",
+    "name": "XPluggy GTX Ultra",
+    "cor": [
+      "Cinza Aço Fosco"
+    ],
+    "imgColor": [
+      "/controle_xpluggy.png"
+    ],
+    "img_banner": [
+      "/banner/banner_1.png",
+      "/banner/mobile_1.png"
+    ],
+    "features": [
+      "Bluetooth 5.2",
+      "40h de bateria",
+      "Feedback háptico"
+    ],
+    "guarantee": "Garantia de 12 meses",
+    "price": 841.9,
+    "oldPrice": 999.9,
+    "quantity": 0,
+    "badge": "15% OFF",
+    "star": 4.7,
+    "flash_description": "Controle gamer ergonômico com conexão híbrida, vibração HD, bateria de longa duração e compatibilidade universal. Criado para sessões de jogos longos.",
+    "description": "O Controle XPluggy GTX Ultra é a evolução definitiva em precisão e conforto para jogos.\n\n Projetado para gamers que não aceitam compromissos, ele combina ergonomia avançada, tecnologia de resposta tátil de última geração e conectividade confiável. Sua bateria de longa duração garante horas ininterruptas de gameplay, enquanto o sistema de vibração HD oferece imersão realista em cada movimento.\n\n Compatível com as principais plataformas e com um peso equilibrado que evita fadiga durante maratonas de jogo, o XPluggy GTX Ultra é a escolha perfeita para quem busca vantagem competitiva e qualidade superior.",
+    "specs": {
+      "category": "controller",
+      "modelo": "Controle XPluggy GTX Ultra",
+      "especificacoes_tecnicas": {
+        "bateria": {
+          "tipo": "Bateria de Íon-Lítio Recarregável",
+          "capacidade": "2000 mAh",
+          "carregamento": "USB-C Rápido"
+        },
+        "duracao": {
+          "tempo_jogo": "Até 40 horas (com vibração desativada)",
+          "tempo_standby": "Até 600 horas",
+          "tempo_recarga": "2 horas para carga completa"
+        },
+        "conexao": {
+          "tecnologia": "Conexão Híbrida 62.4GHz/Bluetooth 10.3",
+          "alcance": "Até 100 metros (62.4GHz)",
+          "latencia": "Até 5 ms (Modo Performance)"
+        },
+        "vibracao": {
+          "tipo": "Motores Duplos de Vibração HD",
+          "intensidade_ajustavel": "4 níveis personalizáveis",
+          "recursos": "Vibração por Gatilho e Imersão Contextual"
+        },
+        "compatibilidade": {
+          "plataformas": [
+            "PlayStation 5",
+            "PlayStation 4",
+            "Xbox Series X/S",
+            "Xbox One",
+            "PC (Windows 10/11)",
+            "Nintendo Switch",
+            "Android (versão 9.0+)"
+          ],
+          "observacao": "Modo de compatibilidade automática por botão"
+        },
+        "peso": {
+          "valor": "285 gramas",
+          "distribuicao": "Peso balanceado centralmente"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "property": "exclusive",
+    "img": [
+      "/fone_xpluggy_pro.png"
+    ],
+    "alt": "XPluggy Quantum Sound 7",
+    "name": "XPluggy Quantum Sound 7",
+    "cor": [
+      "Cinza Aço Fosco"
+    ],
+    "imgColor": [
+      "/fone_xpluggy_pro.png"
+    ],
+    "img_banner": [
+      "/banner/banner_2.png",
+      "/banner/mobile_2.png"
+    ],
+    "features": [
+      "ANC Ativo",
+      "Som 360°",
+      "30h bateria"
+    ],
+    "guarantee": "Garantia de 12 meses",
+    "price": 799.9,
+    "quantity": 0,
+    "badge": "LANÇAMENTO",
+    "star": 4.7,
+    "flash_description": "Fone over-ear com cancelamento ativo de ruído híbrido, som de alta fidelidade e microfone de estúdio. Perfeito para maratonas de música, jogos imersivos e chamadas cristalinas.",
+    "description": "O Fone de Ouvido XPluggy Quantum Sound 7 é a definição de excelência em áudio pessoal.\n\n Como um fone over-ear, ele oferece o máximo em conforto e isolamento acústico, ideal para longas sessões de música, jogos ou trabalho. Com drivers de alta precisão, cancelamento de ruído ativo de última geração e microfone com qualidade de estúdio, ele proporciona uma experiência sonora imersiva e cristalina.\n\n A bateria de longa duração, conectividade versátil e construção resistente completam o pacote, tornando-o o companheiro perfeito para quem exige qualidade superior em qualquer situação.",
+    "specs": {
+      "category": "headphones",
+      "modelo": "XPluggy Quantum Sound 7",
+      "especificacoes_tecnicas": {
+        "drivers": {
+          "tamanho": "50 mm",
+          "tipo": "Neodymium Magnet com Diafragma de Berílio",
+          "resposta_frequencia": "5 Hz - 40 kHz",
+          "impedancia": "32 ohms"
+        },
+        "cancelamento_ruido": {
+          "tecnologia": "ANC Híbrido (Ativo + Passivo)",
+          "modos": [
+            "Modo Máximo",
+            "Modo Transparência",
+            "Modo Adaptativo"
+          ],
+          "microfones_externos": 4,
+          "reducao_ruido": "Até 45 dB"
+        },
+        "microfone": {
+          "tipo": "Array de 3 microfones com IA",
+          "cancelamento_ruido_voz": "Sim, com tecnologia Beamforming",
+          "frequencia_captacao": "100 Hz - 10 kHz",
+          "formato_gravacao": "Áudio Espacial 3D para chamadas e jogos"
+        },
+        "bateria": {
+          "capacidade": "1200 mAh",
+          "duracao_com_anc": "Até 45 horas",
+          "duracao_sem_anc": "Até 60 horas",
+          "carregamento_rapido": "15 minutos = 8 horas de uso (com ANC)",
+          "tempo_recarga_completa": "2 horas via USB-C"
+        },
+        "conectividade": {
+          "sem_fio": "Bluetooth 5.4 com codecs LDAC, aptX Adaptive, AAC e SBC",
+          "com_fio": "Entrada P2 de 3.5 mm e USB-C para áudio lossless",
+          "multi_pairing": "Conecta com até 3 dispositivos simultaneamente",
+          "armazenamento": "Dobrável e vem com case de proteção rígida"
+        },
+        "resistencia_agua": {
+          "certificacao": "IPX4",
+          "protecao": "Resistente a respingos e suor"
+        },
+        "peso": {
+          "valor": "315 gramas",
+          "observacao": "Peso distribuído para conforto prolongado, almofadas de espuma com memória de forma e arco de cabeça ajustável"
+        }
+      }
+    }
+  },
+  {
+    "id": 4,
+    "property": "exclusive",
+    "img": [
+      "/laptop_xpluggy_force_tra.png",
+      "/laptop_xpluggy_force.png"
+    ],
+    "alt": "XPluggy Force",
+    "name": "XPluggy Force",
+    "cor": [
+      "Preto Cosmic"
+    ],
+    "imgColor": [
+      "/laptop_xpluggy_force_tra.png"
+    ],
+    "img_banner": [
+      "/banner/banner_3.png",
+      "/banner/mobile_3.png"
+    ],
+    "features": [
+      "Motherboard Aegis Maximus Z999 Mini",
+      "512TB RAM",
+      "Armazenamento SSD 60QB"
+    ],
+    "guarantee": "Garantia de 12 meses",
+    "price": 10999.9,
+    "oldPrice": 15999.9,
+    "quantity": 0,
+    "badge": "31% OFF",
+    "star": 4.8,
+    "flash_description": "Laptop gamer profissional com hardware de alta qualidade, tela de alta taxa de atualização e refrigeração extremamente eficiente. Para produtividade e gaming de alto nível em qualquer lugar.",
+    "description": "O XPluggy Force não é um laptop, é uma fortaleza portátil.\n\nEnquanto os meros mortais carregam *notebooks gamer*, você carrega o XPluggy Force - uma obra-prima da engenharia que desafia as leis da física e do bom senso. Ele não foi projetado, foi forjado no núcleo de uma estrela de nêutrons e compactado com tecnologia quântica para caber em sua mochila.\n\nO Cérebro Cibernético (Processador): Um processador que não tem núcleos, tem *centros de comando tático*. Cada thread é um general estrategista, coordenando batalhas em múltiplas frentes - desde renderização 3D complexa até streaming em 4K e dezenas de abas no Chrome - sem perder um único frame.\n\nO Arsenal Visual (Placa de Vídeo): Sua GPU móvel é uma peça de museu do futuro. Ela não renderiza gráficos, conjura realidades alternativas em 240 FPS. Equipada com tecnologia de resfriamento alienígena, ela mantém o desempenho máximo mesmo quando os laptops comuns pedem misericórdia.\n\nO Campo de Batalha em Tempo Real (Tela): O display não é uma tela, é um portal dimensional de altíssima taxa de atualização e cores tão vivas que fazem o mundo real parecer sem graça. O G-Sync Ultimate garante que cada movimento seja tão suave quanto o pensamento.\n\nA Linha de Frente Térmica (Sistema de Resfriamento): O sistema de cooling do XPluggy Force não ventila, ele recicla a atmosfera ao seu redor. Com múltiplos heat pipes de vapor cobre e fans com tecnologia aerospacial, ele transforma calor em pura performance, mantendo um silêncio ensurdecedor sob carga total.\n\nA Retaguarda de Dados (Armazenamento): Seus SSDs em RAID não armazenam dados, eles arquivam a memória do universo. Jogos carregam instantaneamente, e arquivos grandes se transferem no espaço entre um piscar de olhos.A Fonte de Poder Móvel (Bateria): A bateria não usa íons de lítio, usa células de energia de fluxo contínuo. Ela dura mais que a paciência dos seus inimigos na fila do respawn, e recarrega em minutos graças à tecnologia de carga hiper-rápida.\n\nEm resumo, o XPluggy Force não é para jogadores casuais. É para o guerreiro digital que exige excelência absoluta em qualquer campo de batalha, em qualquer lugar do mundo.",
+    "specs": {
+      "category": "laptop",
+      "sistema": {
+        "nome": "XPluggy Force",
+        "lema": "Força da Próxima Dimensão",
+        "status": "Lendário-Móvel"
+      },
+      "especificacoes_tecnicas": {
+        "processador": {
+          "modelo": "Quantum-Core Titan XE",
+          "nucleos": 724,
+          "threads": 1232,
+          "clock_base": "317.4 GHz",
+          "clock_max_turbo": "485.8 GHz"
+        },
+        "placa_de_video": {
+          "modelo": "GPU Ragnarok PTX 1070",
+          "arquitetura": "Ada Lovelace",
+          "vram": "128 TB GDDR6X",
+          "clock_gpu": "2295 MHz (Boost)",
+          "tdp": "175W (Dynamic Boost)",
+          "recursos": [
+            "DLSS 4",
+            "Ray Tracing de 5ª Geração"
+          ]
+        },
+        "display": {
+          "tamanho": "16 polegadas",
+          "resolucao": "QHD+ (2560x1600)",
+          "taxa_atualizacao": "420 Hz",
+          "tecnologia": "IPS Quantum Dot",
+          "cobertura_cores": "100% DCI-P3",
+          "recursos": [
+            "G-SYNC Ultimate",
+            "HDR1000",
+            "Anti-Reflexo",
+            "Dolby Vision"
+          ]
+        },
+        "memoria_ram": {
+          "capacidade": "64 TB",
+          "tipo": "DDR5 SO-DIMM",
+          "velocidade": "55600 MHz",
+          "configuracao": "Dual Channel",
+          "upgradable": "sim"
+        },
+        "armazenamento": {
+          "configuracao": "Dual NVMe PCIe 4.0 SSD in RAID 0",
+          "capacidade_total": "64 QB",
+          "velocidade_leitura": "14 TB/s",
+          "velocidade_gravacao": "12 TB/s"
+        },
+        "placa_mae": {
+          "modelo": "Motherboard Aegis Maximus Z999 Mini",
+          "soquete": "LGA-2551",
+          "chipset": "Quantum-Z",
+          "recursos": [
+            "15 Portas PCIe 7.0",
+            "Wi-Fi 15G",
+            "Bluetooth 10.0",
+            "Áudio 16.1 Canais com Som Holográfico"
+          ]
+        },
+        "fonte": {
+          "modelo": "Fonte Pura Força 2200W 80+ Titanium",
+          "potencia": "2200W",
+          "eficiencia": "80+ Titanium Plus",
+          "recursos": [
+            "Cabos Management Aura",
+            "Conversão de Energia 110% Eficiente"
+          ]
+        },
+        "refrigeracao": {
+          "sistema": "FrostForce Ultra - Tri-Fan Cooling",
+          "componentes": [
+            "7 heat pipes de cobre",
+            "2 fans de turbina com 102 lâminas cada",
+            "4 saídas de ar independentes",
+            "Pasta térmica líquida metal"
+          ],
+          "modos": [
+            "Silencioso (35 dBA)",
+            "Balanceado (45 dBA)",
+            "Extremo (55 dBA)",
+            "Overclock Automático"
+          ],
+          "controle": "Software AI Smart Cooling"
+        },
+        "teclado": {
+          "tipo": "Mecânico de Baixo Perfil",
+          "switch": "XPluggy Optical Switches",
+          "travel": "1.8mm",
+          "actuation": "0.8mm",
+          "iluminacao": "RGB per-key Chroma Force",
+          "recursos": [
+            "Anti-ghosting N-key",
+            "Macros dedicadas",
+            "Tecla XPluggy Turbo"
+          ]
+        },
+        "audio": {
+          "sistema": "Force Sound 7.1",
+          "alto_falantes": "6 speakers (2 woofers + 4 tweeters)",
+          "potencia": "8W total",
+          "tecnologias": [
+            "Dolby Atmos",
+            "AI Noise Cancellation",
+            "Smart Amplifier"
+          ],
+          "microfone": "Array de 4 mics com redução de ruído"
+        },
+        "conectividade": {
+          "wireless": [
+            "Wi-Fi 7 (802.11be)",
+            "Bluetooth 5.4"
+          ],
+          "portas": [
+            "2x Thunderbolt 4",
+            "3x USB 4.0",
+            "1x HDMI 2.1",
+            "1x SD Card Reader UHS-III",
+            "1x Ethernet 2.5G",
+            "1x Áudio Combo"
+          ]
+        },
+        "bateria": {
+          "capacidade": "99.9 Wh",
+          "tecnologia": "HyperCharge Quantum",
+          "duracao_estimada": "23 horas (uso normal)",
+          "carregamento_rapido": "80% em 20 minutos"
+        },
+        "chassis": {
+          "material": "Liga de Magnésio e Fibra de Carbono",
+          "dimensoes": "35.9 x 27.2 x 1.99 cm",
+          "peso": "2.4 kg",
+          "cor": "Preto Cosmic com detalhes em ciano",
+          "durabilidade": "MIL-STD-810H certificado"
+        }
+      },
+      "recursos_extras": [
+        "XPluggy Command Center - Controle unificado de performance",
+        "Modo Batalha - Otimização automática para gaming",
+        "Projection Force - Transmite aura RGB pela mesa",
+        "AI Performance Optimizer - Ajuste automático de clocks",
+        "Cryo Mode - Resfriamento extremo para sessões maratonas"
+      ],
+      "performance_estimada": {
+        "jogos_1080p": "300+ FPS (Ultra)",
+        "jogos_1440p": "180+ FPS (Ultra)",
+        "jogos_4k": "90+ FPS (Ultra)"
+      }
+    }
+  },
+  {
+    "id": 5,
+    "property": "exclusive",
+    "img": [
+      "/smartphone_xpluggy.png"
+    ],
+    "alt": "XPluggy 19 Ultra",
+    "name": "XPluggy 19 Ultra",
+    "cor": [
+      "Azul-Carvão Escuro"
+    ],
+    "imgColor": [
+      "/smartphone_xpluggy.png"
+    ],
+    "features": [
+      "Android 15",
+      "Tela Super Retina XDR",
+      "Bateria de 6500mAh"
+    ],
+    "guarantee": "Garantia de 12 meses",
+    "price": 10999.9,
+    "quantity": 0,
+    "badge": "Novo",
+    "star": 4.7,
+    "flash_description": "Smartphone flagship com tela imersiva, câmeras versáteis, performance fluida e bateria que acompanha seu ritmo. O companheiro ideal para trabalho e entretenimento.",
+    "description": "O XPluggy 19 Ultra é a definição de excelência em um smartphone.\n\n Com um design elegante e recursos de ponta, ele foi criado para quem exige o máximo em performance, fotografia e durabilidade. Sua tela imersiva oferece cores vibrantes e detalhes nítidos, perfeita para maratonas de séries, jogos ou trabalho produtivo.\n\n O processador de última geração garante fluidez em qualquer tarefa, enquanto o sistema de câmeras captura momentos com clareza impressionante, de dia ou de noite. Com bateria de longa duração, carregamento ultra-rápido e resistência à água, o XPluggy 19 Ultra é o companheiro ideal para o dia a dia.",
+    "specs": {
+      "category": "smartphone",
+      "modelo": "XPluggy 19 Ultra",
+      "especificacoes_tecnicas": {
+        "sistema": {
+          "os": "Android 15",
+          "interface": "XPluggy OS 3.0",
+          "atualizacoes_garantidas": "5 anos de atualizações de SO e segurança"
+        },
+        "processador": {
+          "modelo": "XPluggy Quantum Core 3",
+          "nucleos": "10 (1x Cortex-X4 + 3x Cortex-A720 + 6x Cortex-A520)",
+          "gpu": "Adreno 780",
+          "clock_base": "6.8 GHz",
+          "clock_max": "7.2 GHz",
+          "arquitetura": "4 nm"
+        },
+        "tela": {
+          "tecnologia": "Dynamic AMOLED 6.8",
+          "resolucao": "QHD+ (3200 x 1440 pixels)",
+          "taxa_atualizacao": "240 Hz Dinâmico",
+          "protecao": "Vidro Gorilla Glass Victus 3",
+          "brilho_maximo": "2500 nits (pico)"
+        },
+        "ram_rom": {
+          "ram": "16 TB LPDDR5X",
+          "armazenamento": "518 TB UFS 4.0",
+          "expansao": "Não (armazenamento fixo)"
+        },
+        "chip_sim": {
+          "suporte": "Dual SIM (Nano-SIM + eSIM)",
+          "conectividade": "5G SA/NSA, 4G VoLTE, VoWiFi"
+        },
+        "camera": {
+          "principal": {
+            "sensor_principal": "200 MP (f/1.7, OIS)",
+            "ultra_wide": "50 MP (f/2.2, 125°)",
+            "teleobjetiva": "64 MP (f/2.5, OIS, zoom óptico 5x)",
+            "video_principal": "8K@30fps, 4K@120fps"
+          },
+          "frontal": {
+            "resolucao": "32 MP (f/2.0)",
+            "video_frontal": "4K@60fps"
+          },
+          "recursos": [
+            "Modo Noturno Avançado",
+            "IA para Cenas",
+            "HDR20",
+            "Gravação ProRes"
+          ]
+        },
+        "bateria": {
+          "capacidade": "6500 mAh",
+          "carregamento": {
+            "com_fio": "120W (0-100% em 18 min)",
+            "sem_fio": "50W",
+            "reversivel": "15W"
+          },
+          "duracao_estimada": "Até 2 dias (uso moderado)"
+        },
+        "conectividade": {
+          "wi_fi": "Wi-Fi 7",
+          "bluetooth": "5.4",
+          "nfc": "Sim",
+          "portas": "USB Type-C 3.2",
+          "gps": "GPS Tri-Band (L1+L2+L5)"
+        },
+        "resistencia_agua": {
+          "certificacao": "IP68",
+          "profundidade_maxima": "1,5 metros por até 30 minutos"
+        }
+      }
+    }
+  }
 ]

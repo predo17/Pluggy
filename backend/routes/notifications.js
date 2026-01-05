@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
         return res.json([]);
     }
 
-    const notifications = JSON.parse(fs.readFileSync(filePath, "utf8"));
+    const notifications = JSON.parse(fs.readFileSync(filePath, "utf8" ));
     return res.json(notifications);
 });
 

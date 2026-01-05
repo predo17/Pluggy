@@ -12,7 +12,7 @@ export function useAllProducts(): Product[] {
   return raw.map((p: any) => ({
     ...p,
     property: p.property ?? "",
-    title: p.title ?? p.name ?? "",
+    name: p.name ?? "",
     features: p.features ?? [],
     flash_description: p.flash_description ?? "",
   }));

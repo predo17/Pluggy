@@ -1,11 +1,11 @@
 import { Clock, Mail, MessagesSquare, Phone, Send } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useLoading } from "../../context/LoadingContext";
+import { useAuth } from "../../context/AuthContext";
 export default function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [formError, setFormError] = useState("");
   const [formSuccess, setFormSuccess] = useState(false);
-  const [formDisabled, setFormDisabled] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,6 +14,7 @@ export default function Contact() {
   const [loading, setLoading] = useState(false);
 
   const { startLoading: startGlobalLoading, stopLoading: stopGlobalLoading } = useLoading();
+  const { user } = useAuth();
   function startLoading() {
     setLoading(true);
     startGlobalLoading();
@@ -44,12 +45,16 @@ export default function Contact() {
   }
   // Verifica se o formulário foi enviado com sucesso para desabilitar o formulário.
   useEffect(() => {
-    const alreadySent = localStorage.getItem("formSent");
-    if (alreadySent) {
-      setFormDisabled(true); 
-      setFormSuccess(true); 
+    if (!user) return;
+
+    const storageKey = `formSent_user_${user.id}`;
+    const alreadySent = localStorage.getItem(storageKey);
+
+    if (alreadySent === "true") {
+      setFormSuccess(true);
     }
-  }, []);
+  }, [user]);
+
 
   // Enviar formulário
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -86,29 +91,25 @@ export default function Contact() {
       const endTime = performance.now();
       const backendTime = endTime - startTime;
 
-      console.log(`Tempo real do Backend: ${backendTime.toFixed(0)} ms`);
-
       // Verifica se houve algum erro inesperado por algum motivo desconhecido.
       const json = await res.json();
       if (json.error) {
-        setFormError("Erro ao enviar o formulário. Por favor, tente mais tarde!");
+        setFormError("Erro ao enviar o formulário ao servidor. Por favor, tente mais tarde!");
         stopLoading();
         return;
       }
 
-      const animationTime = Math.min(Math.max(backendTime, 800), 2500);
+      const animationTime = Math.min(Math.max(backendTime, 2000), 3500);
 
-      console.log(`Tempo da animação: ${animationTime.toFixed(0)}ms`);
-      // Faz uma pausa dramática para a animação aparecer
       await new Promise(res => setTimeout(res, animationTime));
 
-      localStorage.setItem("formSent", "true");
+      const storageKey = `formSent_user_${user?.id}`;
+      localStorage.setItem(storageKey, "true");
       setFormSuccess(true);
-      setFormDisabled(true);
 
     } catch (error) {
       console.error("Erro:", error);
-      setFormError("Erro ao enviar o formulário ao servidor. Por favor, tente mais tarde!");
+      setFormError("Erro ao enviar o formulário. Por favor, tente mais tarde!");
     } finally {
       setTimeout(() => setFormError(""), 4000);
       stopLoading();
@@ -128,7 +129,7 @@ export default function Contact() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 py-16">
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Formulário */}
           <div className="lg:col-span-3">
@@ -156,7 +157,8 @@ export default function Contact() {
                     <p className="text-gray-600 ">Responderemos em até 24 horas</p>
                   </div>
                 </div>
-                <form className={`space-y-3 ${formDisabled ? "hidden" : ""}`} ref={form} onSubmit={handleSubmit}>
+
+                <form className="space-y-3 " ref={form} onSubmit={handleSubmit}>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label className="text-sm font-medium text-gray-700">Nome *</label>
@@ -246,6 +248,7 @@ export default function Contact() {
                     <p className="text-red-600 text-center font-medium">{formError}</p>
                   )}
                 </form>
+
               </div>
             )}
           </div>
@@ -267,7 +270,7 @@ export default function Contact() {
               <div className="space-y-4">
                 {[
                   { icon: Phone, label: "Telefone", value: "(86) 99999-9999" },
-                  { icon: Mail, label: "E-mail", value: "contato@pluggy.com" },
+                  { icon: Mail, label: "E-mail", value: "pluggy@gmail.com" },
                   { icon: Clock, label: "Horário de Atendimento", value: "24h" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-center gap-4">

@@ -18,7 +18,7 @@ export interface Product {
     category?: string;
 
     // TIPAGEM PRINCIPAL DAS FICHAS TÉCNICAS
-    specs?: PcSpecs | LaptopSpecs | ControllerSpecs | HeadphonesSpecs | SmartphoneSpecs;
+    specs?: PcSpecs | LaptopSpecs | ControllerSpecs | HeadphonesSpecs | SmartphoneSpecs | GenericSpecs;
 }
 
 export interface CartItem {
@@ -31,7 +31,7 @@ export interface CartItem {
     features: string[];
     quantity: number;
     price: number;
-    addedAnimation?: boolean
+    hidden?: boolean;
 }
 
 export interface AppContextType {
@@ -332,4 +332,10 @@ export interface ConectividadeSmartphone {
 export interface ResistenciaAguaSmartphone {
     certificacao: string;
     profundidade_maxima: string;
+}
+
+interface GenericSpecs {
+    especificacoes_tecnicas: {
+        geral: Record<string, any>;
+    };
 }

@@ -1,222 +1,1907 @@
 {
   "smartphones": [
-
-  {
-    "id": 1,
-    "badge": "NOVO",
-    "img": "/imgproduct/iphone-15-pro-mockup.png",
-    "alt": "Mockup iPhone 15 Pro - fundo transparente",
-    "name": "Mockup iPhone 15 Pro",
-    "description": "Mockup 3D realista do iPhone 15 Pro, pronto para apresentações e landing pages.",
-    "cor": ["Lavanda Pálido"],
-    "imgColor": ["/imgproduct/iphone-15-pro-mockup.png"],
-    "guarantee": "12 meses",
-    "freight": "Frete grátis",
-    "price": 39.9,
-    "quantity": 20,
-    "star": 4.2
-  },
-  {
-    "id": 2,
-    "badge": "",
-    "img": "images/smartphones/android-ui-kit.png",
-    "alt": "Android UI Kit - fundo transparente",
-    "name": "Android UI Kit",
-    "description": "Kit de interface Android completo em Figma com componentes prontos.",
-    "freight": "Frete grátis",
-    "price": 29.0,
-    "quantity": 18
-  },
-  {
-    "id": 3,
-    "img": "images/smartphones/iphone-clay-mockups.png",
-    "alt": "iPhone Clay Mockups - fundo transparente",
-    "name": "iPhone Clay Mockups",
-    "description": "Conjunto de mockups minimalistas estilo clay para portfolios e showcases.",
-    "guarantee": "12 meses",
-    "price": 24.5,
-    "quantity": 15
-  },
-  {
-    "id": 4,
-    "img": "images/smartphones/smartwatch-3d-render.png",
-    "alt": "Smartwatch 3D Render - fundo transparente",
-    "name": "Smartwatch 3D Render",
-    "description": "Render de smartwatch em alta resolução para material promocional.",
-    "price": 18.9,
-    "quantity": 12
-  },
-  {
-    "id": 5,
-    "img": "images/smartphones/tablet-device-mockup.png",
-    "alt": "Tablet Device Mockup - fundo transparente",
-    "name": "Tablet Device Mockup",
-    "description": "Mockup de tablet versátil, ideal para demonstrar aplicações responsivas.",
-    "price": 21.0,
-    "quantity": 14
-  },
-  {
-    "id": 6,
-    "img": "images/smartphones/foldable-phone-mockup.png",
-    "alt": "Foldable Phone Mockup - fundo transparente",
-    "name": "Foldable Phone Mockup",
-    "description": "Mockup de smartphone dobrável com visual futurista.",
-    "price": 27.0,
-    "quantity": 10
-  },
-  {
-    "id": 7,
-    "img": "images/smartphones/phone-gradient-pack.png",
-    "alt": "Phone Gradient Pack - fundo transparente",
-    "name": "Phone Gradient Pack",
-    "description": "Coleção de fundos gradientes otimizados para mockups e wallpapers.",
-    "price": 14.9,
-    "quantity": 30
-  },
-  {
-    "id": 8,
-    "img": "images/smartphones/minimal-phone-psd.png",
-    "alt": "Minimal Phone PSD - fundo transparente",
-    "name": "Minimal Phone PSD",
-    "description": "Arquivo PSD com composições limpas para uso em apresentações.",
-    "price": 12.0,
-    "quantity": 25
-  },
-  {
-    "id": 9,
-    "img": "images/smartphones/device-shadow-pack.png",
-    "alt": "Device Shadow Pack - fundo transparente",
-    "name": "Device Shadow Pack",
-    "description": "Sombras realistas para aplicar em mockups e deixar os produtos mais naturais.",
-    "price": 9.9,
-    "quantity": 40
-  },
-  {
-    "id": 10,
-    "img": "images/smartphones/smartphone-neon-mockup.png",
-    "alt": "Smartphone Neon Mockup - fundo transparente",
-    "name": "Smartphone Neon Mockup",
-    "description": "Mockup vibrante com estética neon para campanhas e banners.",
-    "price": 34.0,
-    "quantity": 8
-  },
-  {
-    "id": 11,
-    "img": "images/smartphones/retro-phone-vector.png",
-    "alt": "Retro Phone Vector - fundo transparente",
-    "name": "Retro Phone Vector",
-    "description": "Pacote de ilustrações vetoriais de celulares retrô (SVG/AI).",
-    "price": 8.9,
-    "quantity": 50
-  },
-  {
-    "id": 12,
-    "img": "images/smartphones/iphone-outline-pack.png",
-    "alt": "iPhone Outline Pack - fundo transparente",
-    "name": "iPhone Outline Pack",
-    "description": "Pack de contornos vetoriais de dispositivos para uso em UI/UX.",
-    "price": 10.0,
-    "quantity": 35
-  },
-  {
-    "id": 13,
-    "img": "images/smartphones/appstore-mockup-set.png",
-    "alt": "App Store Mockup Set - fundo transparente",
-    "name": "App Store Mockup Set",
-    "description": "Conjunto de mockups para simular listagens em stores de apps.",
-    "price": 22.5,
-    "quantity": 16
-  },
-  {
-    "id": 14,
-    "img": "images/smartphones/clean-ui-screens.png",
-    "alt": "Clean UI Screens - fundo transparente",
-    "name": "Clean UI Screens",
-    "description": "Coleção de telas mobile clean e responsivas em Figma/Sketch.",
-    "price": 16.9,
-    "quantity": 22
-  },
-  {
-    "id": 15,
-    "img": "images/smartphones/dark-mode-phone-ui.png",
-    "alt": "Dark Mode Phone UI - fundo transparente",
-    "name": "Dark Mode Phone UI",
-    "description": "Interface mobile elegante focada em modo escuro e usabilidade noturna.",
-    "price": 18.0,
-    "quantity": 19
-  },
-  {
-    "id": 16,
-    "img": "images/smartphones/camera-lens-icons.png",
-    "alt": "Camera Lens Icons - fundo transparente",
-    "name": "Camera Lens Icons",
-    "description": "Ícones vetoriais relacionados a câmeras e lentes para UI mobile.",
-    "price": 6.9,
-    "quantity": 60
-  },
-  {
-    "id": 17,
-    "img": "images/smartphones/device-showcase-pack.png",
-    "alt": "Device Showcase Pack - fundo transparente",
-    "name": "Device Showcase Pack",
-    "description": "Cenas prontas para apresentações de apps e vitrines de produtos.",
-    "price": 26.0,
-    "quantity": 13
-  },
-  {
-    "id": 18,
-    "img": "images/smartphones/app-ui-template.png",
-    "alt": "App UI Template - fundo transparente",
-    "name": "App UI Template",
-    "description": "Template de interface para apps, pronto para customização e prototipagem.",
-    "price": 30.0,
-    "quantity": 11
-  },
-  {
-    "id": 19,
-    "img": "images/smartphones/phone-wireframe-kit.png",
-    "alt": "Phone Wireframe Kit - fundo transparente",
-    "name": "Phone Wireframe Kit",
-    "description": "Wireframes mobile em múltiplos tamanhos para prototipagem rápida.",
-    "price": 12.5,
-    "quantity": 28
-  },
-  {
-    "id": 20,
-    "img": "images/smartphones/gradient-wallpaper-set.png",
-    "alt": "Gradient Wallpaper Set - fundo transparente",
-    "name": "Gradient Wallpaper Set",
-    "description": "Pacote de papéis de parede gradientes exclusivos Pluggy com fundo transparente.",
-    "price": 7.0,
-    "quantity": 100
-  }
+    {
+      "id": 1,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/silver_1.webp",
+        "/imgproduct/smartphones/13_406fbe1b-c316-4475-8a99-6fc914b9f932.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/silver_1.webp"
+      ],
+      "name": "Nebula X Pro",
+      "cor": [
+        "Prata"
+      ],
+      "features": [
+        "Tela AMOLED",
+        "Câmera IA",
+        "Carregamento rápido"
+      ],
+      "guarantee": "12 meses",
+      "price": 5499.99,
+      "quantity": 10,
+      "star": 4.6,
+      "flash_description": "Performance extrema com design premium.",
+      "description": "Nebula X Pro é um smartwatch com funcionalidades completas de smartphone, projetado para quem deseja total conectividade no pulso. Apesar do nome smartphone, trata-se de um relógio inteligente com sistema Android, conectividade 4G LTE e capacidade de operar de forma independente — sem precisar de um celular pareado",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Nebula X Pro",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android",
+            "interface": "Nebula UI",
+            "atualizacoes_garantidas": "4 anos"
+          },
+          "processador": {
+            "modelo": "Nebula Core Z",
+            "nucleos": "8",
+            "gpu": "Nebula GPU",
+            "clock_base": "3.2 GHz",
+            "clock_max": "3.8 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "AMOLED",
+            "resolucao": "QHD+",
+            "taxa_atualizacao": "144 Hz",
+            "protecao": "Gorilla Glass",
+            "brilho_maximo": "2000 nits"
+          },
+          "ram_rom": {
+            "ram": "12 GB",
+            "armazenamento": "512 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "108 MP",
+              "ultra_wide": "16 MP",
+              "teleobjetiva": "12 MP",
+              "video_principal": "4K"
+            },
+            "frontal": {
+              "resolucao": "32 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "IA",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5000 mAh",
+            "carregamento": {
+              "com_fio": "100W",
+              "sem_fio": "30W",
+              "reversivel": "10W"
+            },
+            "duracao_estimada": "1.5 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "1.5 m"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "badge": "Mais vendido",
+      "img": [
+        "/imgproduct/smartphones/infinix_30.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/infinix_30.webp"
+      ],
+      "name": "Infinix Note 30",
+      "cor": [
+        "Cinza"
+      ],
+      "features": [
+        "Preço baixo",
+        "Tela grande",
+        "Boa bateria"
+      ],
+      "guarantee": "12 meses",
+      "price": 1199.99,
+      "quantity": 12,
+      "star": 4,
+      "flash_description": "Muito por pouco.",
+      "description": "Ótimo custo-benefício de entrada.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Infinix Note 30",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "XOS 13",
+            "atualizacoes_garantidas": "2 anos"
+          },
+          "processador": {
+            "modelo": "MediaTek Helio G99",
+            "nucleos": "8",
+            "gpu": "Mali-G57 MC2",
+            "clock_base": "2.0 GHz",
+            "clock_max": "2.2 GHz",
+            "arquitetura": "6 nm"
+          },
+          "tela": {
+            "tecnologia": "IPS LCD",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "120 Hz",
+            "protecao": "Vidro Reforçado",
+            "brilho_maximo": "580 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Sim (microSD)"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "4G LTE"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "64 MP",
+              "profundidade": "2 MP",
+              "video_principal": "1440p"
+            },
+            "frontal": {
+              "resolucao": "16 MP",
+              "video_frontal": "1080p"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Retrato"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5000 mAh",
+            "carregamento": {
+              "com_fio": "45W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 5",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "Não",
+            "profundidade_maxima": "Não aplicável"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "badge": "Lançamento",
+      "img": [
+        "/imgproduct/smartphones/galaxy-s24-ultra-titanio-preto-700x700.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/galaxy-s24-ultra-titanio-preto-700x700.avif"
+      ],
+      "name": "Samsung Galaxy S24 Ultra",
+      "cor": [
+        "Titânio Preto"
+      ],
+      "features": [
+        "Câmera 200MP",
+        "Tela AMOLED",
+        "S Pen"
+      ],
+      "guarantee": "12 meses",
+      "price": 8999.99,
+      "quantity": 4,
+      "star": 4.7,
+      "flash_description": "O Android mais poderoso da atualidade.",
+      "description": "Smartphone premium com foco em produtividade e fotografia.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Galaxy S24 Ultra",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 14",
+            "interface": "One UI 6.1",
+            "atualizacoes_garantidas": "7 anos"
+          },
+          "processador": {
+            "modelo": "Snapdragon 8 Gen 3 for Galaxy",
+            "nucleos": "8",
+            "gpu": "Adreno 750",
+            "clock_base": "3.3 GHz",
+            "clock_max": "3.39 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "Dynamic AMOLED 2X",
+            "resolucao": "QHD+",
+            "taxa_atualizacao": "120 Hz adaptável",
+            "protecao": "Gorilla Glass Armor",
+            "brilho_maximo": "2600 nits"
+          },
+          "ram_rom": {
+            "ram": "12 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM (Nano + eSIM)",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "200 MP OIS",
+              "ultra_wide": "12 MP",
+              "teleobjetiva": "50 MP (5x)",
+              "video_principal": "8K"
+            },
+            "frontal": {
+              "resolucao": "12 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "IA",
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5000 mAh",
+            "carregamento": {
+              "com_fio": "45W",
+              "sem_fio": "15W",
+              "reversivel": "4.5W"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 7",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C 3.2",
+            "gps": "Multi-band"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "1.5 m por 30 min"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_Q_NP_2X_656728-MLB98652877969_112025-V.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_Q_NP_2X_656728-MLB98652877969_112025-V.avif"
+      ],
+      "name": "iPhone 15 Pro Max",
+      "cor": [
+        "Titânio Natural"
+      ],
+      "features": [
+        "Chip A17 Pro",
+        "Câmera Pro",
+        "iOS"
+      ],
+      "guarantee": "12 meses",
+      "price": 10999.99,
+      "quantity": 4,
+      "star": 4.7,
+      "flash_description": "Desempenho extremo com design em titânio.",
+      "description": "O iPhone mais avançado já criado.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "iPhone 15 Pro Max",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "iOS 17",
+            "interface": "iOS",
+            "atualizacoes_garantidas": "5+ anos"
+          },
+          "processador": {
+            "modelo": "Apple A17 Pro",
+            "nucleos": "6",
+            "gpu": "Apple GPU",
+            "clock_base": "3.2 GHz",
+            "clock_max": "3.7 GHz",
+            "arquitetura": "3 nm"
+          },
+          "tela": {
+            "tecnologia": "Super Retina XDR OLED",
+            "resolucao": "2796 x 1290",
+            "taxa_atualizacao": "120 Hz",
+            "protecao": "Ceramic Shield",
+            "brilho_maximo": "2000 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual eSIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "48 MP OIS",
+              "ultra_wide": "12 MP",
+              "teleobjetiva": "12 MP (5x)",
+              "video_principal": "4K ProRes"
+            },
+            "frontal": {
+              "resolucao": "12 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Cinema",
+              "ProRAW"
+            ]
+          },
+          "bateria": {
+            "capacidade": "4422 mAh",
+            "carregamento": {
+              "com_fio": "27W",
+              "sem_fio": "15W MagSafe",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6E",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "6 m por 30 min"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_Q_NP_2X_716454-MLB89634317255_082025-V.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_Q_NP_2X_716454-MLB89634317255_082025-V.webp"
+      ],
+      "name": "Samsung Galaxy S23 FE",
+      "cor": [
+        "Grafite"
+      ],
+      "features": [
+        "AMOLED 120Hz",
+        "Boa câmera",
+        "IP68"
+      ],
+      "guarantee": "12 meses",
+      "price": 3499.99,
+      "quantity": 8,
+      "star": 4.5,
+      "flash_description": "Experiência premium por um preço justo.",
+      "description": "Versão Fan Edition com ótimo custo-benefício.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Galaxy S23 FE",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "One UI 5.1",
+            "atualizacoes_garantidas": "4 anos"
+          },
+          "processador": {
+            "modelo": "Exynos 2200",
+            "nucleos": "8",
+            "gpu": "Xclipse 920",
+            "clock_base": "2.8 GHz",
+            "clock_max": "2.8 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "Dynamic AMOLED 2X",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "120 Hz",
+            "protecao": "Gorilla Glass 5",
+            "brilho_maximo": "1450 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP OIS",
+              "ultra_wide": "12 MP",
+              "teleobjetiva": "8 MP (3x)",
+              "video_principal": "8K"
+            },
+            "frontal": {
+              "resolucao": "10 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "4500 mAh",
+            "carregamento": {
+              "com_fio": "25W",
+              "sem_fio": "15W",
+              "reversivel": "4.5W"
+            },
+            "duracao_estimada": "1.5 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "1.5 m"
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_Q_NP_2X_977024-MLA99516563302_112025-V.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_Q_NP_2X_977024-MLA99516563302_112025-V.webp"
+      ],
+      "name": "Xiaomi Redmi Note 13 Pro",
+      "cor": [
+        "Azul Oceano"
+      ],
+      "features": [
+        "Câmera 200MP",
+        "AMOLED",
+        "120Hz"
+      ],
+      "guarantee": "12 meses",
+      "price": 2799.99,
+      "quantity": 10,
+      "star": 4.6,
+      "flash_description": "Câmera absurda pelo preço.",
+      "description": "Um dos intermediários mais completos do mercado.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Redmi Note 13 Pro",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "MIUI 14",
+            "atualizacoes_garantidas": "3 anos"
+          },
+          "processador": {
+            "modelo": "Snapdragon 7s Gen 2",
+            "nucleos": "8",
+            "gpu": "Adreno 710",
+            "clock_base": "1.8 GHz",
+            "clock_max": "2.4 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "AMOLED",
+            "resolucao": "1.5K (2712 x 1220)",
+            "taxa_atualizacao": "120 Hz",
+            "protecao": "Gorilla Glass Victus",
+            "brilho_maximo": "1800 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "200 MP OIS",
+              "ultra_wide": "8 MP",
+              "macro": "2 MP",
+              "video_principal": "4K"
+            },
+            "frontal": {
+              "resolucao": "16 MP",
+              "video_frontal": "1080p"
+            },
+            "recursos": [
+              "HDR",
+              "IA",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5100 mAh",
+            "carregamento": {
+              "com_fio": "67W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6",
+            "bluetooth": "5.2",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP54",
+            "profundidade_maxima": "Respingos"
+          }
+        }
+      }
+    },
+    {
+      "id": 7,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/13t1_1_.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/13t1_1_.avif"
+      ],
+      "name": "Xiaomi 13T Pro",
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Câmera Leica",
+        "144Hz",
+        "Carregamento rápido"
+      ],
+      "guarantee": "12 meses",
+      "price": 4999.99,
+      "quantity": 7,
+      "star": 4.6,
+      "flash_description": "Performance e fotografia profissional.",
+      "description": "Topo de linha da Xiaomi com câmeras Leica.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Xiaomi 13T Pro",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "MIUI 14",
+            "atualizacoes_garantidas": "3 anos"
+          },
+          "processador": {
+            "modelo": "Snapdragon 7s Gen 2",
+            "nucleos": "8",
+            "gpu": "Adreno 710",
+            "clock_base": "1.8 GHz",
+            "clock_max": "2.4 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "AMOLED",
+            "resolucao": "1.5K (2712 x 1220)",
+            "taxa_atualizacao": "120 Hz",
+            "protecao": "Gorilla Glass Victus",
+            "brilho_maximo": "1800 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "200 MP OIS",
+              "ultra_wide": "8 MP",
+              "macro": "2 MP",
+              "video_principal": "4K"
+            },
+            "frontal": {
+              "resolucao": "16 MP",
+              "video_frontal": "1080p"
+            },
+            "recursos": [
+              "HDR",
+              "IA",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5100 mAh",
+            "carregamento": {
+              "com_fio": "67W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6",
+            "bluetooth": "5.2",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP54",
+            "profundidade_maxima": "Respingos"
+          }
+        }
+      }
+    },
+    {
+      "id": 8,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_Q_NP_2X_689034-MLB100387459721_122025-V-motorola-edge-40-256gb-8gb-ram-tela-66-cm-50mp-revisado.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_Q_NP_2X_689034-MLB100387459721_122025-V-motorola-edge-40-256gb-8gb-ram-tela-66-cm-50mp-revisado.avif"
+      ],
+      "name": "Motorola Edge 40",
+      "cor": [
+        "Verde"
+      ],
+      "features": [
+        "Design premium",
+        "OLED",
+        "5G"
+      ],
+      "guarantee": "12 meses",
+      "price": 2999.99,
+      "quantity": 13,
+      "star": 4.4,
+      "flash_description": "Elegante e rápido.",
+      "description": "Equilíbrio entre design e desempenho.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Motorola Edge 40",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "Android Puro",
+            "atualizacoes_garantidas": "3 anos"
+          },
+          "processador": {
+            "modelo": "MediaTek Dimensity 8020",
+            "nucleos": "8",
+            "gpu": "Mali-G77 MC9",
+            "clock_base": "2.0 GHz",
+            "clock_max": "2.6 GHz",
+            "arquitetura": "6 nm"
+          },
+          "tela": {
+            "tecnologia": "pOLED",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "144 Hz",
+            "protecao": "Gorilla Glass 5",
+            "brilho_maximo": "1200 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP OIS",
+              "ultra_wide": "13 MP",
+              "video_principal": "4K"
+            },
+            "frontal": {
+              "resolucao": "32 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "4400 mAh",
+            "carregamento": {
+              "com_fio": "68W",
+              "sem_fio": "15W",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "1 dia"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6E",
+            "bluetooth": "5.2",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "1.5 m"
+          }
+        }
+      }
+    },
+    {
+      "id": 9,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_Q_NP_2X_648373-MLA74525556610_022024-V.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_Q_NP_2X_648373-MLA74525556610_022024-V.avif"
+      ],
+      "name": "Motorola Edge 40 Neo",
+      "cor": [
+        "Azul"
+      ],
+      "features": [
+        "OLED",
+        "Leve",
+        "5G"
+      ],
+      "guarantee": "12 meses",
+      "price": 1999.99,
+      "quantity": 13,
+      "star": 4.3,
+      "flash_description": "Estilo e fluidez no dia a dia.",
+      "description": "Intermediário moderno e acessível.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Motorola Edge 40 Neo",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "Android Puro",
+            "atualizacoes_garantidas": "2 anos"
+          },
+          "processador": {
+            "modelo": "MediaTek Dimensity 7030",
+            "nucleos": "8",
+            "gpu": "Mali-G610 MC3",
+            "clock_base": "2.0 GHz",
+            "clock_max": "2.5 GHz",
+            "arquitetura": "6 nm"
+          },
+          "tela": {
+            "tecnologia": "pOLED",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "144 Hz",
+            "protecao": "Panda Glass",
+            "brilho_maximo": "1300 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Sim (microSD)"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP",
+              "ultra_wide": "Não",
+              "video_principal": "4K"
+            },
+            "frontal": {
+              "resolucao": "32 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5000 mAh",
+            "carregamento": {
+              "com_fio": "68W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "1.5 m"
+          }
+        }
+      }
+    },
+    {
+      "id": 10,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_NQ_NP_2X_816054-MLA99479821342_112025-F.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_NQ_NP_2X_816054-MLA99479821342_112025-F.avif"
+      ],
+      "name": "Samsung Galaxy A54",
+      "cor": [
+        "Violeta"
+      ],
+      "features": [
+        "Boa câmera",
+        "AMOLED",
+        "IP67"
+      ],
+      "guarantee": "12 meses",
+      "price": 2499.99,
+      "quantity": 13,
+      "star": 4.5,
+      "flash_description": "Um dos intermediários mais confiáveis.",
+      "description": "Excelente conjunto geral.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Galaxy A54",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "One UI 5.1",
+            "atualizacoes_garantidas": "4 anos"
+          },
+          "processador": {
+            "modelo": "Exynos 1380",
+            "nucleos": "8",
+            "gpu": "Mali-G68 MP5",
+            "clock_base": "2.0 GHz",
+            "clock_max": "2.4 GHz",
+            "arquitetura": "5 nm"
+          },
+          "tela": {
+            "tecnologia": "Super AMOLED",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "120 Hz",
+            "protecao": "Gorilla Glass 5",
+            "brilho_maximo": "1000 nits"
+          },
+          "ram_rom": {
+            "ram": "8 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Sim (microSD)"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP OIS",
+              "ultra_wide": "12 MP",
+              "macro": "5 MP",
+              "video_principal": "4K"
+            },
+            "frontal": {
+              "resolucao": "32 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5000 mAh",
+            "carregamento": {
+              "com_fio": "25W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP67",
+            "profundidade_maxima": "1 m por 30 min"
+          }
+        }
+      }
+    },
+    {
+      "id": 11,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/a15-2-jsvssu66jr.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/a15-2-jsvssu66jr.webp"
+      ],
+      "name": "Samsung Galaxy A15",
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Preço baixo",
+        "Boa bateria",
+        "Tela grande"
+      ],
+      "guarantee": "12 meses",
+      "price": 1299.99,
+      "quantity": 9,
+      "star": 4.1,
+      "flash_description": "O essencial para o dia a dia.",
+      "description": "Modelo básico com boa autonomia.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Galaxy A15",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 14",
+            "interface": "One UI Core 6",
+            "atualizacoes_garantidas": "2 anos"
+          },
+          "processador": {
+            "modelo": "MediaTek Helio G99",
+            "nucleos": "8",
+            "gpu": "Mali-G57 MC2",
+            "clock_base": "2.0 GHz",
+            "clock_max": "2.2 GHz",
+            "arquitetura": "6 nm"
+          },
+          "tela": {
+            "tecnologia": "Super AMOLED",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "90 Hz",
+            "protecao": "Vidro Reforçado",
+            "brilho_maximo": "800 nits"
+          },
+          "ram_rom": {
+            "ram": "6 GB",
+            "armazenamento": "128 GB",
+            "expansao": "Sim (microSD)"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "4G LTE"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP",
+              "macro": "5 MP",
+              "profundidade": "2 MP",
+              "video_principal": "1080p"
+            },
+            "frontal": {
+              "resolucao": "13 MP",
+              "video_frontal": "1080p"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5000 mAh",
+            "carregamento": {
+              "com_fio": "25W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 5",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "Não",
+            "profundidade_maxima": "Não aplicável"
+          }
+        }
+      }
+    },
+    {
+      "id": 12,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/1396-google-pixel-8-pro-5g-12-512gb-obsidiana-libre-opiniones.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/1396-google-pixel-8-pro-5g-12-512gb-obsidiana-libre-opiniones.webp"
+      ],
+      "name": "Google Pixel 8 Pro",
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Câmera IA",
+        "Android puro",
+        "Tela OLED"
+      ],
+      "guarantee": "12 meses",
+      "price": 7999.99,
+      "quantity": 5,
+      "star": 4.6,
+      "flash_description": "A melhor câmera com inteligência artificial.",
+      "description": "Android puro com foco em fotografia.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Pixel 8 Pro",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 14",
+            "interface": "Pixel UI",
+            "atualizacoes_garantidas": "7 anos"
+          },
+          "processador": {
+            "modelo": "Google Tensor G3",
+            "nucleos": "9",
+            "gpu": "Immortalis-G715",
+            "clock_base": "2.0 GHz",
+            "clock_max": "3.0 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "LTPO OLED",
+            "resolucao": "QHD+",
+            "taxa_atualizacao": "1–120 Hz",
+            "protecao": "Gorilla Glass Victus 2",
+            "brilho_maximo": "2400 nits"
+          },
+          "ram_rom": {
+            "ram": "12 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Nano SIM + eSIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP OIS",
+              "ultra_wide": "48 MP",
+              "teleobjetiva": "48 MP (zoom óptico 5x)",
+              "video_principal": "4K@60fps"
+            },
+            "frontal": {
+              "resolucao": "10.5 MP",
+              "video_frontal": "4K"
+            },
+            "recursos": [
+              "HDR",
+              "IA Avançada",
+              "Astrofotografia"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5050 mAh",
+            "carregamento": {
+              "com_fio": "30W",
+              "sem_fio": "23W",
+              "reversivel": "Sim"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 7",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "Multi-band"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP68",
+            "profundidade_maxima": "1.5 m por 30 min"
+          }
+        }
+      }
+    },
+    {
+      "id": 13,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/D_Q_NP_2X_712945-MLB83310050965_032025-T-smartphone-asus-rog-phone-5s-12gb-256gb-preto.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/D_Q_NP_2X_712945-MLB83310050965_032025-T-smartphone-asus-rog-phone-5s-12gb-256gb-preto.webp"
+      ],
+      "name": "ASUS ROG Phone 7",
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Focado em jogos",
+        "165Hz",
+        "Bateria grande"
+      ],
+      "guarantee": "12 meses",
+      "price": 7499.99,
+      "quantity": 4,
+      "star": 4.7,
+      "flash_description": "O sonho de qualquer gamer.",
+      "description": "Smartphone gamer de alto desempenho.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "ROG Phone 7",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "ROG UI",
+            "atualizacoes_garantidas": "2 anos"
+          },
+          "processador": {
+            "modelo": "Snapdragon 8 Gen 2",
+            "nucleos": "8",
+            "gpu": "Adreno 740",
+            "clock_base": "2.8 GHz",
+            "clock_max": "3.2 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "AMOLED",
+            "resolucao": "Full HD+",
+            "taxa_atualizacao": "165 Hz",
+            "protecao": "Gorilla Glass Victus",
+            "brilho_maximo": "1500 nits"
+          },
+          "ram_rom": {
+            "ram": "16 GB",
+            "armazenamento": "512 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP",
+              "ultra_wide": "13 MP",
+              "macro": "5 MP",
+              "video_principal": "8K"
+            },
+            "frontal": {
+              "resolucao": "32 MP",
+              "video_frontal": "1080p"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Jogo",
+              "Estabilização"
+            ]
+          },
+          "bateria": {
+            "capacidade": "6000 mAh",
+            "carregamento": {
+              "com_fio": "65W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "Até 2 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 6E",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C (dupla)",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "IP54",
+            "profundidade_maxima": "Respingos"
+          }
+        }
+      }
+    },
+    {
+      "id": 14,
+      "badge": "Novo",
+      "img": [
+        "/imgproduct/smartphones/7.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/smartphones/7.avif"
+      ],
+      "name": "Realme GT 5",
+      "cor": [
+        "Prata"
+      ],
+      "features": [
+        "Carregamento rápido",
+        "OLED",
+        "Alto desempenho"
+      ],
+      "guarantee": "12 meses",
+      "price": 3699.99,
+      "quantity": 10,
+      "star": 4.4,
+      "flash_description": "Velocidade absurda no carregamento.",
+      "description": "Excelente custo-benefício premium.",
+      "specs": {
+        "category": "smartphone",
+        "modelo": "Realme GT 5",
+        "especificacoes_tecnicas": {
+          "sistema": {
+            "os": "Android 13",
+            "interface": "Realme UI 4.0",
+            "atualizacoes_garantidas": "3 anos"
+          },
+          "processador": {
+            "modelo": "Snapdragon 8 Gen 2",
+            "nucleos": "8",
+            "gpu": "Adreno 740",
+            "clock_base": "2.8 GHz",
+            "clock_max": "3.2 GHz",
+            "arquitetura": "4 nm"
+          },
+          "tela": {
+            "tecnologia": "AMOLED",
+            "resolucao": "1.5K",
+            "taxa_atualizacao": "144 Hz",
+            "protecao": "Gorilla Glass",
+            "brilho_maximo": "1400 nits"
+          },
+          "ram_rom": {
+            "ram": "12 GB",
+            "armazenamento": "256 GB",
+            "expansao": "Não"
+          },
+          "chip_sim": {
+            "suporte": "Dual SIM",
+            "conectividade": "5G"
+          },
+          "camera": {
+            "principal": {
+              "sensor_principal": "50 MP OIS",
+              "ultra_wide": "8 MP",
+              "macro": "2 MP",
+              "video_principal": "8K"
+            },
+            "frontal": {
+              "resolucao": "16 MP",
+              "video_frontal": "1080p"
+            },
+            "recursos": [
+              "HDR",
+              "Modo Noturno"
+            ]
+          },
+          "bateria": {
+            "capacidade": "5240 mAh",
+            "carregamento": {
+              "com_fio": "150W",
+              "sem_fio": "Não",
+              "reversivel": "Não"
+            },
+            "duracao_estimada": "1.5 dias"
+          },
+          "conectividade": {
+            "wi_fi": "Wi-Fi 7",
+            "bluetooth": "5.3",
+            "nfc": "Sim",
+            "portas": "USB-C",
+            "gps": "GPS"
+          },
+          "resistencia_agua": {
+            "certificacao": "Não",
+            "profundidade_maxima": "Não aplicável"
+          }
+        }
+      }
+    }
   ],
-  "templates": [
-    { "id": 21, "img": "./controle_da_pluggy.png", "title": "Landing Page Freelancer", "price": 59.00, "description": "Template moderno para portfólios profissionais.", "file": "freelancer-landing.zip" },
-    { "id": 22, "title": "React SaaS Template", "price": 79.00, "description": "Template completo para startups e SaaS.", "file": "react-saas.zip" },
-    { "id": 23, "title": "Dashboard Admin Tailwind", "price": 89.00, "description": "Painel administrativo estilizado com Tailwind.", "file": "dashboard-tailwind.zip" },
-    { "id": 24, "title": "E-commerce Modern", "price": 95.00, "description": "Loja online pronta com carrinho e checkout.", "file": "ecommerce-modern.zip" },
-    { "id": 25, "title": "Portfolio Developer", "price": 49.00, "description": "Site pessoal para desenvolvedores modernos.", "file": "portfolio-dev.zip" },
-    { "id": 26, "title": "Next.js Blog Kit", "price": 42.00, "description": "Template para blogs técnicos com MDX.", "file": "blog-kit.zip" },
-    { "id": 27, "title": "Agency Website", "price": 54.00, "description": "Site elegante para agências criativas.", "file": "agency-site.zip" },
-    { "id": 28, "title": "Landing Crypto", "price": 67.00, "description": "Landing Page para projetos Web3 e blockchain.", "file": "crypto-landing.zip" },
-    { "id": 29, "title": "Startup One Page", "price": 39.00, "description": "Template leve e otimizado para startups.", "file": "startup-one.zip" },
-    { "id": 30, "title": "Course Platform UI", "price": 72.00, "description": "Interface para plataformas de ensino online.", "file": "course-platform.zip" },
-    { "id": 31, "title": "Modern Resume Site", "price": 38.00, "description": "Modelo de currículo online com animações.", "file": "resume-site.zip" },
-    { "id": 32, "title": "Music App Template", "price": 50.00, "description": "Interface moderna para aplicativos de música.", "file": "music-app.zip" },
-    { "id": 33, "title": "Digital Product Store", "price": 85.00, "description": "Template para lojas de produtos digitais.", "file": "digital-store.zip" },
-    { "id": 34, "title": "Gaming Website UI", "price": 64.00, "description": "Site com estilo gamer e animações responsivas.", "file": "gaming-ui.zip" }
+  "accessory": [
+    {
+      "id": 15,
+      "badge": "Mais vendido",
+      "name": "Carregador Turbo USB-C 65W",
+      "cor": [
+        "Branco"
+      ],
+      "img": [
+        "/imgproduct/accessory/D_Q_NP_2X_842352-MLB90382542882_082025-V.webp",
+        "/imgproduct/accessory/D_NQ_NP_914895-MLU75730050701_042024-O.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/D_NQ_NP_914895-MLU75730050701_042024-O.webp"
+      ],
+      "features": [
+        "Carga rápida",
+        "Proteção contra superaquecimento",
+        "Compacto"
+      ],
+      "guarantee": "12 meses",
+      "price": 189.9,
+      "quantity": 10,
+      "star": 4.6,
+      "flash_description": "Carregamento rápido e seguro para vários dispositivos.",
+      "description": "Carregador turbo com tecnologia GaN, ideal para smartphones modernos e tablets.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "potencia": "65W",
+            "entrada": "Bivolt",
+            "saidas": [
+              "USB-C"
+            ],
+            "tecnologia": "GaN",
+            "compatibility": [
+              "Android",
+              "iPhone USB-C",
+              "Tablets"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 16,
+      "badge": "Novo",
+      "name": "Cabo USB para Micro USB + USB-C 1.2m ",
+      "cor": [
+        "Branco"
+      ],
+      "img": [
+        "/imgproduct/accessory/cabo_usb_micro_usb_usb_c_1_2m_pvc_branco_euabc_12pb_7105_6_65ce9a508d18a4154187f3986cf9e996_20250609144819.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/cabo_usb_micro_usb_usb_c_1_2m_pvc_branco_euabc_12pb_7105_6_65ce9a508d18a4154187f3986cf9e996_20250609144819.webp"
+      ],
+      "features": [
+        "Alta durabilidade",
+        "Transferência rápida",
+        "Carga rápida"
+      ],
+      "guarantee": "6 meses",
+      "price": 79.9,
+      "quantity": 14,
+      "star": 4.5,
+      "flash_description": "Cabo resistente para carga e dados.",
+      "description": "Cabo USB-C original com suporte a carregamento rápido e transferência de dados.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "conexoes": "Micro USB + USB-C",
+            "comprimento": "1.2 m",
+            "tipo": "USB-C para USB-C",
+            "velocidade_dados": "Até 480 Mbps",
+            "compatibility": [
+              "Android",
+              "Notebooks USB-C"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 17,
+      "badge": "Novo",
+      "name": "Fone de Ouvido Bluetooth TWS",
+      "cor": [
+        "Preto"
+      ],
+      "img": [
+        "/imgproduct/accessory/D_Q_NP_2X_928365-MLA100049281763_122025-V.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/D_Q_NP_2X_928365-MLA100049281763_122025-V.webp"
+      ],
+      "features": [
+        "Bluetooth 5.3",
+        "Cancelamento de ruído",
+        "Estojo com carga"
+      ],
+      "guarantee": "12 meses",
+      "price": 299.9,
+      "quantity": 9,
+      "star": 4.4,
+      "flash_description": "Som imersivo e liberdade sem fios.",
+      "description": "Fone TWS com excelente qualidade sonora e autonomia prolongada.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "bluetooth": "5.3",
+            "autonomia": "Até 12h",
+            "microfone": "Sim",
+            "resistencia": "IPX4",
+            "compatibility": [
+              "Android",
+              "iOS",
+              "Windows"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 18,
+      "badge": "Recomendado",
+      "name": "Mouse Sem Fio Silencioso",
+      "cor": [
+        "Branco"
+      ],
+      "img": [
+        "/imgproduct/accessory/D_Q_NP_2X_948949-MLB92802996309_092025-E-mouse-sem-fio-wireles-usb-recarregavel-optico-led-silencioso.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/D_Q_NP_2X_948949-MLB92802996309_092025-E-mouse-sem-fio-wireles-usb-recarregavel-optico-led-silencioso.webp"
+      ],
+      "features": [
+        "Clique silencioso",
+        "Alta precisão",
+        "Ergonômico"
+      ],
+      "guarantee": "24 meses",
+      "price": 129.9,
+      "quantity": 12,
+      "star": 4.7,
+      "flash_description": "Conforto e precisão para o dia a dia.",
+      "description": "Mouse sem fio ideal para trabalho e estudo prolongados.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "conexao": "Wireless USB",
+            "dpi": "1200",
+            "bateria": "AA",
+            "compatibility": [
+              "Windows",
+              "macOS",
+              "Linux"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 19,
+      "badge": "Novo",
+      "name": "Suporte Ajustável para Notebook",
+      "cor": [
+        "Branco"
+      ],
+      "img": [
+        "/imgproduct/accessory/D_Q_NP_2X_867109-MLB96587852139_102025-E.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/D_Q_NP_2X_867109-MLB96587852139_102025-E.webp"
+      ],
+      "features": [
+        "Altura ajustável",
+        "Melhora postura",
+        "Alumínio"
+      ],
+      "guarantee": "12 meses",
+      "price": 159.9,
+      "quantity": 8,
+      "star": 4.5,
+      "flash_description": "Mais conforto e ergonomia no trabalho.",
+      "description": "Suporte resistente que melhora a ventilação e postura.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "material": "Alumínio",
+            "ajuste_altura": "Sim",
+            "peso_suportado": "Até 5 kg",
+            "compatibility": [
+              "Notebooks até 17 polegadas"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 20,
+      "badge": "Novo",
+      "name": "Filtro de Linha com 6 Tomadas",
+      "cor": [
+        "Preto"
+      ],
+      "img": [
+        "/imgproduct/accessory/D_Q_NP_2X_948476-MLB89165904025_082025-E-filtro-linha-fiolux-protect-regua-6-tomadas-cabo-1m-10a-led.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/D_Q_NP_2X_948476-MLB89165904025_082025-E-filtro-linha-fiolux-protect-regua-6-tomadas-cabo-1m-10a-led.webp"
+      ],
+      "features": [
+        "Proteção contra surtos",
+        "6 tomadas",
+        "Chave liga/desliga"
+      ],
+      "guarantee": "12 meses",
+      "price": 89.9,
+      "quantity": 11,
+      "star": 4.6,
+      "flash_description": "Proteção e organização elétrica.",
+      "description": "Filtro de linha ideal para proteger seus equipamentos.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "tomadas": 6,
+            "voltagem": "Bivolt",
+            "proteção": "Contra surtos elétricos",
+            "compatibility": [
+              "Eletrônicos em geral"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 21,
+      "badge": "Novo",
+      "name": "HD Externo Portátil 1TB",
+      "cor": [
+        "Branco"
+      ],
+      "img": [
+        "/imgproduct/accessory/D_NQ_NP_2X_795236-MLA83755730285_042025-F.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/accessory/D_NQ_NP_2X_795236-MLA83755730285_042025-F.avif"
+      ],
+      "features": [
+        "Alta velocidade",
+        "Portátil",
+        "Plug and Play"
+      ],
+      "guarantee": "24 meses",
+      "price": 399.9,
+      "quantity": 7,
+      "star": 4.7,
+      "flash_description": "Armazene seus arquivos com segurança.",
+      "description": "HD externo compacto ideal para backups e transporte.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "interface": "USB 3.0",
+            "capacidade": "1 TB",
+            "compatibility": [
+              "Windows",
+              "macOS",
+              "Consoles"
+            ]
+          }
+        }
+      }
+    }
   ],
-  "ebooks": [
-    { "id": 36, "title": "Guia de TypeScript Moderno", "price": 19.90, "description": "Aprenda TypeScript do zero ao avançado.", "file": "ebook-typescript.pdf" },
-    { "id": 37, "title": "Manual de Performance Web", "price": 22.50, "description": "Melhore o desempenho dos seus sites.", "file": "performance-web.pdf" },
-    { "id": 38, "title": "UI/UX Design Simplificado", "price": 25.00, "description": "Guia prático de design centrado no usuário.", "file": "uiux-simplificado.pdf" },
-    { "id": 39, "title": "SEO para Desenvolvedores", "price": 17.00, "description": "Otimização de sites com técnicas modernas.", "file": "seo-dev.pdf" },
-    { "id": 40, "title": "Marketing Digital 2025", "price": 27.00, "description": "Estratégias atualizadas para tráfego e vendas.", "file": "marketing2025.pdf" },
-    { "id": 41, "title": "Git e GitHub Essencial", "price": 14.00, "description": "Controle de versão para equipes e projetos.", "file": "git-essencial.pdf" },
-    { "id": 42, "title": "Design System na Prática", "price": 29.90, "description": "Crie sistemas de design reutilizáveis.", "file": "design-system.pdf" },
-    { "id": 43, "title": "React Hooks Avançado", "price": 24.90, "description": "Domine hooks e padrões avançados de React.", "file": "react-hooks.pdf" },
-    { "id": 44, "title": "Arquitetura Frontend", "price": 31.00, "description": "Boas práticas e padrões para apps escaláveis.", "file": "frontend-architecture.pdf" },
-    { "id": 45, "title": "Automação com JavaScript", "price": 26.00, "description": "Crie scripts e bots inteligentes com JS.", "file": "automation-js.pdf" }
+  "others": [
+    {
+      "id": 22,
+      "badge": "Mais vendido",
+      "name": "Power Bank 20.000mAh Fast Charge",
+      "img": [
+        "/imgproduct/others/61ugGlPfnkL.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/others/61ugGlPfnkL.avif"
+      ],
+      "cor": [
+        "Azul Marinho",
+        "Verde Mentolado"
+      ],
+      "features": [
+        "Carga rápida",
+        "Alta capacidade",
+        "Proteção inteligente"
+      ],
+      "guarantee": "12 meses",
+      "price": 249.9,
+      "quantity": 14,
+      "star": 4.6,
+      "flash_description": "Energia extra para seus dispositivos em qualquer lugar.",
+      "description": "Power bank de alta capacidade com suporte a carregamento rápido para smartphones, fones e outros eletrônicos.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "capacidade": "20.000 mAh",
+            "saidas": [
+              "USB-A",
+              "USB-C"
+            ],
+            "carga_rapida": "Sim",
+            "peso": "420 g",
+            "compatibility": [
+              "Smartphones",
+              "Fones Bluetooth",
+              "Tablets"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 23,
+      "badge": "Mais vendido",
+      "name": "Fone de Ouvido Bluetooth ANC",
+      "img": [
+        "/imgproduct/others/D_Q_NP_2X_603971-MLA100014281805_122025-V.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/others/D_Q_NP_2X_603971-MLA100014281805_122025-V.avif"
+      ],
+      "cor": [
+        "Cinza Ardósia Médio"
+      ],
+      "features": [
+        "Cancelamento de ruído",
+        "Bluetooth 5.3",
+        "Alta autonomia"
+      ],
+      "guarantee": "12 meses",
+      "price": 349.9,
+      "quantity": 10,
+      "star": 4.7,
+      "flash_description": "Som imersivo com menos ruído externo.",
+      "description": "Fone de ouvido Bluetooth com cancelamento ativo de ruído e excelente qualidade sonora para o dia a dia.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "bluetooth": "5.3",
+            "cancelamento_ruido": "Ativo (ANC)",
+            "autonomia": "Até 30h",
+            "microfone": "Sim",
+            "compatibility": [
+              "Android",
+              "iOS",
+              "Windows"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 24,
+      "badge": "Novo",
+      "name": "Mouse Sem Fio Recarregável",
+      "img": [
+        "/imgproduct/others/D_Q_NP_2X_677296-MLA100087080233_122025-E.webp"
+      ],
+      "imgColor": [
+        "/imgproduct/others/D_Q_NP_2X_677296-MLA100087080233_122025-E.webp"
+      ],
+      "cor": [
+        "Cinza"
+      ],
+      "features": [
+        "Design ergonômico",
+        "Clique silencioso",
+        "Bateria recarregável"
+      ],
+      "guarantee": "12 meses",
+      "price": 119.9,
+      "quantity": 12,
+      "star": 4.5,
+      "flash_description": "Conforto e praticidade para trabalho e estudo.",
+      "description": "Mouse sem fio com bateria recarregável via USB-C, ideal para uso prolongado.",
+      "specs": {
+        "category": "mouse",
+        "especificacoes_tecnicas": {
+          "geral": {
+            "conexao": "Wireless USB",
+            "dpi": "1200",
+            "bateria": "Recarregável",
+            "alcance": "10 m",
+            "compatibility": [
+              "Windows",
+              "macOS",
+              "Linux"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 25,
+      "badge": "Novo",
+      "name": "Hub USB-C 6 em 1",
+      "img": [
+        "/imgproduct/others/D_NQ_NP_2X_662220-MLA100510066539_122025-F.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/others/D_NQ_NP_2X_662220-MLA100510066539_122025-F.avif"
+      ],
+      "cor": [
+        "Cinza"
+      ],
+      "features": [
+        "Múltiplas portas",
+        "Design portátil",
+        "Alta compatibilidade"
+      ],
+      "guarantee": "12 meses",
+      "price": 199.9,
+      "quantity": 8,
+      "star": 4.6,
+      "flash_description": "Expanda as conexões do seu notebook.",
+      "description": "Hub USB-C com portas HDMI, USB e leitor de cartões, ideal para notebooks modernos.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "portas": [
+              "HDMI",
+              "USB-A",
+              "USB-C",
+              "SD",
+              "MicroSD"
+            ],
+            "compatibility": [
+              "Notebooks USB-C",
+              "MacBook",
+              "Ultrabooks"
+            ],
+            "resolucao_hdmi": "4K",
+            "alimentacao": "Pass-through USB-C"
+          }
+        }
+      }
+    },
+    {
+      "id": 26,
+      "badge": "Novo",
+      "name": "Suporte Veicular Magnético para Smartphone",
+      "img": [
+        "/imgproduct/others/D_Q_NP_2X_639242-MLA83675224720_042025-V.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/others/D_Q_NP_2X_639242-MLA83675224720_042025-V.avif"
+      ],
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Fixação magnética forte",
+        "Rotação 360°",
+        "Fácil instalação"
+      ],
+      "guarantee": "6 meses",
+      "price": 79.9,
+      "quantity": 14,
+      "star": 4.4,
+      "flash_description": "Mais segurança e praticidade ao dirigir.",
+      "description": "Suporte veicular magnético compatível com a maioria dos smartphones, ideal para uso com GPS.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "fixacao": "Magnética",
+            "rotacao": "360°",
+            "instalacao": "Saída de ar"
+          }
+        }
+      }
+    },
+    {
+      "id": 27,
+      "badge": "Lançamento",
+      "name": "Caixa de Som Bluetooth Compacta",
+      "img": [
+        "/imgproduct/others/D_Q_NP_2X_855695-MLA89350880118_082025-E.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/others/D_Q_NP_2X_855695-MLA89350880118_082025-E.avif"
+      ],
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Som potente",
+        "Bluetooth 5.2",
+        "Resistente à água"
+      ],
+      "guarantee": "12 meses",
+      "price": 219.9,
+      "quantity": 10,
+      "star": 4.6,
+      "flash_description": "Som de qualidade em qualquer lugar.",
+      "description": "Caixa de som portátil com ótima qualidade sonora e resistência para uso diário.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "potencia": "20W",
+            "resistencia": "IPX7",
+            "autonomia": "Até 12h",
+            "compatibility": [
+              "Smartphones",
+              "Tablets",
+              "Notebooks"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": 28,
+      "badge": "Recomendado",
+      "name": "Mochila para Notebook até 15.6\"",
+      "img": [
+        "/imgproduct/others/D_Q_NP_2X_898842-MLA93774585739_092025-V.avif"
+      ],
+      "imgColor": [
+        "/imgproduct/others/D_Q_NP_2X_898842-MLA93774585739_092025-V.avif"
+      ],
+      "cor": [
+        "Preto"
+      ],
+      "features": [
+        "Compartimentos acolchoados",
+        "Resistente à água",
+        "Design moderno"
+      ],
+      "guarantee": "12 meses",
+      "price": 189.9,
+      "quantity": 8,
+      "star": 4.7,
+      "flash_description": "Proteção e estilo para o dia a dia.",
+      "description": "Mochila ideal para transportar notebook, acessórios e itens pessoais com segurança.",
+      "specs": {
+        "especificacoes_tecnicas": {
+          "geral": {
+            "material": "Poliéster impermeável",
+            "capacidade": "25 L",
+            "compartimentos": "Notebook, acessórios, documentos"
+          }
+        }
+      }
+    }
   ]
 }
